@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xfa generator="AdobeLiveCycleDesignerES_V9.0.0.0.20091029.1.612548" APIVersion="3.1.9277.0"?>
+<xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2011-10-13T03:47:13Z" uuid="584d6018-6fb4-465b-82a1-5b0f003542e2">
+<template xmlns="http://www.xfa.org/schema/xfa-template/2.8/">
+   <?formServer defaultPDFRenderFormat acrobat9.0static?>
+   <?formServer allowRenderCaching 0?>
+   <?formServer formModel both?>
+   <subform name="form1" locale="en_AU" layout="tb">
+      <pageSet>
+         <pageArea>
+            <medium short="21.0141cm" long="29.7043cm" imagingBBox="0cm,0cm,21.0141cm,29.7043cm" stock="a4"/>
+            <contentArea id="CA_Page_1" w="21.0141cm" h="29.7043cm" x="0cm" y="0cm"/>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <subform w="170mm" h="39mm" name="OrthoTreatment">
+         <bind match="none"/>
+         <draw name="R1" w="160mm" h="36mm" y="2mm" x="5mm">
+            <value>
+               <rectangle>
+                  <edge thickness="0.26mm" cap="butt"/>
+                  <corner radius="5.08mm" thickness="0.26mm"/>
+               </rectangle>
+            </value>
+         </draw>
+         <draw name="L1" y="7.5mm" w="160mm" h="0cm" x="5mm">
+            <value>
+               <line>
+                  <edge thickness="0.0254cm" cap="butt"/>
+               </line>
+            </value>
+         </draw>
+         <draw name="L2" y="7.5mm" x="85mm" w="0cm" h="24.024mm">
+            <value>
+               <line slope="/">
+                  <edge thickness="0.0254cm" cap="butt"/>
+               </line>
+            </value>
+         </draw>
+         <draw name="L3" y="13.5mm" w="160mm" h="0cm" x="5mm">
+            <value>
+               <line>
+                  <edge thickness="0.0254cm" cap="butt"/>
+               </line>
+            </value>
+         </draw>
+         <draw name="L4" y="19.5mm" w="160mm" h="0cm" x="5mm">
+            <value>
+               <line>
+                  <edge thickness="0.0254cm" cap="butt"/>
+               </line>
+            </value>
+         </draw>
+         <draw name="L5" y="25.5mm" w="160mm" h="0cm" x="5mm">
+            <value>
+               <line>
+                  <edge thickness="0.0254cm" cap="butt"/>
+               </line>
+            </value>
+         </draw>
+         <draw name="L6" y="31.5mm" w="160mm" h="0cm" x="5mm">
+            <value>
+               <line>
+                  <edge thickness="0.0254cm" cap="butt"/>
+               </line>
+            </value>
+         </draw>
+         <field name="ffkeyno_606" y="0mm" x="0mm" w="62mm" h="9mm" id="floatingField018848" presence="hidden" access="readOnly">
+            <ui>
+               <textEdit>
+                  <border>
+                     <?templateDesigner StyleID aped3?>
+                     <edge stroke="lowered"/>
+                  </border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Myriad Pro"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <bind match="dataRef" ref="$.Documents.Document.Data.keyno_606"/>
+            <value>
+               <text maxChars="10"/>
+            </value>
+         </field>
+         <draw name="T2" y="3mm" x="13mm" w="87.297mm" h="3.534mm">
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in">Total cost of orthodontic treatment: $<span xfa:embedType="uri" xfa:embedMode="raw" xfa:embed="#floatingField018848"/></p></body>
+               </exData>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font weight="bold" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para hAlign="justify"/>
+         </draw>
+         <draw name="T3" y="8.5mm" x="13mm" w="2.4165cm" h="3.966mm">
+            <value>
+               <text>Treatment year</text>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para hAlign="justify"/>
+         </draw>
+         <draw name="T4" y="8.5mm" x="93mm" w="2.6782cm" h="3.966mm">
+            <value>
+               <text>Entitlement up to</text>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para hAlign="justify"/>
+         </draw>
+         <field name="ffkeyno_600" y="0mm" x="0mm" w="62mm" h="9mm" id="floatingField015245" presence="hidden" access="readOnly">
+            <ui>
+               <textEdit>
+                  <border>
+                     <?templateDesigner StyleID aped3?>
+                     <edge stroke="lowered"/>
+                  </border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Myriad Pro"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <bind match="dataRef" ref="$.Documents.Document.Data.keyno_600"/>
+         </field>
+         <draw name="T5" y="14.5mm" x="13mm" w="26.782mm" h="4.398mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p><span xfa:embedType="uri" xfa:embedMode="raw" xfa:embed="#floatingField015245"/></p></body>
+               </exData>
+            </value>
+            <font typeface="Arial"/>
+            <margin topInset="0mm" bottomInset="0mm" leftInset="0mm" rightInset="0mm"/>
+         </draw>
+         <field name="ffkeyno_603" y="0mm" x="0mm" w="62mm" h="9mm" id="floatingField021052" presence="hidden" access="readOnly">
+            <ui>
+               <textEdit>
+                  <border>
+                     <?templateDesigner StyleID aped3?>
+                     <edge stroke="lowered"/>
+                  </border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Myriad Pro"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <value>
+               <text maxChars="10"/>
+            </value>
+            <bind match="dataRef" ref="$.Documents.Document.Data.keyno_603"/>
+         </field>
+         <draw name="T6" y="14.5mm" x="93mm" w="26.782mm" h="4.398mm">
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in">$<span xfa:embedType="uri" xfa:embedMode="raw" xfa:embed="#floatingField021052"/></p></body>
+               </exData>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para hAlign="justify"/>
+         </draw>
+         <field name="ffkeyno_601" y="0mm" x="0mm" w="62mm" h="9mm" id="floatingField011079" presence="hidden" access="readOnly">
+            <ui>
+               <textEdit>
+                  <border>
+                     <?templateDesigner StyleID aped3?>
+                     <edge stroke="lowered"/>
+                  </border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Myriad Pro"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <bind match="dataRef" ref="$.Documents.Document.Data.keyno_601"/>
+         </field>
+         <draw name="T7" y="20.5mm" x="13mm" w="26.782mm" h="4.398mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p><span xfa:embedType="uri" xfa:embedMode="raw" xfa:embed="#floatingField011079"/></p></body>
+               </exData>
+            </value>
+            <font typeface="Arial"/>
+            <margin topInset="0mm" bottomInset="0mm" leftInset="0mm" rightInset="0mm"/>
+         </draw>
+         <field name="ffkeyno_604" y="0mm" x="0mm" w="62mm" h="9mm" id="floatingField012670" presence="hidden" access="readOnly">
+            <ui>
+               <textEdit>
+                  <border>
+                     <?templateDesigner StyleID aped3?>
+                     <edge stroke="lowered"/>
+                  </border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Myriad Pro"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <value>
+               <text maxChars="10"/>
+            </value>
+            <bind match="dataRef" ref="$.Documents.Document.Data.keyno_604"/>
+         </field>
+         <draw name="T8" y="20.5mm" x="93mm" w="26.782mm" h="4.411mm">
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in">$<span xfa:embedType="uri" xfa:embedMode="raw" xfa:embed="#floatingField012670"/></p></body>
+               </exData>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para hAlign="justify"/>
+         </draw>
+         <field name="ffkeyno_602" y="0mm" x="0mm" w="62mm" h="9mm" id="floatingField017112" presence="hidden" access="readOnly">
+            <ui>
+               <textEdit>
+                  <border>
+                     <?templateDesigner StyleID aped3?>
+                     <edge stroke="lowered"/>
+                  </border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Myriad Pro"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <bind match="dataRef" ref="$.Documents.Document.Data.keyno_602"/>
+         </field>
+         <draw name="T9" y="26.5mm" x="13mm" w="26.782mm" h="4.398mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p><span xfa:embedType="uri" xfa:embedMode="raw" xfa:embed="#floatingField017112"/></p></body>
+               </exData>
+            </value>
+            <font typeface="Arial" baselineShift="0pt"/>
+            <margin topInset="0mm" bottomInset="0mm" leftInset="0mm" rightInset="0mm"/>
+            <para spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+         </draw>
+         <field name="ffkeyno_605" y="0mm" x="0mm" w="62mm" h="9mm" id="floatingField012218" presence="hidden" access="readOnly">
+            <ui>
+               <textEdit>
+                  <border>
+                     <?templateDesigner StyleID aped3?>
+                     <edge stroke="lowered"/>
+                  </border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Myriad Pro"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <value>
+               <text maxChars="10"/>
+            </value>
+            <bind match="dataRef" ref="$.Documents.Document.Data.keyno_605"/>
+         </field>
+         <draw name="T10" y="26.5mm" x="93mm" w="26.782mm" h="4.134mm">
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in">$<span xfa:embedType="uri" xfa:embedMode="raw" xfa:embed="#floatingField012218"/></p></body>
+               </exData>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para hAlign="justify"/>
+         </draw>
+         <field name="ffkeyno_495" y="0mm" x="0mm" w="62mm" h="9mm" id="floatingField023181" presence="hidden" access="readOnly">
+            <ui>
+               <textEdit>
+                  <border>
+                     <?templateDesigner StyleID aped3?>
+                     <edge stroke="lowered"/>
+                  </border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Myriad Pro"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <bind match="dataRef" ref="$.Documents.Document.Data.keyno_495"/>
+            <value>
+               <text maxChars="10"/>
+            </value>
+         </field>
+         <draw name="T11" y="32.5mm" x="13mm" w="64.797mm" h="4.357mm">
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in">Total benefit payable: $<span xfa:embedType="uri" xfa:embedMode="raw" xfa:embed="#floatingField023181"/></p></body>
+               </exData>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font weight="bold" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para hAlign="justify" vAlign="middle"/>
+         </draw>
+         <?templateDesigner isFragment yes?>
+         <?templateDesigner fragmentTitle OrthoTreatment?>
+         <?templateDesigner fragmentDescription Contains total cost of Orthodontic Treatments, ie keyno_606, keyno_600 to 605 and keyno_495?>
+         <?templateDesigner expand 1?></subform>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Arial" 0 0 ISO-8859-1 4 112 28 000300070013001400150016001700180019002800370042004400480049004C004E004F0050005100520053005500570058005C005E0060 $0123456ET_aefiklmnoprtuy{}?>
+      <?renderCache.subset "Arial" 1 0 ISO-8859-1 4 120 30 000300070013001700180019001C001D00370042004400450046004700480049004B004C004E004F0050005100520053005500560057005C005E0060 $04569:T_abcdefhiklmnoprsty{}?>
+   </subform>
+   <?templateDesigner Grid show:1, snap:1, units:17, color:ff8080, origin:(0,0), interval:(25000,25000), objsnap:0, guidesnap:0, pagecentersnap:-1019460748?>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-template/2.8/?>
+   <?templateDesigner DefaultLanguage JavaScript?>
+   <?templateDesigner DefaultRunAt client?>
+   <?PDFPrintOptions embedViewerPrefs 0?>
+   <?PDFPrintOptions embedPrintOnFormOpen 0?>
+   <?PDFPrintOptions scalingPrefs 0?>
+   <?PDFPrintOptions enforceScalingPrefs 0?>
+   <?PDFPrintOptions paperSource 0?>
+   <?PDFPrintOptions duplexMode 0?>
+   <?templateDesigner DefaultPreviewType interactive?>
+   <?templateDesigner DefaultPreviewPagination simplex?>
+   <?templateDesigner XDPPreviewFormat 19?>
+   <?templateDesigner DefaultPreviewDataFileName test01.xml?>
+   <?templateDesigner SaveTaggedPDF 1?>
+   <?templateDesigner SavePDFWithEmbeddedFonts 1?>
+   <?templateDesigner FormTargetVersion 28?>
+   <?templateDesigner Zoom 118?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?></template>
+<config xmlns="http://www.xfa.org/schema/xci/2.8/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+         <version>1.7</version>
+         <adobeExtensionLevel>3</adobeExtensionLevel>
+      </pdf>
+      <cache>
+         <macroCache/>
+      </cache>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+</config>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 4.2.1-c043 52.398682, 2009/08/10-13:00:47        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" rdf:about="">
+         <xmp:MetadataDate>2011-10-13T03:47:13Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer ES 9.0</xmp:CreatorTool>
+      </rdf:Description>
+      <rdf:Description xmlns:pdf="http://ns.adobe.com/pdf/1.3/" rdf:about="">
+         <pdf:Producer>Adobe LiveCycle Designer ES 9.0</pdf:Producer>
+      </rdf:Description>
+      <rdf:Description xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" rdf:about="">
+         <xmpMM:DocumentID>uuid:584d6018-6fb4-465b-82a1-5b0f003542e2</xmpMM:DocumentID>
+      </rdf:Description>
+      <rdf:Description xmlns:lcd="http://ns.adobe.com/livecycle/designer/" xmlns:dc="http://purl.org/dc/elements/1.1/" rdf:about="">
+         <lcd:fragmentCatalog>
+            <rdf:Seq>
+               <rdf:li rdf:parseType="Resource">
+                  <dc:title>
+                     <rdf:Alt>
+                        <rdf:li xml:lang="x-default">OrthoTreatment</rdf:li>
+                     </rdf:Alt>
+                  </dc:title>
+                  <dc:description>
+                     <rdf:Alt>
+                        <rdf:li xml:lang="x-default">Contains total cost of Orthodontic Treatments, ie keyno_606, keyno_600 to 605 and keyno_495</rdf:li>
+                     </rdf:Alt>
+                  </dc:description>
+                  <dc:identifier>$template.form1.OrthoTreatment</dc:identifier>
+                  <lcd:fragmentRole>Subform</lcd:fragmentRole>
+               </rdf:li>
+            </rdf:Seq>
+         </lcd:fragmentCatalog>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale name="en_AU" desc="English (Australia)">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, D MMMM YYYY</datePattern>
+         <datePattern name="long">D MMMM YYYY</datePattern>
+         <datePattern name="med">DD/MM/YYYY</datePattern>
+         <datePattern name="short">D/MM/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$z,zz9.99</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">$</currencySymbol>
+         <currencySymbol name="isoname">AUD</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+      </typefaces>
+   </locale>
+</localeSet></xdp:xdp>

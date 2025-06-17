@@ -1,0 +1,1773 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xfa generator="AdobeLiveCycleDesigner_V11.0.1.20130826.2.901444" APIVersion="3.6.13235.0"?>
+<xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2020-05-21T13:04:27Z" uuid="31c64407-2413-44f3-8ef8-3bee212a5588">
+<template xmlns="http://www.xfa.org/schema/xfa-template/2.8/">
+   <?formServer defaultPDFRenderFormat acrobat9.0static?>
+   <?formServer allowRenderCaching 0?>
+   <?formServer formModel both?>
+   <subform name="WHICSLetter" layout="tb" locale="en_AU" restoreState="auto">
+      <pageSet>
+         <pageArea name="FirstPage" id="Page1">
+            <subform w="210mm" h="86mm" name="sfmHeaderSection">
+               <bind match="none"/>
+               <subform w="203.99mm" name="sfmHeader" h="86mm">
+                  <bind match="none"/>
+                  <field name="txtDocumentTitle" w="198.96mm" h="6mm" x="5.03mm" y="21.96mm" access="readOnly">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <font typeface="Arial" letterSpacing="0.05em" size="11pt" weight="bold"/>
+                     <margin topInset="0mm" bottomInset="0mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                     <para hAlign="center"/>
+                     <value>
+                        <text>REMITTANCE ADVICE</text>
+                     </value>
+                     <bind match="dataRef" ref="$.Header.FormTitle"/>
+                  </field>
+                  <subform w="203.99mm" name="sfmDocumentInfo" y="0mm" h="86mm" x="0mm">
+                     <bind match="none"/>
+                     <subform w="75mm" name="sfmHdrDocInfo" layout="tb" x="128.98mm" y="28.966mm">
+                        <bind match="none"/>
+                        <subform w="75mm" layout="tb" name="sfmOperatingAccount">
+                           <bind match="none"/>
+                           <field name="txtOperatingAccount" w="74mm" h="0.209528in" access="readOnly">
+                              <ui>
+                                 <textEdit/>
+                              </ui>
+                              <font size="8pt" typeface="Arial" weight="bold"/>
+                              <margin topInset="0.5mm" bottomInset="2mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                              <para vAlign="middle"/>
+                              <bind match="none"/>
+                           </field>
+                           <?templateDesigner expand 1?></subform>
+                        <subform w="75mm" layout="tb" name="sfmABN">
+                           <bind match="none"/>
+                           <field name="txtABN" w="74mm" h="0.209528in" access="readOnly">
+                              <ui>
+                                 <textEdit/>
+                              </ui>
+                              <font size="8pt" typeface="Arial"/>
+                              <margin topInset="0.5mm" bottomInset="2mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                              <para vAlign="middle"/>
+                              <bind match="none"/>
+                              <value>
+                                 <text>Medibank Private Limited ABN 47 080 890 259</text>
+                              </value>
+                           </field>
+                           <?templateDesigner expand 1?></subform>
+                        <subform name="sfmPage" w="75mm" layout="lr-tb">
+                           <bind match="none"/>
+                           <draw name="lblPage" minH="4mm" w="36mm">
+                              <ui>
+                                 <textEdit/>
+                              </ui>
+                              <value>
+                                 <text>PAGE:</text>
+                              </value>
+                              <font typeface="Arial" size="9pt"/>
+                              <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                              <para vAlign="middle"/>
+                           </draw>
+                           <field h="7.5mm" name="CurrentSheet" presence="hidden" w="55mm" access="readOnly" id="floatingField009961">
+                              <ui>
+                                 <numericEdit>
+                                    <border>
+                                       <edge stroke="lowered"/>
+                                    </border>
+                                    <margin/>
+                                 </numericEdit>
+                              </ui>
+                              <font typeface="Arial"/>
+                              <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                              <para vAlign="middle"/>
+                              <caption reserve="20mm">
+                                 <para vAlign="middle"/>
+                                 <value>
+                                    <text>Text Field</text>
+                                 </value>
+                              </caption>
+                              <calculate override="error"/>
+                              <event name="event__layout_ready" activity="ready" ref="$layout">
+                                 <script contentType="application/x-javascript">this.rawValue = xfa.layout.sheet(this)+1;
+</script>
+                              </event>
+                              <?templateDesigner floatingFieldPlaceholder #?>
+                              <bind match="none"/>
+                           </field>
+                           <field h="7.5mm" name="SheetCount" presence="hidden" w="55mm" access="readOnly" id="floatingField000491">
+                              <ui>
+                                 <numericEdit>
+                                    <border>
+                                       <edge stroke="lowered"/>
+                                    </border>
+                                    <margin/>
+                                 </numericEdit>
+                              </ui>
+                              <font typeface="Arial"/>
+                              <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                              <para vAlign="middle"/>
+                              <caption reserve="20mm">
+                                 <para vAlign="middle"/>
+                                 <value>
+                                    <text>Text Field</text>
+                                 </value>
+                              </caption>
+                              <calculate override="error"/>
+                              <event name="event__layout_ready" activity="ready" ref="$layout">
+                                 <script contentType="application/x-javascript">this.rawValue = xfa.layout.sheetCount();
+</script>
+                              </event>
+                              <?templateDesigner floatingFieldPlaceholder ##?>
+                              <bind match="none"/>
+                           </field>
+                           <draw name="lblPageInfo" minH="4mm" minW="38mm">
+                              <ui>
+                                 <textEdit>
+                                    <margin/>
+                                 </textEdit>
+                              </ui>
+                              <value>
+                                 <exData contentType="text/html" maxLength="0">
+                                    <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in"><span xfa:embedType="uri" xfa:embedMode="raw" xfa:embed="#floatingField009961"/> of<span style="xfa-spacerun:yes"> </span><span xfa:embedType="uri" xfa:embedMode="raw" xfa:embed="#floatingField000491"/></p></body>
+                                 </exData>
+                              </value>
+                              <font typeface="Arial" size="9pt"/>
+                              <margin bottomInset="0.5mm" leftInset="0mm" rightInset="0.5mm" topInset="0.5mm"/>
+                              <para vAlign="middle"/>
+                           </draw>
+                           <?templateDesigner expand 1?></subform>
+                        <subform name="sfmEnquiries" w="75mm" layout="lr-tb">
+                           <bind match="none"/>
+                           <field name="txtEnquiries" w="74mm" minH="4mm" access="readOnly">
+                              <ui>
+                                 <textEdit/>
+                              </ui>
+                              <font typeface="Arial" size="9pt"/>
+                              <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                              <para vAlign="middle"/>
+                              <bind match="dataRef" ref="$.Header.Enquiries"/>
+                              <caption reserve="35.5mm">
+                                 <value>
+                                    <text>ENQUIRIES:</text>
+                                 </value>
+                                 <para vAlign="middle"/>
+                              </caption>
+                              <value>
+                                 <text>1300 130 460</text>
+                              </value>
+                           </field>
+                           <?templateDesigner expand 1?></subform>
+                        <subform name="sfmPaymentDate" w="75mm" layout="lr-tb">
+                           <bind match="none"/>
+                           <field name="txtPaymentDateLabel" w="36mm" minH="4mm" access="readOnly">
+                              <ui>
+                                 <textEdit/>
+                              </ui>
+                              <font typeface="Arial" size="9pt"/>
+                              <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                              <para vAlign="middle"/>
+                              <bind match="dataRef" ref="$.Header.PaymentDateLabel"/>
+                              <value>
+                                 <text>DATE:</text>
+                              </value>
+                           </field>
+                           <field name="txtPaymentDate" w="38mm" minH="4mm" access="readOnly">
+                              <ui>
+                                 <textEdit/>
+                              </ui>
+                              <font typeface="Arial" size="9pt"/>
+                              <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0mm" rightInset="0.5mm"/>
+                              <para vAlign="middle"/>
+                              <bind match="dataRef" ref="$.Documents.Document.Data.remitt_dte"/>
+                           </field>
+                           <?templateDesigner expand 1?></subform>
+                        <subform name="sfmProviderNo" w="75mm" layout="lr-tb">
+                           <bind match="none"/>
+                           <field name="txtProviderNoLabel" w="36mm" minH="4mm" access="readOnly">
+                              <ui>
+                                 <textEdit/>
+                              </ui>
+                              <font typeface="Arial" size="9pt"/>
+                              <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                              <para vAlign="middle"/>
+                              <bind match="dataRef" ref="$.Header.ProviderNoLabel"/>
+                              <value>
+                                 <text>PROVIDER NO:</text>
+                              </value>
+                           </field>
+                           <field name="txtProviderNo" w="38mm" minH="4mm" access="readOnly">
+                              <ui>
+                                 <textEdit/>
+                              </ui>
+                              <font typeface="Arial" size="9pt"/>
+                              <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0mm" rightInset="0.5mm"/>
+                              <para vAlign="middle"/>
+                              <bind match="dataRef" ref="$.Documents.Document.Data.prov_doh"/>
+                           </field>
+                           <?templateDesigner expand 1?></subform>
+                        <margin leftInset="0mm"/>
+                        <subform name="sfmDocumentNo" w="75mm" layout="lr-tb">
+                           <bind match="none"/>
+                           <?templateDesigner expand 1?></subform>
+                        <?templateDesigner expand 1?></subform>
+                     <subform usehref="..\..\Livecycle_Templates\Global_Fragments\Cheque_WhiteMarker.xdp#som($template.form1.ChequeWhiteMarker)" x="77.102mm" y="2.035mm">
+                        <?templateDesigner expand 1?>
+                     </subform>
+                     <?templateDesigner expand 1?></subform>
+                  <?templateDesigner expand 1?></subform>
+               <?templateDesigner expand 1?></subform>
+            <medium stock="a4" short="210mm" long="297mm"/>
+            <subform x="25mm" y="84mm" w="173mm" h="2.08mm" name="sfmDivider">
+               <bind match="none"/>
+               <margin leftInset="0mm" rightInset="0mm"/>
+               <draw name="Line1" y="2mm" x="0.001mm" w="173mm" h="0in">
+                  <value>
+                     <line slope="/">
+                        <edge thickness="0.25mm"/>
+                     </line>
+                  </value>
+               </draw>
+               <?templateDesigner expand 1?></subform>
+            <contentArea x="25mm" y="44mm" w="173mm" h="225mm" name="FirstPage" id="content_ID"/>
+            <subform y="274mm" w="210mm" name="sfmFooter" layout="tb">
+               <bind match="none"/>
+               <margin leftInset="13mm"/>
+               <?templateDesigner expand 1?></subform>
+            <field name="lblDisclaimer" w="185mm" h="6mm" access="readOnly" x="12.542mm" y="286mm">
+               <ui>
+                  <textEdit multiLine="1"/>
+               </ui>
+               <font size="7pt" typeface="Arial" baselineShift="0pt"/>
+               <margin topInset="0mm" bottomInset="0mm" leftInset="0mm" rightInset="0mm"/>
+               <para hAlign="center" vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+               <bind match="dataRef" ref="$.Disclaimers.BottomBlackP1"/>
+               <value>
+                  <text>Please note the payment of benefits by Medibank Private is subject to our Fund Rules and policies which may change from time to time.</text>
+               </value>
+            </field>
+            <?templateDesigner expand 1?></pageArea>
+         <pageArea name="contentRemaining" id="Page1_ID">
+            <medium stock="a4" short="210mm" long="297mm"/>
+            <subform w="210mm" h="88mm" name="sfmHeaderSection">
+               <bind match="none"/>
+               <subform y="21.874mm" w="206mm" name="sfmHeader" x="0.888mm" h="59.126mm">
+                  <bind match="none"/>
+                  <field name="txtDocumentTitle" w="198.96mm" h="6mm" x="3.943mm" access="readOnly">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <font typeface="Arial" letterSpacing="0.05em" size="11pt" weight="bold"/>
+                     <margin topInset="0mm" bottomInset="0mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                     <para hAlign="center"/>
+                     <value>
+                        <text>REMITTANCE ADVICE</text>
+                     </value>
+                     <bind match="dataRef" ref="$.Header.FormTitle"/>
+                  </field>
+                  <subform w="206mm" name="sfmDocumentInfo" y="0.133mm" h="59.042mm">
+                     <bind match="none"/>
+                     <subform w="75mm" name="sfmHdrDocInfo" layout="tb" x="123.96mm">
+                        <bind match="none"/>
+                        <subform w="75mm" layout="tb" name="sfmOperatingAccount">
+                           <bind match="none"/>
+                           <field name="txtOperatingAccount" w="74mm" h="0.209528in" access="readOnly">
+                              <ui>
+                                 <textEdit/>
+                              </ui>
+                              <font size="8pt" typeface="Arial" weight="bold"/>
+                              <margin topInset="0.5mm" bottomInset="2mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                              <para vAlign="middle"/>
+                              <bind match="dataRef" ref="$.Header.OperatingAccount"/>
+                           </field>
+                           <?templateDesigner expand 1?></subform>
+                        <subform w="75mm" layout="tb" name="sfmABN">
+                           <bind match="none"/>
+                           <field name="txtABN" w="74mm" h="0.209528in" access="readOnly">
+                              <ui>
+                                 <textEdit/>
+                              </ui>
+                              <font size="8pt" typeface="Arial"/>
+                              <margin topInset="0.5mm" bottomInset="2mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                              <para vAlign="middle"/>
+                              <bind match="none"/>
+                              <value>
+                                 <text>Medibank Private Limited ABN 47 080 890 259</text>
+                              </value>
+                           </field>
+                           <?templateDesigner expand 1?></subform>
+                        <subform name="sfmPage" w="75mm" layout="lr-tb">
+                           <bind match="none"/>
+                           <draw name="lblPage" minH="4mm" w="36mm">
+                              <ui>
+                                 <textEdit/>
+                              </ui>
+                              <value>
+                                 <text>PAGE:</text>
+                              </value>
+                              <font typeface="Arial" size="9pt"/>
+                              <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                              <para vAlign="middle"/>
+                           </draw>
+                           <field h="7.5mm" name="CurrentSheet" presence="hidden" w="55mm" access="readOnly" id="floatingField000041">
+                              <ui>
+                                 <numericEdit>
+                                    <border>
+                                       <edge stroke="lowered"/>
+                                    </border>
+                                    <margin/>
+                                 </numericEdit>
+                              </ui>
+                              <font typeface="Arial"/>
+                              <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                              <para vAlign="middle"/>
+                              <caption reserve="20mm">
+                                 <para vAlign="middle"/>
+                                 <value>
+                                    <text>Text Field</text>
+                                 </value>
+                              </caption>
+                              <calculate override="error"/>
+                              <event name="event__layout_ready" activity="ready" ref="$layout">
+                                 <script contentType="application/x-javascript">this.rawValue = xfa.layout.sheet(this)+1;
+</script>
+                              </event>
+                              <?templateDesigner floatingFieldPlaceholder #?>
+                              <bind match="none"/>
+                           </field>
+                           <field h="7.5mm" name="SheetCount" presence="hidden" w="55mm" access="readOnly" id="floatingField018467">
+                              <ui>
+                                 <numericEdit>
+                                    <border>
+                                       <edge stroke="lowered"/>
+                                    </border>
+                                    <margin/>
+                                 </numericEdit>
+                              </ui>
+                              <font typeface="Arial"/>
+                              <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                              <para vAlign="middle"/>
+                              <caption reserve="20mm">
+                                 <para vAlign="middle"/>
+                                 <value>
+                                    <text>Text Field</text>
+                                 </value>
+                              </caption>
+                              <calculate override="error"/>
+                              <event name="event__layout_ready" activity="ready" ref="$layout">
+                                 <script contentType="application/x-javascript">this.rawValue = xfa.layout.sheetCount();
+</script>
+                              </event>
+                              <?templateDesigner floatingFieldPlaceholder ##?>
+                              <bind match="none"/>
+                           </field>
+                           <draw name="lblPageInfo" minH="4mm" minW="38mm">
+                              <ui>
+                                 <textEdit>
+                                    <margin/>
+                                 </textEdit>
+                              </ui>
+                              <value>
+                                 <exData contentType="text/html" maxLength="0">
+                                    <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in"><span xfa:embedType="uri" xfa:embedMode="raw" xfa:embed="#floatingField000041"/> of<span style="xfa-spacerun:yes"> </span><span xfa:embedType="uri" xfa:embedMode="raw" xfa:embed="#floatingField018467"/></p></body>
+                                 </exData>
+                              </value>
+                              <font typeface="Arial" size="9pt"/>
+                              <margin bottomInset="0.5mm" leftInset="0mm" rightInset="0.5mm" topInset="0.5mm"/>
+                              <para vAlign="middle"/>
+                           </draw>
+                           <?templateDesigner expand 1?></subform>
+                        <subform name="sfmEnquiries" w="75mm" layout="lr-tb">
+                           <bind match="none"/>
+                           <field name="txtEnquiries" w="74mm" minH="4mm" access="readOnly">
+                              <ui>
+                                 <textEdit/>
+                              </ui>
+                              <font typeface="Arial" size="9pt"/>
+                              <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                              <para vAlign="middle"/>
+                              <caption reserve="35.5mm">
+                                 <value>
+                                    <text>ENQUIRIES:</text>
+                                 </value>
+                                 <para vAlign="middle"/>
+                              </caption>
+                              <bind match="none"/>
+                              <value>
+                                 <text>1300 130 460</text>
+                              </value>
+                           </field>
+                           <?templateDesigner expand 1?></subform>
+                        <subform name="sfmPaymentDate" w="75mm" layout="lr-tb">
+                           <bind match="none"/>
+                           <field name="txtPaymentDateLabel" w="36mm" minH="4mm">
+                              <ui>
+                                 <textEdit/>
+                              </ui>
+                              <font typeface="Arial" size="9pt"/>
+                              <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                              <para vAlign="middle"/>
+                              <bind match="dataRef" ref="$.Header.PaymentDateLabel"/>
+                              <value>
+                                 <text>DATE:</text>
+                              </value>
+                           </field>
+                           <field name="txtPaymentDate" w="38mm" minH="4mm" access="readOnly">
+                              <ui>
+                                 <textEdit/>
+                              </ui>
+                              <font typeface="Arial" size="9pt"/>
+                              <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0mm" rightInset="0.5mm"/>
+                              <para vAlign="middle"/>
+                              <bind match="dataRef" ref="$.Documents.Document.Data.remitt_dte"/>
+                           </field>
+                           <?templateDesigner expand 1?></subform>
+                        <subform name="sfmProviderNo" w="75mm" layout="lr-tb">
+                           <bind match="none"/>
+                           <field name="txtProviderNoLabel" w="36mm" minH="4mm">
+                              <ui>
+                                 <textEdit/>
+                              </ui>
+                              <font typeface="Arial" size="9pt"/>
+                              <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                              <para vAlign="middle"/>
+                              <bind match="dataRef" ref="$.Header.ProviderNoLabel"/>
+                              <value>
+                                 <text>PROVIDER NO:</text>
+                              </value>
+                           </field>
+                           <field name="txtProviderNo" w="38mm" minH="4mm" access="readOnly">
+                              <ui>
+                                 <textEdit/>
+                              </ui>
+                              <font typeface="Arial" size="9pt"/>
+                              <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0mm" rightInset="0.5mm"/>
+                              <para vAlign="middle"/>
+                              <bind match="dataRef" ref="$.Documents.Document.Data.prov_doh"/>
+                           </field>
+                           <?templateDesigner expand 1?></subform>
+                        <margin leftInset="0mm"/>
+                        <subform name="sfmDocumentNo" w="75mm" layout="lr-tb">
+                           <bind match="none"/>
+                           <?templateDesigner expand 1?></subform>
+                        <?templateDesigner expand 1?></subform>
+                     <subform x="0.112mm" y="31.993mm" w="206mm" h="2mm" name="sfmDivider">
+                        <bind match="none"/>
+                        <margin leftInset="12.75mm" rightInset="12.75mm"/>
+                        <draw name="Line1" y="2mm" x="7.499mm" w="173mm" h="0in">
+                           <value>
+                              <line slope="/">
+                                 <edge thickness="0.25mm"/>
+                              </line>
+                           </value>
+                        </draw>
+                        <?templateDesigner expand 1?></subform>
+                     <?templateDesigner expand 1?></subform>
+                  <?templateDesigner expand 1?></subform>
+               <?templateDesigner expand 1?></subform>
+            <contentArea x="24mm" y="63mm" w="173mm" h="202mm" name="contentRemaining" id="contentRemaining_ID"/>
+            <subform y="286.347mm" w="210mm" name="sfmFooter">
+               <bind match="none"/>
+               <field name="lblDisclaimer" x="15mm" w="183mm" h="5.821mm" access="readOnly">
+                  <ui>
+                     <textEdit multiLine="1"/>
+                  </ui>
+                  <font size="7pt" typeface="Arial" baselineShift="0pt"/>
+                  <margin topInset="0mm" bottomInset="0mm" leftInset="0mm" rightInset="0mm"/>
+                  <para hAlign="center" vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+                  <bind match="dataRef" ref="$.Disclaimers.BottomBlackPn"/>
+                  <value>
+                     <text>Please note the payment of benefits by Medibank Private is subject to our Fund Rules and policies which may change from time to time.</text>
+                  </value>
+               </field>
+               <?templateDesigner expand 1?></subform>
+            <field name="lblMailReferenceLine" y="294mm" x="199mm" h="2mm" minW="37mm" anchorType="bottomRight" access="readOnly">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="5pt" typeface="Arial"/>
+               <margin topInset="0mm" bottomInset="0mm" leftInset="0mm" rightInset="0mm"/>
+               <para vAlign="middle" hAlign="right"/>
+               <bind match="dataRef" ref="$.PagesInfo.MailReferenceLines.MailReferenceLine[*]"/>
+            </field>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <subform name="FirstPage" layout="tb">
+         <bind match="none"/>
+         <subform name="sfmContent" layout="tb" w="173mm">
+            <bind match="none"/>
+            <subform w="93mm" name="sfmHeader" h="45.976mm">
+               <bind match="none"/>
+               <keep intact="none"/>
+               <subform w="93mm" name="sfmHdrAddress" layout="tb">
+                  <bind match="none"/>
+                  <field name="lblMailReferenceLine" w="92.25mm" minH="4.35mm" access="readOnly">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <font size="6pt" typeface="Calibri"/>
+                     <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="none"/>
+                  </field>
+                  <subform name="sfmBarcode" w="92.25mm" layout="lr-tb">
+                     <bind match="none"/>
+                     <margin bottomInset="3mm"/>
+                     <?templateDesigner expand 1?></subform>
+                  <field name="lblName" w="92.207mm" minH="4mm" access="readOnly">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <font typeface="Arial" size="9pt"/>
+                     <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <text>Name</text>
+                     </value>
+                     <bind match="dataRef" ref="$.Documents.Document.Data.prov_name"/>
+                  </field>
+                  <subform name="sfmAddress1" w="92.178mm" layout="lr-tb">
+                     <bind match="none"/>
+                     <field name="lblAddress1" w="92.207mm" minH="4mm" access="readOnly">
+                        <ui>
+                           <textEdit/>
+                        </ui>
+                        <font typeface="Arial" size="9pt"/>
+                        <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                        <para vAlign="middle"/>
+                        <bind match="dataRef" ref="$.Documents.Document.Data.addr1"/>
+                        <calculate>
+                           <script contentType="application/x-javascript">	
+	FirstPage.scoFunctions.HideIfEmpty(this.parent, this);
+</script>
+                        </calculate>
+                     </field>
+                     <?templateDesigner expand 1?></subform>
+                  <subform w="92.178mm" name="sfmAddress2" layout="lr-tb">
+                     <bind match="none"/>
+                     <field name="lblAddress2" w="92.207mm" minH="4mm" access="readOnly">
+                        <ui>
+                           <textEdit/>
+                        </ui>
+                        <font typeface="Arial" size="9pt"/>
+                        <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                        <para vAlign="middle"/>
+                        <bind match="dataRef" ref="$.Documents.Document.Data.addr2"/>
+                        <calculate>
+                           <script contentType="application/x-javascript">
+	FirstPage.scoFunctions.HideIfEmpty(this.parent, this);
+</script>
+                        </calculate>
+                     </field>
+                     <?templateDesigner expand 1?></subform>
+                  <subform w="92.207mm" minH="4.528mm" layout="lr-tb" name="sfmAddress3">
+                     <bind match="none"/>
+                     <field name="lblAddress3" w="92.207mm" minH="4mm" access="readOnly">
+                        <ui>
+                           <textEdit/>
+                        </ui>
+                        <font typeface="Arial" size="9pt"/>
+                        <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                        <para vAlign="middle"/>
+                        <bind match="dataRef" ref="$.Documents.Document.Data.suburb"/>
+                        <calculate>
+                           <script contentType="application/x-javascript">
+	FirstPage.scoFunctions.HideIfEmpty(this.parent, this);
+</script>
+                        </calculate>
+                     </field>
+                     <?templateDesigner expand 1?></subform>
+                  <subform w="92.207mm" minH="4.528mm" layout="lr-tb" name="sfmAddress4">
+                     <bind match="none"/>
+                     <field name="lblAddress4" w="92.207mm" minH="4mm" access="readOnly">
+                        <ui>
+                           <textEdit/>
+                        </ui>
+                        <font typeface="Arial" size="9pt"/>
+                        <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                        <para vAlign="middle"/>
+                        <bind match="none"/>
+                        <calculate>
+                           <script contentType="application/x-javascript">
+	FirstPage.scoFunctions.HideIfEmpty(this.parent, this);
+</script>
+                        </calculate>
+                     </field>
+                     <?templateDesigner expand 1?></subform>
+                  <field name="lblAddressPostal" w="92.207mm" minH="4mm" access="readOnly">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <font typeface="Arial" size="9pt"/>
+                     <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <text>AddressPostal</text>
+                     </value>
+                     <bind match="dataRef" ref="$.Documents.Document.Data.pcode"/>
+                  </field>
+                  <margin leftInset="0mm" topInset="0mm"/>
+                  <?templateDesigner expand 0?></subform>
+               <?templateDesigner expand 0?></subform>
+            <subform name="sfmBody" layout="tb" w="173mm">
+               <bind match="dataRef" ref="$.Documents.Document.Data.remittance_details"/>
+               <margin leftInset="0mm" rightInset="0mm"/>
+               <breakAfter/>
+               <subform w="173mm" name="sfmClaim" layout="tb">
+                  <bind match="dataRef" ref="$.service_provider"/>
+                  <margin topInset="0mm" bottomInset="2.5mm"/>
+                  <subform w="173mm" minH="13.709mm" layout="lr-tb" name="sfmCustomers">
+                     <bind match="dataRef" ref="$.customers"/>
+                     <subform w="172.953mm" name="sfmLodgement" layout="tb">
+                        <bind match="none"/>
+                        <field name="txtLodgement" minH="4mm" w="172.999mm" access="readOnly">
+                           <ui>
+                              <textEdit>
+                                 <border presence="hidden">
+                                    <?templateDesigner StyleID aped0?></border>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font typeface="Arial" weight="bold" size="8pt"/>
+                           <margin topInset="0mm" bottomInset="0mm" leftInset="0mm" rightInset="0mm"/>
+                           <para vAlign="middle"/>
+                           <bind match="dataRef" ref="$.servprov_desc"/>
+                           <calculate override="disabled">
+                              <script contentType="application/x-javascript">
+	FirstPage.scoFunctions.HideIfEmpty(this.parent, this);
+</script>
+                           </calculate>
+                        </field>
+                        <keep intact="contentArea"/>
+                        <margin bottomInset="2.5mm" topInset="2.5mm"/>
+                        <?templateDesigner expand 1?></subform>
+                     <subform layout="lr-tb" name="sfmLabels" w="173mm">
+                        <assist role="TH"/>
+                        <draw name="lblMship" w="14mm" h="0.244444in">
+                           <ui>
+                              <textEdit/>
+                           </ui>
+                           <value>
+                              <text>MSHIP</text>
+                           </value>
+                           <font typeface="Arial" weight="bold" size="8pt"/>
+                           <margin topInset="0mm" bottomInset="0mm" leftInset="0mm" rightInset="0mm"/>
+                           <?renderCache.bounds 39685 17600 0 0 0 0 0 0?>
+                           <?renderCache.textRun 5 MSHIP 0 0 6316 0 0 0 "Arial" 1 0 8000 ISO-8859-1?></draw>
+                        <draw name="lblPatient" w="24mm" h="0.244444in">
+                           <ui>
+                              <textEdit/>
+                           </ui>
+                           <value>
+                              <text>PATIENT NAME</text>
+                           </value>
+                           <font typeface="Arial" weight="bold" size="8pt"/>
+                           <margin topInset="0mm" bottomInset="0mm" leftInset="0mm" rightInset="0mm"/>
+                           <?renderCache.bounds 68031 17600 0 0 0 0 0 0?>
+                           <?renderCache.textRun 12 PATIENT NAME 0 0 6316 0 0 0 "Arial" 1 0 8000 ISO-8859-1?></draw>
+                        <draw name="lblService" w="15mm" h="0.244444in">
+                           <ui>
+                              <textEdit/>
+                           </ui>
+                           <value>
+                              <text>SERVICE</text>
+                           </value>
+                           <font typeface="Arial" weight="bold" size="8pt"/>
+                           <margin topInset="0mm" bottomInset="0mm" leftInset="0mm" rightInset="0mm"/>
+                           <?renderCache.bounds 42520 17600 0 0 0 0 0 0?>
+                           <?renderCache.textRun 7 SERVICE 0 0 6316 0 0 0 "Arial" 1 0 8000 ISO-8859-1?></draw>
+                        <draw name="lblDate" w="13mm" h="0.244444in">
+                           <ui>
+                              <textEdit/>
+                           </ui>
+                           <value>
+                              <text>DATE</text>
+                           </value>
+                           <font typeface="Arial" weight="bold" size="8pt"/>
+                           <margin topInset="0mm" bottomInset="0mm" leftInset="0mm" rightInset="0mm"/>
+                           <?renderCache.bounds 36850 17600 0 0 0 0 0 0?>
+                           <?renderCache.textRun 4 DATE 0 0 6316 0 0 0 "Arial" 1 0 8000 ISO-8859-1?></draw>
+                        <draw name="lblCharge" w="12.5mm" h="0.244444in">
+                           <ui>
+                              <textEdit/>
+                           </ui>
+                           <value>
+                              <text>CHARGE</text>
+                           </value>
+                           <font typeface="Arial" weight="bold" size="8pt"/>
+                           <margin topInset="0mm" bottomInset="0mm" leftInset="0mm" rightInset="0mm"/>
+                           <para hAlign="right"/>
+                           <?renderCache.bounds 35433 17600 0 0 0 0 0 0?>
+                           <?renderCache.textRun 6 CHARGE 0 765 6316 0 0 0 "Arial" 1 0 8000 ISO-8859-1?></draw>
+                        <draw name="lblBenefit" w="21.001mm" h="0.244444in">
+                           <ui>
+                              <textEdit>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <value>
+                              <text>PROVIDER BENEFIT </text>
+                           </value>
+                           <font typeface="Arial" weight="bold" size="8pt" baselineShift="0pt"/>
+                           <margin topInset="0mm" bottomInset="0mm" leftInset="0mm" rightInset="0mm"/>
+                           <para spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt" hAlign="right"/>
+                           <?renderCache.bounds 59530 17600 0 0 0 0 0 0?>
+                           <?renderCache.textRun 9 PROVIDER  0 17745 6316 0 0 0 "Arial" 1 0 8000 ISO-8859-1?>
+                           <?renderCache.textRun 8 BENEFIT  0 25307 15916 0 0 0 "Arial" 1 0 8000 ISO-8859-1?></draw>
+                        <draw name="lblActRef" w="25mm" h="0.244444in">
+                           <ui>
+                              <textEdit/>
+                           </ui>
+                           <value>
+                              <text>PATIENT SUBTOTAL</text>
+                           </value>
+                           <font typeface="Arial" weight="bold" size="8pt"/>
+                           <margin topInset="0mm" bottomInset="0mm" leftInset="0mm" rightInset="0mm"/>
+                           <para hAlign="right"/>
+                           <?renderCache.bounds 70866 17600 0 0 0 0 0 0?>
+                           <?renderCache.textRun 8 PATIENT  0 36643 6316 0 0 0 "Arial" 1 0 8000 ISO-8859-1?>
+                           <?renderCache.textRun 8 SUBTOTAL 0 27315 15916 0 0 0 "Arial" 1 0 8000 ISO-8859-1?></draw>
+                        <draw name="lblExp" w="24mm" h="0.244444in">
+                           <ui>
+                              <textEdit>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <value>
+                              <text>EXP</text>
+                           </value>
+                           <font typeface="Arial" weight="bold" size="8pt"/>
+                           <para marginLeft="0pt" hAlign="right"/>
+                           <margin topInset="0mm" bottomInset="0mm" leftInset="1mm" rightInset="0mm"/>
+                           <?renderCache.bounds 65196 17600 0 0 2835 0 0 0?>
+                           <?renderCache.textRun 3 EXP 0 52023 6316 0 0 0 "Arial" 1 0 8000 ISO-8859-1?></draw>
+                        <border>
+                           <edge presence="hidden"/>
+                        </border>
+                        <bind match="none"/>
+                        <margin topInset="2.5mm" bottomInset="0.5mm"/>
+                        <keep intact="contentArea"/>
+                        <?templateDesigner expand 1?></subform>
+                     <subform w="173mm" name="sfmCustomer" layout="lr-tb">
+                        <bind match="dataRef" ref="$.customer[*]"/>
+                        <field h="0.157486in" name="rSubtotal" w="0.590556in" presence="hidden">
+                           <ui>
+                              <textEdit>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font typeface="Arial" size="8pt"/>
+                           <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                           <para vAlign="middle" marginLeft="5.669pt"/>
+                           <border>
+                              <edge presence="hidden"/>
+                              <corner thickness="0.1778mm" presence="hidden"/>
+                           </border>
+                           <bind match="none"/>
+                           <keep intact="contentArea"/>
+                        </field>
+                        <subform minH="13.709mm" layout="lr-tb" name="sfmHdr" presence="hidden">
+                           <bind match="none"/>
+                           <field name="rMship" h="3mm" w="16.5mm" access="readOnly">
+                              <ui>
+                                 <textEdit/>
+                              </ui>
+                              <font typeface="Arial" size="7.5pt"/>
+                              <margin topInset="0mm" bottomInset="0mm" leftInset="0mm" rightInset="2mm"/>
+                              <para vAlign="middle"/>
+                              <border>
+                                 <edge presence="hidden"/>
+                                 <corner thickness="0.1778mm" presence="hidden"/>
+                              </border>
+                              <bind match="dataRef" ref="$.client"/>
+                              <calculate>
+                                 <script contentType="application/x-javascript">
+
+	//FirstPage.scoFunctions.RemoveTrailingChar(textfield);
+</script>
+                              </calculate>
+                           </field>
+                           <field name="rClaimId" h="3mm" w="12.8mm" y="3mm">
+                              <ui>
+                                 <textEdit/>
+                              </ui>
+                              <font typeface="Arial" size="7.5pt"/>
+                              <margin topInset="0mm" bottomInset="0mm" leftInset="0mm" rightInset="2mm"/>
+                              <para vAlign="middle"/>
+                              <border>
+                                 <edge presence="hidden"/>
+                                 <corner thickness="0.1778mm" presence="hidden"/>
+                              </border>
+                              <bind match="dataRef" ref="$.clm_id"/>
+                           </field>
+                           <field name="rPatient" w="26.5mm" h="3mm" y="3mm">
+                              <ui>
+                                 <textEdit/>
+                              </ui>
+                              <font typeface="Arial" size="7.5pt"/>
+                              <margin topInset="0mm" bottomInset="0mm" leftInset="0mm" rightInset="2mm"/>
+                              <para vAlign="middle"/>
+                              <border>
+                                 <edge presence="hidden"/>
+                                 <corner thickness="0.1778mm" presence="hidden"/>
+                              </border>
+                              <bind match="dataRef" ref="$.pat_name"/>
+                           </field>
+                           <field name="rActRef" w="18.5mm" h="3mm" y="3mm">
+                              <ui>
+                                 <textEdit/>
+                              </ui>
+                              <font typeface="Arial" size="7.5pt"/>
+                              <margin topInset="0mm" bottomInset="0mm" leftInset="0mm" rightInset="2mm"/>
+                              <para vAlign="middle"/>
+                              <border>
+                                 <edge presence="hidden"/>
+                                 <corner thickness="0.1778mm" presence="hidden"/>
+                              </border>
+                              <bind match="dataRef" ref="$.cust_total"/>
+                           </field>
+                           <keep intact="contentArea"/>
+                           <?templateDesigner expand 1?></subform>
+                        <subform name="sfmItems" layout="tb">
+                           <border>
+                              <edge presence="hidden"/>
+                              <corner presence="hidden"/>
+                           </border>
+                           <subform layout="lr-tb" name="sfmItem">
+                              <assist role="TR"/>
+                              <subform minH="13.709mm" layout="lr-tb" name="sfmHdr">
+                                 <bind match="none"/>
+                                 <field name="rMship" w="14mm" access="readOnly" h="3.7mm">
+                                    <ui>
+                                       <textEdit/>
+                                    </ui>
+                                    <font typeface="Arial" size="7.5pt"/>
+                                    <margin topInset="0mm" bottomInset="0mm" leftInset="0mm" rightInset="0mm"/>
+                                    <para vAlign="middle"/>
+                                    <border>
+                                       <edge presence="hidden"/>
+                                       <corner thickness="0.1778mm" presence="hidden"/>
+                                    </border>
+                                    <bind match="none"/>
+                                    <calculate override="disabled">
+                                       <script contentType="application/x-javascript">
+
+
+	//FirstPage.scoFunctions.RemoveTrailingChar(textfield);
+</script>
+                                    </calculate>
+                                    <event activity="initialize" name="event__initialize">
+                                       <script contentType="application/x-javascript">
+if (this.parent.parent.instanceIndex == 0)
+{
+	this.rawValue = this.parent.parent.parent.parent.sfmHdr.rMship.rawValue
+
+}
+</script>
+                                    </event>
+                                 </field>
+                                 <field name="rPatient" w="24mm" y="3mm" access="readOnly" minH="3.7mm">
+                                    <ui>
+                                       <textEdit multiLine="1"/>
+                                    </ui>
+                                    <font typeface="Arial" size="7.5pt"/>
+                                    <margin topInset="0mm" bottomInset="0mm" leftInset="0mm" rightInset="2mm"/>
+                                    <para vAlign="middle"/>
+                                    <border>
+                                       <edge presence="hidden"/>
+                                       <corner thickness="0.1778mm" presence="hidden"/>
+                                    </border>
+                                    <bind match="none"/>
+                                    <event activity="initialize" name="event__initialize">
+                                       <script contentType="application/x-javascript">
+if (this.parent.parent.instanceIndex == 0)
+{
+	this.rawValue = this.parent.parent.parent.parent.sfmHdr.rPatient.rawValue
+
+}
+</script>
+                                    </event>
+                                 </field>
+                                 <field name="rService" h="3.7mm" w="15mm" access="readOnly">
+                                    <ui>
+                                       <textEdit/>
+                                    </ui>
+                                    <font typeface="Arial" size="7.5pt"/>
+                                    <margin topInset="0mm" bottomInset="0mm" leftInset="0mm" rightInset="0mm"/>
+                                    <para vAlign="middle" hAlign="right"/>
+                                    <border>
+                                       <edge presence="hidden"/>
+                                       <corner thickness="0.1778mm" presence="hidden"/>
+                                    </border>
+                                    <bind match="dataRef" ref="$.item_code"/>
+                                 </field>
+                                 <field name="rDate" h="3.7mm" w="13mm" access="readOnly">
+                                    <ui>
+                                       <textEdit/>
+                                    </ui>
+                                    <font typeface="Arial" size="7.5pt"/>
+                                    <margin topInset="0mm" bottomInset="0mm" leftInset="0mm" rightInset="0mm"/>
+                                    <para vAlign="middle" hAlign="right"/>
+                                    <border>
+                                       <edge presence="hidden"/>
+                                       <corner thickness="0.1778mm" presence="hidden"/>
+                                    </border>
+                                    <bind match="dataRef" ref="$.dte_serv"/>
+                                 </field>
+                                 <field name="rCharge" h="3.7mm" w="12.5mm" access="readOnly">
+                                    <ui>
+                                       <numericEdit/>
+                                    </ui>
+                                    <font typeface="Arial" size="7.5pt"/>
+                                    <margin topInset="0mm" bottomInset="0mm" leftInset="0mm" rightInset="0mm"/>
+                                    <para vAlign="middle" hAlign="right"/>
+                                    <border>
+                                       <edge presence="hidden"/>
+                                       <corner thickness="0.1778mm" presence="hidden"/>
+                                    </border>
+                                    <bind match="dataRef" ref="$.amt_charged"/>
+                                    <format>
+                                       <picture>num{$z,zzz,zz9.99}</picture>
+                                    </format>
+                                 </field>
+                                 <field name="rProvBenefit" h="3.7mm" w="21.001mm" access="readOnly">
+                                    <ui>
+                                       <numericEdit>
+                                          <margin/>
+                                       </numericEdit>
+                                    </ui>
+                                    <font typeface="Arial" size="7.5pt"/>
+                                    <margin topInset="0mm" bottomInset="0mm" leftInset="0mm" rightInset="0mm"/>
+                                    <para vAlign="middle" hAlign="right"/>
+                                    <border>
+                                       <edge presence="hidden"/>
+                                       <corner thickness="0.1778mm" presence="hidden"/>
+                                    </border>
+                                    <bind match="dataRef" ref="$.benefit"/>
+                                    <format>
+                                       <picture>num{$z,zzz,zz9.99}</picture>
+                                    </format>
+                                 </field>
+                                 <field name="rClaimId" h="3.7mm" w="25mm" access="readOnly">
+                                    <ui>
+                                       <textEdit/>
+                                    </ui>
+                                    <font typeface="Arial" size="7.5pt"/>
+                                    <margin topInset="0mm" bottomInset="0mm" leftInset="0mm" rightInset="2mm"/>
+                                    <para vAlign="middle" hAlign="right"/>
+                                    <border>
+                                       <edge presence="hidden"/>
+                                       <corner thickness="0.1778mm" presence="hidden"/>
+                                    </border>
+                                    <bind match="none"/>
+                                    <event activity="initialize" name="event__initialize">
+                                       <script contentType="application/x-javascript">if (this.parent.parent.instanceIndex == 0)
+{
+	this.rawValue = this.parent.parent.parent.parent.sfmHdr.rActRef.rawValue
+}
+
+</script>
+                                    </event>
+                                 </field>
+                                 <field name="rExp" w="24.001mm" h="3.7mm" access="readOnly">
+                                    <ui>
+                                       <textEdit>
+                                          <margin/>
+                                       </textEdit>
+                                    </ui>
+                                    <font typeface="Arial" size="7.5pt"/>
+                                    <margin topInset="0mm" bottomInset="0mm" leftInset="1mm" rightInset="0mm"/>
+                                    <para vAlign="middle" hAlign="right"/>
+                                    <border>
+                                       <edge presence="hidden"/>
+                                       <corner thickness="0.1778mm" presence="hidden"/>
+                                    </border>
+                                    <bind match="dataRef" ref="$.exp_code"/>
+                                 </field>
+                                 <keep intact="contentArea"/>
+                                 <?templateDesigner expand 1?></subform>
+                              <border>
+                                 <edge presence="hidden"/>
+                              </border>
+                              <occur max="-1"/>
+                              <bind match="dataRef" ref="$.item[*]"/>
+                              <margin bottomInset="0.5mm"/>
+                              <?templateDesigner rowpattern first:1, next:1, firstcolor:f0f0f0, nextcolor:ffffff, apply:0?>
+                              <keep intact="contentArea"/>
+                              <?templateDesigner expand 1?></subform>
+                           <bind match="dataRef" ref="$.items"/>
+                           <?templateDesigner rowpattern first:1, next:1, firstcolor:f0f0f0, nextcolor:ffffff, apply:0?>
+                           <?templateDesigner expand 1?></subform>
+                        <occur max="-1"/>
+                        <?templateDesigner expand 1?></subform>
+                     <calculate>
+                        <script contentType="application/x-javascript">
+	FirstPage.scoFunctions.PlaceSubClaimSubtotals(this);
+	FirstPage.scoFunctions.HideUnusedExplanations(this);
+</script>
+                     </calculate>
+                     <subform w="173mm" name="sfmFooter">
+                        <bind match="none"/>
+                        <keep intact="none"/>
+                        <field name="txtTotalBenefit" w="60mm" minH="4mm" y="0.291mm" x="87mm" access="readOnly">
+                           <ui>
+                              <numericEdit>
+                                 <border presence="hidden">
+                                    <?templateDesigner StyleID aped0?></border>
+                                 <margin/>
+                              </numericEdit>
+                           </ui>
+                           <font typeface="Arial" size="8pt" weight="bold"/>
+                           <margin topInset="0mm" bottomInset="0mm" leftInset="0mm" rightInset="0mm"/>
+                           <para vAlign="middle" hAlign="right" marginRight="0pt"/>
+                           <caption reserve="41.54mm">
+                              <para vAlign="middle" hAlign="right" marginRight="0pt"/>
+                              <value>
+                                 <text>TOTAL PROVIDER BENEFIT</text>
+                              </value>
+                           </caption>
+                           <bind match="dataRef" ref="$.servprov_total"/>
+                           <validate>
+                              <picture>num{$z,zzz,zz9.99}</picture>
+                           </validate>
+                           <format>
+                              <picture>num{$z,zzz,zz9.99}</picture>
+                           </format>
+                        </field>
+                        <subform w="173mm" name="sfmExplanation" layout="tb" y="5.999mm">
+                           <bind match="dataRef" ref="$record.Claims.Claim[*].Ftr.ExpCodes"/>
+                           <margin bottomInset="2.5mm"/>
+                           <subform layout="tb" name="sfmHdr" w="6.798694in">
+                              <bind match="none"/>
+                              <draw h="0.157486in" name="lblHdr" w="172.687mm" presence="hidden">
+                                 <border>
+                                    <edge presence="hidden"/>
+                                    <corner thickness="0.1778mm" presence="hidden"/>
+                                 </border>
+                                 <ui>
+                                    <textEdit/>
+                                 </ui>
+                                 <value>
+                                    <text>EXPLANATION OF CODES</text>
+                                 </value>
+                                 <font typeface="Arial" size="8pt" baselineShift="0pt"/>
+                                 <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                                 <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+                              </draw>
+                              <para vAlign="middle" hAlign="center"/>
+                              <?templateDesigner expand 0?></subform>
+                           <subform layout="tb" name="sfmRow" w="6.798694in">
+                              <bind match="none"/>
+                              <field name="txtCode" w="172.687mm" access="readOnly" minH="4mm" presence="hidden">
+                                 <ui>
+                                    <textEdit multiLine="1"/>
+                                 </ui>
+                                 <font typeface="Arial" size="7pt"/>
+                                 <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                                 <para vAlign="middle"/>
+                                 <border>
+                                    <edge presence="hidden"/>
+                                    <corner thickness="0.1778mm" presence="hidden"/>
+                                 </border>
+                                 <bind match="none"/>
+                              </field>
+                              <para vAlign="middle" hAlign="center"/>
+                              <occur max="-1"/>
+                              <?templateDesigner expand 1?></subform>
+                           <?templateDesigner expand 1?></subform>
+                        <margin topInset="2.5mm" bottomInset="2.5mm"/>
+                        <?templateDesigner expand 0?></subform>
+                     <draw name="Line1" w="171.45mm" h="0in">
+                        <value>
+                           <line slope="/">
+                              <edge thickness="0.25mm"/>
+                           </line>
+                        </value>
+                     </draw>
+                     <?templateDesigner expand 1?></subform>
+                  <?templateDesigner expand 1?></subform>
+               <?templateDesigner expand 1?></subform>
+            <subform w="173mm" name="sfmAdvice" layout="tb">
+               <bind match="none"/>
+               <subform name="sfmRemit">
+                  <bind match="none"/>
+                  <field name="txtLabel" w="122mm" h="4mm" y="0mm" access="readOnly">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <font typeface="Arial" size="8pt" baselineShift="0pt" weight="bold"/>
+                     <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0mm"/>
+                     <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="2.835pt"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner thickness="0.1778mm" presence="hidden"/>
+                     </border>
+                     <bind match="dataRef" ref="$.Documents.Document.Data.remittance_details.payment.desc"/>
+                  </field>
+                  <field name="txtAmount" w="20mm" h="4mm" x="125mm" y="0.006mm" access="readOnly">
+                     <ui>
+                        <numericEdit/>
+                     </ui>
+                     <font typeface="Arial" size="8pt" baselineShift="0pt" weight="bold"/>
+                     <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0mm"/>
+                     <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="2.835pt" hAlign="right"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner thickness="0.1778mm" presence="hidden"/>
+                     </border>
+                     <keep intact="contentArea"/>
+                     <bind match="dataRef" ref="$.Documents.Document.Data.remittance_details.total.tot_ben"/>
+                     <format>
+                        <picture>num{$z,zzz,zz9.99}</picture>
+                     </format>
+                  </field>
+                  <calculate>
+                     <script contentType="application/x-javascript">
+
+	FirstPage.scoFunctions.HideUnusedRemittanceStrings();
+	
+</script>
+                  </calculate>
+                  <?templateDesigner expand 1?></subform>
+               <subform w="173mm" name="sfmRemitStmt" layout="tb">
+                  <bind match="none"/>
+                  <margin topInset="4mm" leftInset="0mm" bottomInset="0mm"/>
+                  <field name="txtRemitStmt" minH="1mm" w="173mm" access="readOnly">
+                     <ui>
+                        <textEdit multiLine="1"/>
+                     </ui>
+                     <font typeface="Arial" size="8pt" baselineShift="0pt" weight="bold"/>
+                     <margin topInset="0mm" bottomInset="0mm" leftInset="0mm" rightInset="1mm"/>
+                     <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt" hAlign="center"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner thickness="0.1778mm" presence="hidden"/>
+                     </border>
+                     <bind match="none"/>
+                     <keep intact="contentArea"/>
+                     <calculate override="disabled">
+                        <script contentType="application/x-javascript">
+	FirstPage.scoFunctions.HideIfEmpty(this.parent, this);
+</script>
+                     </calculate>
+                     <value>
+                        <text>The above remittance advice total has been credited to your nominated bank account.</text>
+                     </value>
+                  </field>
+                  <?templateDesigner expand 0?></subform>
+               <subform w="173mm" name="sfmStmt" layout="tb">
+                  <bind match="none"/>
+                  <margin topInset="4mm" leftInset="0mm" bottomInset="0mm"/>
+                  <field name="txtStmt" minH="1mm" w="173mm" access="readOnly">
+                     <ui>
+                        <textEdit multiLine="1"/>
+                     </ui>
+                     <font typeface="Arial" size="8pt" baselineShift="0pt"/>
+                     <margin topInset="0mm" bottomInset="0mm" leftInset="0mm" rightInset="1mm"/>
+                     <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt" hAlign="center"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner thickness="0.1778mm" presence="hidden"/>
+                     </border>
+                     <bind match="none"/>
+                     <keep intact="contentArea"/>
+                     <calculate override="disabled">
+                        <script contentType="application/x-javascript">
+	FirstPage.scoFunctions.HideIfEmpty(this.parent, this);
+</script>
+                     </calculate>
+                     <value>
+                        <text>* * * END OF REMITTANCE ADVICE * * *</text>
+                     </value>
+                  </field>
+                  <?templateDesigner expand 1?></subform>
+               <subform w="173mm" name="sfmInfo" layout="tb">
+                  <bind match="none"/>
+                  <margin topInset="4mm" leftInset="0mm" bottomInset="0mm"/>
+                  <field name="txtInfo" minH="1mm" w="173mm" access="readOnly">
+                     <ui>
+                        <textEdit multiLine="1"/>
+                     </ui>
+                     <font typeface="Arial" size="8pt" baselineShift="0pt"/>
+                     <margin topInset="0mm" bottomInset="0mm" leftInset="0mm" rightInset="1mm"/>
+                     <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner thickness="0.1778mm" presence="hidden"/>
+                     </border>
+                     <bind match="dataRef" ref="$record.Footer.InformationString"/>
+                     <keep intact="contentArea"/>
+                     <calculate override="disabled">
+                        <script contentType="application/x-javascript">
+	FirstPage.scoFunctions.HideIfEmpty(this.parent, this);
+</script>
+                     </calculate>
+                  </field>
+                  <?templateDesigner expand 1?></subform>
+               <subform w="173mm" name="sfmrecovery" layout="tb" presence="hidden">
+                  <bind match="dataRef" ref="$record.Footer.RecoveryDisclamer"/>
+                  <margin topInset="4mm" leftInset="0mm" bottomInset="0mm"/>
+                  <field name="txtrecovery" minH="1mm" w="173mm" access="readOnly">
+                     <ui>
+                        <textEdit multiLine="1"/>
+                     </ui>
+                     <font typeface="Arial" size="8pt" baselineShift="0pt"/>
+                     <margin topInset="0mm" bottomInset="0mm" leftInset="0mm" rightInset="1mm"/>
+                     <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner thickness="0.1778mm" presence="hidden"/>
+                     </border>
+                     <bind match="dataRef" ref="$.txtrecovery"/>
+                     <keep intact="contentArea"/>
+                  </field>
+                  <event activity="initialize" name="event__initialize">
+                     <script contentType="application/x-javascript">
+ if(txtrecovery.rawValue.length&gt;1){
+  this.presence = "visible";
+ }
+
+</script>
+                  </event>
+                  <?templateDesigner expand 1?></subform>
+               <subform w="173mm" name="sfmPrivacy" layout="tb">
+                  <bind match="none"/>
+                  <margin topInset="4mm" leftInset="0mm" bottomInset="0mm"/>
+                  <field name="txtPrivacy" minH="1mm" w="173mm" access="readOnly">
+                     <ui>
+                        <textEdit multiLine="1"/>
+                     </ui>
+                     <font typeface="Arial" size="8pt" baselineShift="0pt"/>
+                     <margin topInset="0mm" bottomInset="0mm" leftInset="0mm" rightInset="1mm"/>
+                     <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner thickness="0.1778mm" presence="hidden"/>
+                     </border>
+                     <bind match="none"/>
+                     <keep intact="contentArea"/>
+                     <calculate override="disabled">
+                        <script contentType="application/x-javascript">
+	FirstPage.scoFunctions.HideIfEmpty(this.parent, this);
+</script>
+                     </calculate>
+                  </field>
+                  <?templateDesigner expand 1?></subform>
+               <?templateDesigner expand 0?></subform>
+            <?templateDesigner expand 1?></subform>
+         <breakBefore targetType="pageArea" target="FirstPage"/>
+         <breakAfter/>
+         <overflow target="contentRemaining.contentRemaining"/>
+         <variables>
+            <script contentType="application/x-javascript" name="scoFunctions">
+	function HideIfEmpty(subform, textfield)
+	{	
+		var actualstr = "";
+		if(textfield.rawValue != null)
+		{
+			actualstr = textfield.rawValue.replace(/ /gi, "");
+		}
+		subform.presence = ((actualstr  == "") ? "hidden" : "visible");		
+	}
+	
+	function RemoveTrailingChar(textfield)
+	{
+		if((textfield.rawValue != null) &amp;&amp; (textfield.rawValue != "")) {
+			var str = textfield.rawValue;
+			textfield.rawValue = str.substring(0, (str.length - 1));
+		}
+	}
+
+	function HideUnusedRemittanceStrings()
+	{
+		var vAdvice = xfa.resolveNode("FirstPage.sfmContent.sfmAdvice");
+		if(vAdvice != null)
+		{
+			vAdvice.sfmRemit.presence = (((vAdvice.sfmRemit.txtLabel.rawValue == null) || (vAdvice.sfmRemit.txtLabel.rawValue == ""))
+				 &amp;&amp; ((vAdvice.sfmRemit.txtAmount.rawValue == null) || (vAdvice.sfmRemit.txtAmount.rawValue == ""))) ? "hidden" : "visible";		
+		}
+	}
+
+	function PlaceSubClaimSubtotals(subform)
+	{
+		if(subform.instanceManager.count &gt; 0)
+		{
+			var noOfClaims = subform.sfmSubClaim.instanceManager.count;
+		
+			for(var nClaim = 0; nClaim &lt; noOfClaims; nClaim++)
+			{				
+				var vSubClaim = xfa.resolveNode(subform.name + ".sfmSubClaim[" + nClaim + "]");
+				//vSubClaim.sfmSubClaimLines.sfmSubClaimLine.instanceManager.addInstance();
+				var nLastRow = vSubClaim.sfmSubClaimLines.sfmSubClaimLine.instanceManager.count - 1;
+				var vLastRow = xfa.resolveNode(vSubClaim.name + "[" + nClaim + "].sfmSubClaimLines.sfmSubClaimLine[" + nLastRow  + "]");
+				var vSubtotal = xfa.resolveNode(vSubClaim.name + "[" + nClaim + "].rSubtotal");
+				vLastRow.rSubtotal.rawValue = vSubtotal.rawValue;
+			}
+		}
+	}
+
+	function HideUnusedExplanations(subform)
+	{	
+		var claimCount = FirstPage.sfmContent.sfmBody.sfmClaim.instanceManager.count;
+		var claimNo = 0;
+		for (claimNo = 0; claimNo &lt; claimCount; claimNo++)
+		{
+			var bExpCodes = false;
+			var vExp = xfa.resolveNode("FirstPage.sfmContent.sfmBody.sfmClaim[" + claimNo + "]." + subform.name + ".sfmFooter.sfmExplanation");
+			if(vExp != null)
+			{
+				var expCount = vExp.sfmRow.instanceManager.count;
+				var expNo = 0;
+				for (expNo = 0; expNo &lt;  expCount; expNo++)
+				{
+					vSubExp = xfa.resolveNode("FirstPage.sfmContent.sfmBody.sfmClaim[" + claimNo + "]." + subform.name + ".sfmFooter.sfmExplanation.sfmRow[" + expNo + "]");
+					if(vSubExp.txtCode.rawValue != null)
+					{
+						if(vSubExp.txtCode.rawValue != "")
+						{
+							bExpCodes = true;
+						}
+					}
+				}
+				if(bExpCodes == false)
+				{
+					vExp.presence = "hidden";
+				}
+			}
+		}
+	}
+</script>
+            <?templateDesigner expand 1?></variables>
+         <occur max="-1"/>
+         <?templateDesigner expand 1?></subform>
+      <proto/>
+      <desc>
+         <text name="version">9.0.0.0.20091029.1.612548.606130</text>
+         <text name="creator">Medibank Private Limited</text>
+         <text name="title">Medical Provider EFT Statement</text>
+      </desc>
+      <?templateDesigner Hyphenation excludeInitialCap:1, excludeAllCaps:1, wordCharCnt:7, remainCharCnt:3, pushCharCnt:3?>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Arial" 0 0 ISO-8859-1 4 232 58 00030006000D00110013001400150016001700180019001A001B001C001D002400250026002700280029002A002C002F0030003100320033003400350036003700380039004400450046004700480049004A004B004C004D004E004F005000510052005300550056005700580059005A005B005C #*.0123456789:ABCDEFGILMNOPQRSTUVabcdefghijklmnoprstuvwxy?>
+      <?renderCache.subset "Arial" 1 0 ISO-8859-1 4 160 40 00030011002400250026002700280029002A002B002C002F003000310032003300350036003700380039003B00440045004600470048004B004C004E004F00500051005200550056005700580059005C .ABCDEFGHILMNOPRSTUVXabcdehiklmnorstuvy?>
+      <?renderCache.subset "Proxima Nova Lt" 0 0 ISO-8859-1 4 32 8 001200310034004200460048005300551PSaegrt?></subform>
+   <?templateDesigner DefaultPreviewDynamic 1?>
+   <?templateDesigner SavePDFWithLog 0?>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-template/2.8/?>
+   <?templateDesigner Grid show:1, snap:1, units:17, color:ff8080, origin:(0,0), interval:(25000,25000), objsnap:0, guidesnap:0, pagecentersnap:2051229700?>
+   <?templateDesigner DefaultLanguage JavaScript?>
+   <?templateDesigner DefaultRunAt client?>
+   <?acrobat JavaScript strictScoping?>
+   <?PDFPrintOptions embedViewerPrefs 0?>
+   <?PDFPrintOptions embedPrintOnFormOpen 0?>
+   <?PDFPrintOptions scalingPrefs 0?>
+   <?PDFPrintOptions enforceScalingPrefs 0?>
+   <?PDFPrintOptions paperSource 0?>
+   <?PDFPrintOptions duplexMode 0?>
+   <?templateDesigner DefaultPreviewType interactive?>
+   <?templateDesigner DefaultPreviewPagination simplex?>
+   <?templateDesigner XDPPreviewFormat 20?>
+   <?templateDesigner DefaultPreviewDataFileName .\WC61.R15.Jared.txt.000000.132c7a58684b41d68fb3c2517c96eab8.xml?>
+   <?templateDesigner DefaultCaptionFontSettings face:Myriad Pro;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultValueFontSettings face:Myriad Pro;size:10;weight:normal;style:normal?>
+   <?templateDesigner SaveTaggedPDF 0?>
+   <?templateDesigner SavePDFWithEmbeddedFonts 0?>
+   <?templateDesigner FormTargetVersion 28?>
+   <?templateDesigner Zoom 99?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?>
+   <?templateDesigner Guidelines v:4125000;h:1650000;h:3250000;h:1900000;h:3375000;h:3350000;h:1375000;h:475000?></template>
+<config xmlns="http://www.xfa.org/schema/xci/2.8/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo>
+            <embed>0</embed>
+         </fontInfo>
+         <tagged>0</tagged>
+         <version>1.7</version>
+         <adobeExtensionLevel>3</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data>
+            <xsl>
+               <uri/>
+            </xsl>
+            <outputXSL>
+               <uri/>
+            </outputXSL>
+         </data>
+      </common>
+      <cache>
+         <macroCache/>
+      </cache>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+   <psMap>
+      <font typeface="Edwardian Script ITC" psName="EdwardianScriptITC" weight="normal" posture="normal"/>
+      <font typeface="Calibri" psName="Calibri" weight="normal" posture="normal"/>
+      <font typeface="Blackadder ITC" psName="BlackadderITC-Regular" weight="normal" posture="normal"/>
+      <font typeface="Brush Script MT" psName="BrushScriptMT" weight="normal" posture="italic"/>
+      <font typeface="ITC Zapf Chancery" psName="ZapfChancery-MediumItalic" weight="normal" posture="italic"/>
+      <font typeface="Vladimir Script" psName="VladimirScript" weight="normal" posture="normal"/>
+      <font typeface="Calibri" psName="Calibri-Bold" weight="bold" posture="normal"/>
+      <font typeface="Proxima Nova Lt" psName="ProximaNova-Light" weight="normal" posture="normal"/>
+   </psMap>
+</config>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale name="en_AU" desc="English (Australia)">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, D MMMM YYYY</datePattern>
+         <datePattern name="long">D MMMM YYYY</datePattern>
+         <datePattern name="med">DD/MM/YYYY</datePattern>
+         <datePattern name="short">D/MM/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$z,zz9.99</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">$</currencySymbol>
+         <currencySymbol name="isoname">AUD</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Arial"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+      </typefaces>
+   </locale>
+</localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 4.2.1-c043 52.398682, 2009/08/10-13:00:47        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" rdf:about="">
+         <xmp:MetadataDate>2020-05-21T13:04:27Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer 11.0</xmp:CreatorTool>
+      </rdf:Description>
+      <rdf:Description xmlns:pdf="http://ns.adobe.com/pdf/1.3/" rdf:about="">
+         <pdf:Producer>Adobe LiveCycle Designer 11.0</pdf:Producer>
+      </rdf:Description>
+      <rdf:Description xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" rdf:about="">
+         <xmpMM:DocumentID>uuid:31c64407-2413-44f3-8ef8-3bee212a5588</xmpMM:DocumentID>
+      </rdf:Description>
+      <rdf:Description xmlns:dc="http://purl.org/dc/elements/1.1/" rdf:about="">
+         <dc:creator>
+            <rdf:Seq>
+               <rdf:li>Medibank Private Limited</rdf:li>
+            </rdf:Seq>
+         </dc:creator>
+         <dc:title>
+            <rdf:Alt>
+               <rdf:li xml:lang="x-default">Medical Provider EFT Statement</rdf:li>
+            </rdf:Alt>
+         </dc:title>
+      </rdf:Description>
+      <rdf:Description xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>9.0.0.0.20091029.1.612548.606130</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+<connectionSet xmlns="http://www.xfa.org/schema/xfa-connection-set/2.8/">
+   <xsdConnection name="DataConnection" dataDescription="WHICSLetter">
+      <uri>.\WHICSLetter.xsd</uri>
+      <rootElement>WHICSLetter</rootElement>
+      <?templateDesigner fileDigest shaHash="iR4nyRjhw3potwuCdghZJaTmYl4="?></xsdConnection>
+</connectionSet>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+   <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="WHICSLetter">
+      <WHICSLetter>
+         <MetaData>
+            <Fund/>
+            <FundName/>
+            <FileName/>
+            <FileDate/>
+            <ConvertDate/>
+         </MetaData>
+         <Documents>
+            <Document>
+               <Data>
+                  <prov_doh/>
+                  <addr1/>
+                  <addr2/>
+                  <page_no/>
+                  <pcode/>
+                  <prov_name/>
+                  <remitt_dte/>
+                  <remitt_total/>
+                  <suburb/>
+                  <remittance_details>
+                     <payment>
+                        <desc/>
+                        <pay_total/>
+                     </payment>
+                     <service_provider>
+                        <customers>
+                           <servprov_desc/>
+                           <servprov_total/>
+                           <customer dd:maxOccur="-1">
+                              <client/>
+                              <pat_name/>
+                              <clm_id/>
+                              <cust_total/>
+                              <items>
+                                 <item dd:maxOccur="-1">
+                                    <clm_ln/>
+                                    <dte_serv/>
+                                    <item_code/>
+                                    <amt_charged/>
+                                    <sched_fee/>
+                                    <benefit/>
+                                    <exp_code/>
+                                 </item>
+                              </items>
+                           </customer>
+                        </customers>
+                     </service_provider>
+                     <total>
+                        <tot_cost/>
+                        <tot_sched_fee/>
+                        <tot_ben/>
+                     </total>
+                  </remittance_details>
+               </Data>
+               <MetaData>
+                  <Form/>
+                  <trayin/>
+                  <trayout/>
+               </MetaData>
+            </Document>
+         </Documents>
+         <LetterSettings>
+            <printer_id/>
+         </LetterSettings>
+      </WHICSLetter>
+   </dd:dataDescription>
+</xfa:datasets>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" id="XFASchemaXSD">
+   <!-- XML Schema Generated from XML Document on Fri Jul 22 2016 14:20:55 GMT+1000 (AUS Eastern Standard Time) -->
+   <!-- with XmlGrid.net Free Online Service http://xmlgrid.net -->
+   <xs:element name="WHICSLetter">
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element name="MetaData">
+               <xs:complexType>
+                  <xs:sequence>
+                     <xs:element name="Fund" type="xs:string"/>
+                     <xs:element name="FundName" type="xs:string"/>
+                     <xs:element name="FileName" type="xs:string"/>
+                     <xs:element name="FileDate" type="xs:string"/>
+                     <xs:element name="ConvertDate" type="xs:string"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+            <xs:element name="Documents">
+               <xs:complexType>
+                  <xs:sequence>
+                     <xs:element name="Document">
+                        <xs:complexType>
+                           <xs:sequence>
+                              <xs:element name="Data">
+                                 <xs:complexType>
+                                    <xs:sequence>
+                                       <xs:element name="prov_doh" type="xs:string"/>
+                                       <xs:element name="addr1" type="xs:string"/>
+                                       <xs:element name="addr2"/>
+                                       <xs:element name="page_no" type="xs:string"/>
+                                       <xs:element name="pcode" type="xs:int"/>
+                                       <xs:element name="prov_name" type="xs:string"/>
+                                       <xs:element name="remitt_dte" type="xs:string"/>
+                                       <xs:element name="remitt_total" type="xs:double"/>
+                                       <xs:element name="suburb" type="xs:string"/>
+                                       <xs:element name="remittance_details">
+                                          <xs:complexType>
+                                             <xs:sequence>
+                                                <xs:element name="payment">
+                                                   <xs:complexType>
+                                                      <xs:sequence>
+                                                         <xs:element name="desc" type="xs:string"/>
+                                                         <xs:element name="pay_total" type="xs:int"/>
+                                                      </xs:sequence>
+                                                   </xs:complexType>
+                                                </xs:element>
+                                                <xs:element name="service_provider">
+                                                   <xs:complexType>
+                                                      <xs:sequence>
+                                                         <xs:element name="customers">
+                                                            <xs:complexType>
+                                                               <xs:sequence>
+                                                                  <xs:element name="servprov_desc" type="xs:string"/>
+                                                                  <xs:element name="servprov_total" type="xs:double"/>
+                                                                  <xs:element name="customer" maxOccurs="unbounded">
+                                                                     <xs:complexType>
+                                                                        <xs:sequence>
+                                                                           <xs:element name="client" type="xs:int"/>
+                                                                           <xs:element name="pat_name" type="xs:string"/>
+                                                                           <xs:element name="clm_id" type="xs:int"/>
+                                                                           <xs:element name="cust_total" type="xs:double"/>
+                                                                           <xs:element name="items">
+                                                                              <xs:complexType>
+                                                                                 <xs:sequence>
+                                                                                    <xs:element name="item" maxOccurs="unbounded">
+                                                                                       <xs:complexType>
+                                                                                          <xs:sequence>
+                                                                                             <xs:element name="clm_ln" type="xs:int"/>
+                                                                                             <xs:element name="dte_serv" type="xs:string"/>
+                                                                                             <xs:element name="item_code" type="xs:int"/>
+                                                                                             <xs:element name="amt_charged" type="xs:int"/>
+                                                                                             <xs:element name="sched_fee" type="xs:double"/>
+                                                                                             <xs:element name="benefit" type="xs:double"/>
+                                                                                             <xs:element name="exp_code"/>
+                                                                                          </xs:sequence>
+                                                                                       </xs:complexType>
+                                                                                    </xs:element>
+                                                                                 </xs:sequence>
+                                                                              </xs:complexType>
+                                                                           </xs:element>
+                                                                        </xs:sequence>
+                                                                     </xs:complexType>
+                                                                  </xs:element>
+                                                               </xs:sequence>
+                                                            </xs:complexType>
+                                                         </xs:element>
+                                                      </xs:sequence>
+                                                   </xs:complexType>
+                                                </xs:element>
+                                                <xs:element name="total">
+                                                   <xs:complexType>
+                                                      <xs:sequence>
+                                                         <xs:element name="tot_cost" type="xs:int"/>
+                                                         <xs:element name="tot_sched_fee" type="xs:double"/>
+                                                         <xs:element name="tot_ben" type="xs:double"/>
+                                                      </xs:sequence>
+                                                   </xs:complexType>
+                                                </xs:element>
+                                             </xs:sequence>
+                                          </xs:complexType>
+                                       </xs:element>
+                                    </xs:sequence>
+                                 </xs:complexType>
+                              </xs:element>
+                              <xs:element name="MetaData">
+                                 <xs:complexType>
+                                    <xs:sequence>
+                                       <xs:element name="Form" type="xs:string"/>
+                                       <xs:element name="trayin"/>
+                                       <xs:element name="trayout"/>
+                                    </xs:sequence>
+                                 </xs:complexType>
+                              </xs:element>
+                           </xs:sequence>
+                        </xs:complexType>
+                     </xs:element>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+            <xs:element name="LetterSettings">
+               <xs:complexType>
+                  <xs:sequence>
+                     <xs:element name="printer_id" type="xs:string"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+</xs:schema></xdp:xdp>

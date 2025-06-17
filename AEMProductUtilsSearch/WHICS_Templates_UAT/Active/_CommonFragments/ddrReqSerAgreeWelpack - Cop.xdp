@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xfa generator="AdobeLiveCycleDesigner_V11.0.1.20130826.2.901444" APIVersion="3.6.13235.0"?>
+<xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2016-09-20T04:30:45Z" uuid="7f00428d-2bab-4373-b765-6b9c19025422">
+<template xmlns="http://www.xfa.org/schema/xfa-template/2.8/">
+   <?formServer defaultPDFRenderFormat acrobat9.0static?>
+   <subform name="form1" locale="en_AU" layout="tb">
+      <pageSet>
+         <pageArea>
+            <medium short="21.0141cm" long="29.7043cm" imagingBBox="0cm,0cm,21.0141cm,29.7043cm" stock="a4"/>
+            <contentArea id="CA_Page_1" w="21.0141cm" h="29.7043cm" x="0cm" y="0cm"/>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <subform w="205.58mm" h="238.12mm" name="ddrReqSerAgree">
+         <draw name="T4" y="15.88mm" h="215.9mm" w="89.822mm" x="0.26mm">
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in">Australian Health Management Group Pty Limited issues this Direct Debit Request (DDR) Service Agreement. <span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in">For the purposes of this agreement, our "HandyPay" or our "Direct Debit" authority is considered the same as a Direct Debit Request.<span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in">You should direct all enquiries about your Direct Debit to the Australian Health Management Group Pty Limited Customer Service Officers.<span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;font-family:'Proxima Nova Th';font-weight:bold;text-decoration:none;letter-spacing:0in">Our commitment to you<span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in">a) Australian Health Management Group Pty Limited will give you at least 14 days notice in writing if there are changes to the terms of the drawing arrangements.<span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in">b) Australian Health Management Group Pty Limited will keep information relating to your nominated financial institution account confidential except where required for the purposes of conducting direct debits with your financial institution.<span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in">c) Where the due date is not a business day, Australian Health Management Group Pty Limited will draw from your nominated account on the nearest business day.<span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in">d) Australian Health Management Group Pty Limited will at all times attempt to meet the scheduled drawing date as arranged with you.<span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;font-family:'Proxima Nova Th';font-weight:bold;text-decoration:none;letter-spacing:0in">Your commitment to us<span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in">a) To ensure that your nominated account can accept direct debits<span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in">b) To advise us if the nominated account is transferred or closed, or the account details change<span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in">c) To arrange another payment method if Australian Health Management Group Pty Limited cancels the drawing arrangements  <span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in">d) To ensure that the Direct Debit Request is signed in accordance with the account signatory arrangements in place with your financial institution.  <span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p></body>
+               </exData>
+            </value>
+            <ui>
+               <textEdit>
+                  <extras>
+                     <float name="LineSpacingPoints">-154618.823</float>
+                  </extras>
+               </textEdit>
+            </ui>
+            <font typeface="Proxima Nova Rg" size="11pt" baselineShift="0pt">
+               <fill presence="hidden"/>
+            </font>
+            <para lineHeight="12pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <traversal>
+               <traverse ref="T5[0]"/>
+            </traversal>
+         </draw>
+         <draw name="T5" y="15.88mm" x="96.31mm" w="89.822mm" h="215.9mm">
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="tab-interval:1.271cm;font-family:'Proxima Nova Th';font-weight:bold;text-decoration:none;letter-spacing:0in">Your rights<span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in">a) Subject to the Terms &amp; Conditions of your Australian Health Management Group Pty Limited policy or account, you may alter the drawing arrangements in writing. Such written advice must be received by us at least 7 working days before the next draw date for any of the following:<span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in">- stopping an individual drawing<span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in">- deferring a drawing<span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in">- altering the DDR schedule in any way<span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in">- cancelling the drawings completely<span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in">b) Subject to the Terms &amp; Conditions of your ahm Health Insurance policy or account you may alter the drawing arrangements by telephone. Alterations to Direct Debit information can be made by verbal agreement between ahm and the member no less than 3 working days before the next draw date. ahm will send you written correspondence to confirm the alterations. <span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in">c) Where you consider that a drawing has been initiated incorrectly, you should contact Australian Health Management Group Pty Limited Customer Service Officers as soon as possible. Where you are not happy with our response, you can address a formal complaint with the envelope marked "Notice of Complaint" to:<span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;font-family:'Proxima Nova Th';font-weight:bold;text-decoration:none;letter-spacing:0in">Australian Health Management Group Pty Limited<span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;font-family:'Proxima Nova Th';font-weight:bold;text-decoration:none;letter-spacing:0in">Locked Bag 1006<span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;font-family:'Proxima Nova Th';font-weight:bold;text-decoration:none;letter-spacing:0in">Matraville NSW 2036<span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;font-family:'Proxima Nova Th';font-weight:bold;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;font-family:'Proxima Nova Th';font-weight:bold;text-decoration:none;letter-spacing:0in">Other information<span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in">a) The details of your drawing arrangements are contained in the DDR schedule<span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in">b) Australian Health Management Group Pty Limited reserves the right to ask that instructions from a member to stop or in any way alter the drawing details is given to us in writing<span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in">c) Australian Health Management Group Pty Limited reserves the right to cancel your drawing arrangement if drawings are dishonoured by your Financial Institution, and to ask you to arrange an alternative payment method</p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in">d) Your drawing arrangements are also governed by the terms and conditions of your ahm Health Insurance policy or account.  <span style="xfa-spacerun:yes"> </span></p></body>
+               </exData>
+            </value>
+            <ui>
+               <textEdit>
+                  <extras>
+                     <float name="LineSpacingPoints">-154618.823</float>
+                  </extras>
+               </textEdit>
+            </ui>
+            <font typeface="Proxima Nova Rg" size="11pt" baselineShift="0pt">
+               <fill presence="hidden"/>
+            </font>
+            <para lineHeight="12pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+         </draw>
+         <traversal>
+            <traverse operation="first" ref="T4[0]"/>
+         </traversal>
+         <?templateDesigner isFragment yes?>
+         <?templateDesigner fragmentTitle ddrReqSerAgree?>
+         <?templateDesigner fragmentDescription Direct Debit request service agreement?>
+         <bind match="none"/>
+         <draw name="Text1" y="2.65mm" x="0.26mm" w="185.48mm" h="13.23mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="font-weight:bold;text-decoration:none;letter-spacing:0in">Direct Debit Service Request Agreement</p></body>
+               </exData>
+            </value>
+            <font size="28pt" typeface="Proxima Nova Th" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+         </draw>
+         <?templateDesigner expand 1?></subform>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Proxima Nova Rg" 0 0 ISO-8859-1 4 224 57 00010001000300070009000A000D000E000F0012001400150018001B002200240025002700280029002A002D002E002F003000310033003400350038003A00420043004400450046004700480049004A004B004C004D004E004F0050005100520053005400550056005700580059005A  "&(),-.1347:ACDFGHILMNOPRSTWYabcdefghijklmnopqrstuvwxy?>
+      <?renderCache.subset "Proxima Nova Th" 1 0 ISO-8859-1 4 168 42 00010011001200130014001700220023002500280029002D002E002F00300031003300340038003A00420043004400450046004700480049004A004C004D004E004F00500051005200530054005500560057005A 01236ABDGHLMNOPRSWYabcdefghiklmnopqrstuvy?>
+   </subform>
+   <?templateDesigner FormTargetVersion 28?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?>
+   <?templateDesigner Zoom 100?></template>
+<config xmlns="http://www.xfa.org/schema/xci/2.8/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+         <version>1.7</version>
+         <adobeExtensionLevel>3</adobeExtensionLevel>
+      </pdf>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+   <psMap>
+      <font typeface="Proxima Nova Th" psName="ProximaNova-Extrabld" weight="bold" posture="normal"/>
+      <font typeface="Proxima Nova Rg" psName="ProximaNova-Regular" weight="normal" posture="normal"/>
+      <font typeface="Proxima Nova Rg" psName="ProximaNova-Bold" weight="bold" posture="normal"/>
+   </psMap>
+</config>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 4.2.1-c043 52.398682, 2009/08/10-13:00:47        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" rdf:about="">
+         <xmp:MetadataDate>2016-09-20T04:30:45Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer 11.0</xmp:CreatorTool>
+      </rdf:Description>
+      <rdf:Description xmlns:pdf="http://ns.adobe.com/pdf/1.3/" rdf:about="">
+         <pdf:Producer>Adobe LiveCycle Designer 11.0</pdf:Producer>
+      </rdf:Description>
+      <rdf:Description xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" rdf:about="">
+         <xmpMM:DocumentID>uuid:7f00428d-2bab-4373-b765-6b9c19025422</xmpMM:DocumentID>
+      </rdf:Description>
+      <rdf:Description xmlns:lcd="http://ns.adobe.com/livecycle/designer/" xmlns:dc="http://purl.org/dc/elements/1.1/" rdf:about="">
+         <lcd:fragmentCatalog>
+            <rdf:Seq>
+               <rdf:li rdf:parseType="Resource">
+                  <dc:title>
+                     <rdf:Alt>
+                        <rdf:li xml:lang="x-default">ddrReqSerAgree</rdf:li>
+                     </rdf:Alt>
+                  </dc:title>
+                  <dc:description>
+                     <rdf:Alt>
+                        <rdf:li xml:lang="x-default">Direct Debit request service agreement</rdf:li>
+                     </rdf:Alt>
+                  </dc:description>
+                  <dc:identifier>$template.form1.ddrReqSerAgree</dc:identifier>
+                  <lcd:fragmentRole>Subform</lcd:fragmentRole>
+               </rdf:li>
+            </rdf:Seq>
+         </lcd:fragmentCatalog>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale name="en_AU" desc="English (Australia)">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, D MMMM YYYY</datePattern>
+         <datePattern name="long">D MMMM YYYY</datePattern>
+         <datePattern name="med">DD/MM/YYYY</datePattern>
+         <datePattern name="short">D/MM/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$z,zz9.99</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">$</currencySymbol>
+         <currencySymbol name="isoname">AUD</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+      </typefaces>
+   </locale>
+</localeSet></xdp:xdp>

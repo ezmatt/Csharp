@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xfa generator="AdobeLiveCycleDesignerES_V9.0.0.0.20091029.1.612548" APIVersion="3.1.9277.0"?>
+<xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2012-02-28T00:35:24Z" uuid="757d5031-0fac-4fe1-8b01-5f58265c15a6">
+<template xmlns="http://www.xfa.org/schema/xfa-template/2.8/">
+   <!-- commandline= -->
+   <?formServer defaultPDFRenderFormat acrobat9.0dynamic?>
+   <subform name="F" layout="tb" locale="en_AU" restoreState="auto">
+      <pageSet>
+         <pageArea id="Page_1" name="Page_1">
+            <medium short="21.0141cm" long="29.7043cm" imagingBBox="0cm,0cm,21.0141cm,29.7043cm" stock="a4"/>
+            <contentArea id="CA_Page_1" w="21.0141cm" h="29.7043cm" x="0cm" y="0cm"/>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <subform name="Page_1" w=" 8.27in" h="11.69in">
+         <draw name="T1" y="10.3641cm" x="6.9927cm" w="6.9928cm" h="0.6002cm">
+            <value>
+               <text>REMINDER NOTICE ONLY</text>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font weight="bold" size="12.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para hAlign="center" lineHeight="12pt"/>
+            <?renderCache.bounds 198221 17014 0 0 0 0 0 0?>
+            <?renderCache.textRun 20 REMINDER NOTICE ONLY 0 24442 9475 0 0 0 "Arial" 1 0 12000 ISO-8859-1?></draw>
+         <draw name="T2" y="7.2528cm" x="15.0359cm" w="2.3901cm" h="0.4765cm">
+            <value>
+               <text>57430</text>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para vAlign="middle" lineHeight="12pt"/>
+            <?renderCache.bounds 67751 13507 0 0 0 0 0 0?>
+            <?renderCache.textRun 5 57430 0 0 9649 0 0 0 "Arial" 0 0 10000 ISO-8859-1?></draw>
+         <draw name="T3" y="11.2144cm" x="2.3009cm" w="16.5465cm" h="16.933mm">
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in">Your health insurance premiums are due on<span style="xfa-spacerun:yes">                        </span>and the amount required is<span style="xfa-spacerun:yes">                      </span>.<span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in"> <span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span>   <span style="xfa-spacerun:yes"> </span></p></body>
+               </exData>
+            </value>
+            <ui>
+               <textEdit>
+                  <extras>
+                     <float name="LineSpacingPoints">12</float>
+                  </extras>
+               </textEdit>
+            </ui>
+            <font weight="bold" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para lineHeight="12pt"/>
+         </draw>
+         <draw name="T4" y="12.0501cm" x="2.3009cm" w="16.4664cm" h="1.2241cm">
+            <value>
+               <text>This will mean your policy is paid to </text>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font weight="bold" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para hAlign="justify" lineHeight="12pt"/>
+         </draw>
+         <draw name="T5" y="0.5802cm" x="0.6403cm" w="1.2105cm" h="0.4302cm">
+            <value>
+               <text>CS11</text>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font size="8.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para lineHeight="7.2pt"/>
+            <?renderCache.bounds 34313 12195 0 0 0 0 0 0?>
+            <?renderCache.textRun 4 CS11 0 0 6316 0 0 0 "Arial" 0 0 8000 ISO-8859-1?></draw>
+         <draw name="T6" y="13.4978cm" x="2.3009cm" w="16.4164cm" h="5.6497cm">
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.6.0.0">
+                        <p style="tab-interval:1.2705cm; color:rgb(0,0,0); vertical-align:top; text-align:justify; margin-right:0in;margin-left:0cm;text-indent:-0cm">
+                           <span style="font-family: 'Arial';">Please note: If you fall behind on your payments you won’t be able to claim hospital or extras benefits.</span>
+                        </p>
+                        <p style="tab-interval:1.2705cm; color:rgb(0,0,0); vertical-align:top; text-align:justify; margin-right:0in;margin-left:0cm;text-indent:-0cm">
+                           <span style="font-family: 'Arial';"/>
+                        </p>
+                        <p style="tab-interval:1.2705cm; color:rgb(0,0,0); vertical-align:top; text-align:justify; margin-right:0in;margin-left:0cm;text-indent:-0cm">
+                           <span style="font-family: 'Arial';">ahm fund rules also require members to be at least one premium payment in advance.</span>
+                        </p>
+                        <p style="tab-interval:1.2705cm; color:rgb(0,0,0); vertical-align:top; text-align:justify; margin-right:0in;margin-left:0cm;text-indent:-0cm">
+                           <span style="font-family: 'Arial';"/>
+                        </p>
+                        <p style="tab-interval:1.2705cm; color:rgb(0,0,0); vertical-align:top; text-align:justify; margin-right:0in;margin-left:0cm;text-indent:-0cm">
+                           <span style="font-family: 'Arial';">Please contact us as soon as possible so we can ensure your cover with us continues. 
+</span>
+                        </p>
+                     </body>
+               </exData>
+            </value>
+            <ui>
+               <textEdit>
+                  <extras>
+                     <float name="LineSpacingPoints">14.4</float>
+                  </extras>
+               </textEdit>
+            </ui>
+            <font typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para hAlign="justify" lineHeight="14.4pt"/>
+         </draw>
+         <draw name="T7" y="19.7477cm" x="3.3013cm" w="16.3663cm" h="0.5902cm">
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.6.0.0">
+                        <p style="tab-interval:1.2705cm; color:rgb(0,0,0); vertical-align:top; text-align:left; margin-right:0in;margin-left:0cm;text-indent:-0cm">
+                           <span style="font-family: 'Arial';"/>
+                           <b>
+                              <span> </span>            </b>
+                           <span style="font-weight: bold; font-size: 10.0pt;">**** If you've recently made a payment, please ignore this notice ****   </span>
+                           <b>
+                              <span> </span>     </b>
+                        </p>
+                     </body>
+               </exData>
+            </value>
+            <ui>
+               <textEdit>
+                  <extras>
+                     <float name="LineSpacingPoints">12</float>
+                  </extras>
+               </textEdit>
+            </ui>
+            <font size="11.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para lineHeight="12pt"/>
+            <?renderCache.bounds 463927 16730 0 0 0 0 0 0?>
+            <?renderCache.textRun 1   0 0 8685 0 0 0 "Arial" 0 0 11000 ISO-8859-1?>
+            <?renderCache.textRun 5     0 3056 8685 0 0 0 "Arial" 1 0 11000 ISO-8859-1?>
+            <?renderCache.textRun 1   0 12225 8685 0 0 0 "Arial" 0 0 11000 ISO-8859-1?>
+            <?renderCache.textRun 73 **** If you've recently made a payment, please ignore this notice ****   0 15281 8685 0 0 0 "Arial" 1 0 10000 ISO-8859-1?>
+            <?renderCache.textRun 1   0 342776 8685 0 0 0 "Arial" 0 0 11000 ISO-8859-1?>
+            <?renderCache.textRun 5     0 345832 8685 0 0 0 "Arial" 1 0 11000 ISO-8859-1?>
+            <?renderCache.textRun 1   0 355000 8685 0 0 0 "Arial" 0 0 11000 ISO-8859-1?></draw>
+         <traversal>
+            <traverse operation="first" ref="date"/>
+         </traversal>
+         <field name="date" y="4.0016cm" x="2.0108cm" w="3.533cm" h="0.4235cm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text maxChars="15"/>
+            </value>
+            <font size="12.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para hAlign="justify" lineHeight="12pt"/>
+         </field>
+         <field name="cover_desc" y="4.3717cm" x="11.4745cm" w="7.9883cm" h="0.4235cm">
+            <bind match="global"/>
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text maxChars="37"/>
+            </value>
+            <font weight="bold" size="11.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para lineHeight="12pt"/>
+         </field>
+         <field name="scale" y="6.1724cm" x="11.4745cm" w="7.9883cm" h="0.4235cm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text maxChars="37"/>
+            </value>
+            <font weight="bold" size="11.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para lineHeight="12pt"/>
+         </field>
+         <field name="ADDR_NAME" y="6.7318cm" x="2.0308cm" w="6.8696cm" h="0.4235cm">
+            <bind match="global"/>
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text maxChars="35"/>
+            </value>
+            <font typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para vAlign="middle" lineHeight="12pt"/>
+         </field>
+         <field name="ADDR_1" y="7.2323cm" x="2.0308cm" w="6.8696cm" h="0.4235cm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text maxChars="35"/>
+            </value>
+            <font typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para vAlign="middle" lineHeight="12pt"/>
+         </field>
+         <field name="ADDR_2" y="7.7329cm" x="2.0308cm" w="6.8696cm" h="0.4235cm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text maxChars="35"/>
+            </value>
+            <font typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para vAlign="middle" lineHeight="12pt"/>
+         </field>
+         <field name="client" y="8.0281cm" x="15.0389cm" w="1.9627cm" h="0.4235cm">
+            <bind match="global"/>
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text maxChars="10"/>
+            </value>
+            <font typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para vAlign="middle" lineHeight="12pt"/>
+         </field>
+         <field name="ADDR_3" y="8.2335cm" x="2.0308cm" w="6.8696cm" h="0.4235cm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text maxChars="35"/>
+            </value>
+            <font typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para vAlign="middle" lineHeight="12pt"/>
+         </field>
+         <field name="curr_dpt" y="11.2244cm" x="9.7847cm" w="2.159cm" h="0.4235cm">
+            <bind match="global"/>
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text maxChars="11"/>
+            </value>
+            <font weight="bold" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para hAlign="center" lineHeight="12pt"/>
+         </field>
+         <field name="due_amt" y="11.2244cm" x="16.6965cm" w="1.9627cm" h="0.4235cm">
+            <bind match="global"/>
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text maxChars="10"/>
+            </value>
+            <font weight="bold" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para vAlign="middle" lineHeight="12pt"/>
+         </field>
+         <field name="calc_dpt" y="12.0348cm" x="8.4133cm" w="2.159cm" h="0.4235cm">
+            <bind match="global"/>
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text maxChars="11"/>
+            </value>
+            <font weight="bold" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para hAlign="justify" lineHeight="12pt"/>
+         </field>
+         <field name="addr_name" y="24.0394cm" x="1.8007cm" w="9.4212cm" h="0.4235cm">
+            <bind match="global"/>
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text maxChars="40"/>
+            </value>
+            <font size="12.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para lineHeight="12pt"/>
+         </field>
+         <field name="client" y="25.3699cm" x="1.8307cm" w="3.533cm" h="0.4235cm">
+            <bind match="global"/>
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text maxChars="15"/>
+            </value>
+            <font size="12.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para lineHeight="18pt"/>
+         </field>
+         <field name="due_amt" y="26.5904cm" x="1.8307cm" w="3.533cm" h="0.4235cm">
+            <bind match="global"/>
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text maxChars="15"/>
+            </value>
+            <font size="12.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para lineHeight="18pt"/>
+         </field>
+         <field name="curr_dpt" y="26.5904cm" x="16.4264cm" w="3.533cm" h="0.4235cm">
+            <bind match="global"/>
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text maxChars="15"/>
+            </value>
+            <font size="12.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para lineHeight="18pt"/>
+         </field>
+         <?templateDesigner expand 1?></subform>
+      <desc>
+         <text name="title"/>
+         <text name="description"/>
+         <text name="creator"/>
+         <text name="contact"/>
+         <text name="created"/>
+         <text name="issued"/>
+         <text name="version">1.0</text>
+         <text name="department"/>
+      </desc>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Arial" 0 0 ISO-8859-1 4 144 38 0003001100130014001600170018001A001D0026002C00330036004400450046004700480049004B004C004F0050005100520053005400550056005700580059005A005B005C00B6 .013457:CIPSabcdefhilmnopqrstuvwxy’?>
+      <?renderCache.subset "Arial" 1 0 ISO-8859-1 4 152 39 00030003000A000D000F0011002600270028002C002F00300031003200350037003C00440046004700480049004A004B004C004F0050005100520053005400550056005700580059005A005C  '*,.CDEILMNORTYacdefghilmnopqrstuvwy?></subform>
+   <?templateDesigner FormTargetVersion 28?>
+   <?templateDesigner DefaultLanguage JavaScript?>
+   <?acrobat JavaScript strictScoping?>
+   <?templateDesigner Zoom 102?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?>
+   <?templateDesigner SaveTaggedPDF 0?>
+   <?templateDesigner SavePDFWithEmbeddedFonts 0?>
+   <?templateDesigner SavePDFWithLog 0?></template>
+<config xmlns="http://www.xfa.org/schema/xci/2.8/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo>
+            <embed>0</embed>
+         </fontInfo>
+         <tagged>0</tagged>
+         <version>1.7</version>
+         <adobeExtensionLevel>3</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data/>
+      </common>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+</config>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale name="en_AU" desc="English (Australia)">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, D MMMM YYYY</datePattern>
+         <datePattern name="long">D MMMM YYYY</datePattern>
+         <datePattern name="med">DD/MM/YYYY</datePattern>
+         <datePattern name="short">D/MM/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$z,zz9.99</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">$</currencySymbol>
+         <currencySymbol name="isoname">AUD</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+      </typefaces>
+   </locale>
+</localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 4.2.1-c043 52.398682, 2009/08/10-13:00:47        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" rdf:about="">
+         <xmp:MetadataDate>2012-02-28T00:35:24Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer ES 9.0</xmp:CreatorTool>
+      </rdf:Description>
+      <rdf:Description xmlns:pdf="http://ns.adobe.com/pdf/1.3/" rdf:about="">
+         <pdf:Producer>Adobe LiveCycle Designer ES 9.0</pdf:Producer>
+      </rdf:Description>
+      <rdf:Description xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" rdf:about="">
+         <xmpMM:DocumentID>uuid:757d5031-0fac-4fe1-8b01-5f58265c15a6</xmpMM:DocumentID>
+      </rdf:Description>
+      <rdf:Description xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <desc:contact rdf:parseType="Resource">
+            <rdf:value/>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:contact>
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>1.0</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+         <desc:department rdf:parseType="Resource">
+            <rdf:value/>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:department>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta></xdp:xdp>

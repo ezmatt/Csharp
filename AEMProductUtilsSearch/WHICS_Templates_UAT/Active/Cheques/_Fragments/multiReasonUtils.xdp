@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xfa generator="AdobeLiveCycleDesignerES_V9.0.0.1.20100329.2.659576" APIVersion="3.1.9277.0"?>
+<xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2012-05-20T23:07:32Z" uuid="5bc03248-7943-480d-a631-0b2d0134669e">
+<template xmlns="http://www.xfa.org/schema/xfa-template/2.8/">
+   <?formServer defaultPDFRenderFormat acrobat9.0static?>
+   <subform name="form1" locale="en_AU" layout="tb">
+      <pageSet>
+         <pageArea>
+            <medium short="21.0141cm" long="29.7043cm" orientation="portrait" imagingBBox="0cm,0cm,21.0141cm,29.7043cm" trayIn="Auto Select" stock="a4"/>
+            <contentArea id="CA_Page_1" w="170mm" h="235mm" x="20mm" y="40mm"/>
+         </pageArea>
+      </pageSet>
+      <subform>
+         <variables>
+            <script contentType="application/x-javascript" name="multiReasonUtils">/**
+ * processReasons()
+ * Uses MultiReason and NoSend fragments to process multi reason letters
+ *
+ * @param {oReasonCodeField} Field object which is bound to the reason code(s) that the MSO enters
+ * @param {arrReasons} An ordered string array of reasons that may appear in the letter
+ * @param {isMultiReason} Boolean value specifying if the letter can display multiple reasons or not
+ * @param {oFloatingField} The floating field object where the reason(s) will appear in the letter
+ * @param {maxInSentence} Maximum number of reasons that can appear in a sentence
+ * @param {strSingle} String appearing in the floating field if reasons are on a single sentence (number of reasons &lt;= maxInSentence)
+ * @param {strBullet} String appearing in the floating field if reasons are on bullet points (number of reasons &gt; maxInSentence)
+ * @param {oBulletPoints} Object reference of MultiReason fragment with the bullet points
+ */
+
+function processReasons(oReasonCodeField, arrReasons, isMultiReason, oFloatingField, maxInSentence, strSingle, strBullet, oBulletPoints) {
+      
+	  var isReason = new Array();
+	  try {
+	     arrIsReason = parseReasons(oReasonCodeField.rawValue, arrReasons.length);
+	  }
+	  //error if invalid reason
+	  catch (err) {	     
+		 var error = { code:"Invalid Reason Code:",
+					   value:"[" + oReasonCodeField.rawValue + "]",
+					   description: "Please select " + (isMultiReason ? "only reason codes" : "a single reason code") + " between 1 and " + arrReasons.length + " in the field " + oReasonCodeField.dataNode.name
+					 };
+		throw error;
+	  }
+
+      var arrSelected = new Array();
+      for (var i = 0; i &lt; arrIsReason.length; i++) {
+         if (arrIsReason[i]) {
+            arrSelected.push(arrReasons[i]);
+         }
+      }
+	  
+	  if (arrSelected.length == 0) {
+	     var error = { code:"Invalid Reason Code:",
+					   value:"[null]",
+					   description: "Please select " + (isMultiReason ? "reason codes" : "a reason code") + " between 1 and " + arrReasons.length + " in the field " + oReasonCodeField.dataNode.name
+					 };
+		throw error;
+	  }
+
+
+   if (isMultiReason) {         
+      //when all the reasons go in one sentence
+      if (arrSelected.length &lt;= maxInSentence || oBulletPoints == null) {
+         oFloatingField.rawValue = strSingle + makeSentence(arrSelected);
+         if (oBulletPoints != null){
+            oBulletPoints.presence = "hidden";
+         }
+      }
+      // when the reasons go in bullet points
+      else {
+         oFloatingField.rawValue = strBullet;
+         oBulletPoints.presence = "visible";
+         populateBullets(oBulletPoints, arrSelected);
+      }
+   }
+
+   //for single reasons
+   else {
+      if (arrSelected.length &gt; 1) {
+	  	var error = { code:"Invalid Number of Reason Codes:",
+					  value:"[" + oReasonCodeField.rawValue + "]",
+					  description: "Please select only a single reason between 1 and " + arrReasons.length + " in the field " + oReasonCodeField.dataNode.name
+				    };
+		throw error;	    
+      }
+	  oFloatingField.rawValue = arrSelected[0] + ".";		 
+   }
+   
+   return arrIsReason;
+}
+
+
+function parseReasons(strCodes,maxNum) {
+   var arr = new Array(maxNum);
+   for (var i = 0; i &lt; arr.length; i++) {
+      arr[i] = false;
+   }
+
+   var str = strCodes || "";
+   str = str.replace(/[^\d]/g,",");
+   var arrCodes = str.split(",");
+
+   for (var i = 0; i &lt; arrCodes.length; i++) {
+      if (arrCodes[i] != "") {
+         if (parseInt(arrCodes[i],10) &gt; 0 &amp;&amp; parseInt(arrCodes[i],10) &lt;= maxNum) {
+            arr[parseInt(arrCodes[i],10)-1] = true;
+         }
+         else {
+            throw "Error: Invalid reason code";
+         }
+      }
+   }
+   return arr;
+}
+
+
+function makeSentence(arr){
+   var str = "";
+   for (var i = 0; i &lt; arr.length; i++) {
+      str += arr[i];
+      if (i == (arr.length-1)) {
+         str += ".";
+      }
+      else if (i == (arr.length-2)) {
+         str += " and ";
+      }
+      else {
+         str += ", ";
+      }               
+   }
+   return str;
+}
+
+function populateBullets(oParent, arr) {
+   for (var i = 0; i &lt; arr.length; i++) {
+      var curr = oParent._rptPoint.addInstance();  
+      curr.reason.rawValue = arr[i];
+      if (i == (arr.length-1)) {
+         curr.punctuation.rawValue = ".";
+      }
+      else if (i == (arr.length-2)) {
+         curr.punctuation.rawValue = ", and";
+      }
+      else {
+         curr.punctuation.rawValue = ",";
+      }
+   }  
+}
+
+
+
+               
+               
+
+               <?templateDesigner isFragment yes?>
+               <?templateDesigner fragmentTitle multiReasonUtils?></script>
+         </variables>
+      </subform>
+   </subform>
+   <?templateDesigner FormTargetVersion 28?>
+   <?templateDesigner Zoom 104?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?></template>
+<config xmlns="http://www.xfa.org/schema/xci/2.8/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+         <version>1.7</version>
+         <adobeExtensionLevel>3</adobeExtensionLevel>
+      </pdf>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+</config>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 4.2.1-c043 52.398682, 2009/08/10-13:00:47        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" rdf:about="">
+         <xmp:MetadataDate>2012-05-20T23:07:32Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer ES 9.0</xmp:CreatorTool>
+      </rdf:Description>
+      <rdf:Description xmlns:pdf="http://ns.adobe.com/pdf/1.3/" rdf:about="">
+         <pdf:Producer>Adobe LiveCycle Designer ES 9.0</pdf:Producer>
+      </rdf:Description>
+      <rdf:Description xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" rdf:about="">
+         <xmpMM:DocumentID>uuid:5bc03248-7943-480d-a631-0b2d0134669e</xmpMM:DocumentID>
+      </rdf:Description>
+      <rdf:Description xmlns:lcd="http://ns.adobe.com/livecycle/designer/" xmlns:dc="http://purl.org/dc/elements/1.1/" rdf:about="">
+         <lcd:fragmentCatalog>
+            <rdf:Seq>
+               <rdf:li rdf:parseType="Resource">
+                  <dc:title>
+                     <rdf:Alt>
+                        <rdf:li xml:lang="x-default">multiReasonUtils</rdf:li>
+                     </rdf:Alt>
+                  </dc:title>
+                  <dc:description>
+                     <rdf:Alt>
+                        <rdf:li xml:lang="x-default"/>
+                     </rdf:Alt>
+                  </dc:description>
+                  <dc:identifier>$template.form1.#subform.#variables.multiReasonUtils</dc:identifier>
+                  <lcd:fragmentRole>ScriptObject</lcd:fragmentRole>
+               </rdf:li>
+            </rdf:Seq>
+         </lcd:fragmentCatalog>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale name="en_AU" desc="English (Australia)">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, D MMMM YYYY</datePattern>
+         <datePattern name="long">D MMMM YYYY</datePattern>
+         <datePattern name="med">DD/MM/YYYY</datePattern>
+         <datePattern name="short">D/MM/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$z,zz9.99</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">$</currencySymbol>
+         <currencySymbol name="isoname">AUD</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+      </typefaces>
+   </locale>
+</localeSet></xdp:xdp>

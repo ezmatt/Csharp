@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xfa generator="Designer_V6.5.0.20190325.1.935878" APIVersion="3.6.19011.0"?>
+<xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2022-11-30T00:03:19Z" uuid="59131c05-716f-4fe3-ac23-357c7053679b">
+<template xmlns="http://www.xfa.org/schema/xfa-template/3.3/">
+   <?formServer defaultPDFRenderFormat acrobat10.0dynamic?>
+   <?formServer allowRenderCaching 0?>
+   <?formServer formModel both?>
+   <subform name="form1" layout="tb" locale="en_AU" restoreState="auto">
+      <pageSet>
+         <pageArea name="Page1" id="Page1">
+            <medium stock="a4" short="210mm" long="297mm"/>
+            <subform usehref="..\..\..\Livecycle_Templates\Global_Fragments\Address_to_member.xdp#som($template.WHICSLetter.Address_to_member)" w="8.267722in" x="0in" y="0mm">
+               <?templateDesigner expand 1?></subform>
+            <contentArea x="19.05mm" y="95.25mm" w="172mm" h="180.975mm" name="sContent" id="sContent_ID"/>
+            <subform usehref="..\..\..\Livecycle_Templates\Global_Fragments\DocID.xdp#som($template.form1.DocID)" x="29mm" y="289mm">
+               <?templateDesigner expand 1?></subform>
+            <subform usehref="..\..\..\Livecycle_Templates\Global_Fragments\Footer_PHI.xdp#som($template.form1.PHI_Footer)" x="0in" y="279.4mm">
+               <?templateDesigner expand 1?></subform>
+            <subform usehref="..\..\..\Livecycle_Templates\Global_Fragments\Header_PHI.xdp#som($template.WHICSLetter.Header_PHI)" w="8.267722in" x="0in" y="0in">
+               <?templateDesigner expand 1?></subform>
+            <?templateDesigner expand 1?></pageArea>
+         <pageArea name="Page2" id="Page2_ID">
+            <medium stock="a4" short="210mm" long="297mm"/>
+            <contentArea x="19.05mm" y="31.75mm" w="171.45mm" h="244.475mm" name="sAll"/>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <subform w="172mm" name="sPage1" layout="tb">
+         <draw name="txtHeader" w="172mm" h="7.88mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="font-weight:bold;text-decoration:none;letter-spacing:0in">We've removed you from this policy</p></body>
+               </exData>
+            </value>
+            <font typeface="Proxima Nova Th" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para spaceAbove="6pt" spaceBelow="2pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+         </draw>
+         <subform usehref="..\..\..\Livecycle_Templates\Global_Fragments\Salute_Hi_NEW.xdp#som($template.WHICSLetter.Salute)">
+            <?templateDesigner expand 1?></subform>
+         <subform y="15.23mm" w="172mm" minH="72.849mm" layout="tb" name="sVariables">
+            <subform w="172mm" layout="tb" name="sNotReregistered">
+               <draw name="txtGeneral2" w="6.771653in" h="0.456028in">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="margin-bottom:0pt;text-decoration:none;letter-spacing:0in">As we didn't hear from the policy holder, you've been removed from this policy. This means you no longer have health insurance with us.</p></body>
+                     </exData>
+                  </value>
+                  <font typeface="Proxima Nova Lt" baselineShift="0pt"/>
+                  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                  <para spaceAbove="6pt" spaceBelow="2pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+               </draw>
+               <?templateDesigner expand 1?></subform>
+            <?templateDesigner expand 1?></subform>
+         <draw name="txtGeneral2" w="6.771653in" h="0.900472in">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="margin-top:4pt;text-decoration:none;letter-spacing:0in">We’ll send a transfer certificate out to you shortly – you’ll need this document if you get health insurance in the future, so make sure you hold onto it.<span style="xfa-spacerun:yes"> </span></p><p style="text-decoration:none;letter-spacing:0in">You might have started your own ahm policy since we first got in touch – if so, ignore this letter as that policy is separate to your previous one and isn’t affected by the changes we are letting you know about today.<span style="xfa-spacerun:yes"> </span></p></body>
+               </exData>
+            </value>
+            <font typeface="Proxima Nova Lt" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para spaceAbove="6pt" spaceBelow="2pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+         </draw>
+         <draw name="txtGeneral2" w="6.771653in" h="20.165mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="font-family:'Proxima Nova Th';font-weight:bold;letter-spacing:0in">Got questions?</p><p style="letter-spacing:0in">If you'd still like to have health insurance we can help you find the cover that best suits your needs. Simply message us at<span style="xfa-spacerun:yes"> </span><span style="font-weight:bold">ahm.com.au<span style="xfa-spacerun:yes"> </span></span>weekdays, 9am - 6pm (AEST/AEDT).</p></body>
+               </exData>
+            </value>
+            <font typeface="Proxima Nova Lt" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para spaceAbove="6pt" spaceBelow="2pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+         </draw>
+         <subform w="117.032mm" h="75.464mm" name="sHidden" presence="hidden">
+            <field name="old_scale" w="62mm" h="9mm" presence="hidden">
+               <ui>
+                  <textEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Myriad Pro"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="25mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text>Text Field</text>
+                  </value>
+               </caption>
+               <bind match="dataRef" ref="$.Documents.Document.Data.old_scale"/>
+            </field>
+            <field name="new_scale" w="62mm" h="9mm" presence="hidden">
+               <ui>
+                  <textEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Myriad Pro"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="25mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text>Text Field</text>
+                  </value>
+               </caption>
+               <bind match="dataRef" ref="$.Documents.Document.Data.new_scale"/>
+            </field>
+            <field name="form" y="66.464mm" x="55.032mm" w="62mm" h="9mm" presence="hidden">
+               <ui>
+                  <textEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Myriad Pro"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="25mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text>Text Field</text>
+                  </value>
+               </caption>
+               <bind match="dataRef" ref="$.Documents.Document.MetaData.Form"/>
+            </field>
+            <?templateDesigner expand 1?></subform>
+         <subform usehref="..\..\..\Livecycle_Templates\Global_Fragments\Signature_Block_NewFont.xdp#som($template.WHICSLetter.Signature_team_at_ahm)">
+            <?templateDesigner expand 1?></subform>
+         <?templateDesigner expand 1?></subform>
+      <proto/>
+      <desc>
+         <text name="version">11.0.1.20130826.2.901444.899636</text>
+      </desc>
+      <?templateDesigner Hyphenation excludeInitialCap:1, excludeAllCaps:1, wordCharCnt:7, remainCharCnt:3, pushCharCnt:3?>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Proxima Nova Lt" 0 0 ISO-8859-1 4 228 61 0001000400080009000A000D000E000F00100011001300150016001700180019001A00220023002500260029002A002D002E002F0031003400350038003A00420043004400450046004700480049004A004C004D004E004F00500051005300540055005600570058005A005C005E0068006F #’(),-./02456789ABDEHILMNPSTWYabcdefghiklmnoprstuvwy{}'–?>
+      <?renderCache.subset "Proxima Nova Lt" 1 0 ISO-8859-1 4 32 8 0001000F004200440049004E00500056 .achmou?>
+      <?renderCache.subset "Proxima Nova Th" 1 0 ISO-8859-1 4 100 25 0001000F002000280038004200440045004600470049004A004D004E004F00500051005200530054005500560057005A0068 .?GWacdefhilmnopqrstuvy'?></subform>
+   <?templateDesigner DefaultPreviewDynamic 1?>
+   <?templateDesigner Grid show:1, snap:1, units:17, color:ff8080, origin:(0,0), interval:(79375,79375), objsnap:0, guidesnap:0, pagecentersnap:0?>
+   <?templateDesigner WidowOrphanControl 0?>
+   <?templateDesigner SavePDFWithLog 0?>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-template/3.3/?>
+   <?templateDesigner Print-PrinterName Adobe PDF?>
+   <?templateDesigner Print-Copies 1?>
+   <?templateDesigner Print-Collate 0?>
+   <?templateDesigner Print-PageRange all?>
+   <?templateDesigner Print-ProductionPrint 0?>
+   <?templateDesigner Print-DuplexingOption simplex?>
+   <?templateDesigner DefaultLanguage JavaScript?>
+   <?templateDesigner DefaultRunAt client?>
+   <?acrobat JavaScript strictScoping?>
+   <?PDFPrintOptions embedViewerPrefs 0?>
+   <?PDFPrintOptions embedPrintOnFormOpen 0?>
+   <?PDFPrintOptions scalingPrefs 0?>
+   <?PDFPrintOptions enforceScalingPrefs 0?>
+   <?PDFPrintOptions paperSource 0?>
+   <?PDFPrintOptions duplexMode 0?>
+   <?templateDesigner DefaultPreviewType interactive?>
+   <?templateDesigner DefaultPreviewPagination simplex?>
+   <?templateDesigner XDPPreviewFormat 20?>
+   <?templateDesigner DefaultPreviewDataFileName ..\..\..\..\LC_XMLs\cs19a.000000.ebc16d84f9664124a90473cfca196490.xml?>
+   <?templateDesigner DefaultCaptionFontSettings face:Myriad Pro;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultValueFontSettings face:Myriad Pro;size:10;weight:normal;style:normal?>
+   <?templateDesigner FormTargetVersion 33?>
+   <?templateDesigner Zoom 146?>
+   <?templateDesigner SaveTaggedPDF 0?>
+   <?templateDesigner SavePDFWithEmbeddedFonts 0?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?></template>
+<config xmlns="http://www.xfa.org/schema/xci/3.0/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo>
+            <embed>0</embed>
+         </fontInfo>
+         <tagged>0</tagged>
+         <version>1.7</version>
+         <adobeExtensionLevel>8</adobeExtensionLevel>
+      </pdf>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+   <psMap>
+      <font typeface="Proxima Nova Lt" psName="ProximaNova-Light" weight="normal" posture="normal"/>
+      <font typeface="Proxima Nova Rg" psName="ProximaNova-Regular" weight="normal" posture="normal"/>
+      <font typeface="Proxima Nova Th" psName="ProximaNova-Extrabld" weight="bold" posture="normal"/>
+      <font typeface="Proxima Nova Rg" psName="ProximaNova-Bold" weight="bold" posture="normal"/>
+      <font typeface="Proxima Nova Lt" psName="ProximaNova-Semibold" weight="bold" posture="normal"/>
+      <font typeface="Shruti" psName="Shruti" weight="normal" posture="normal"/>
+      <font typeface="Segoe UI" psName="SegoeUI" weight="normal" posture="normal"/>
+   </psMap>
+</config>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale name="en_AU" desc="English (Australia)">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, D MMMM YYYY</datePattern>
+         <datePattern name="long">D MMMM YYYY</datePattern>
+         <datePattern name="med">DD/MM/YYYY</datePattern>
+         <datePattern name="short">D/MM/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$z,zz9.99</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">$</currencySymbol>
+         <currencySymbol name="isoname">AUD</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+      </typefaces>
+   </locale>
+</localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.2-c001 63.139439, 2011/06/07-10:39:26        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:pdfuaid="http://www.aiim.org/pdfua/ns/id/" xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <xmp:MetadataDate>2022-11-30T00:03:19Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Designer 6.5</xmp:CreatorTool>
+         <pdf:Producer>Designer 6.5</pdf:Producer>
+         <xmpMM:DocumentID>uuid:59131c05-716f-4fe3-ac23-357c7053679b</xmpMM:DocumentID>
+         <pdfuaid:part>1</pdfuaid:part>
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>11.0.1.20130826.2.901444.899636</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta></xdp:xdp>

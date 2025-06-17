@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xfa generator="AdobeLiveCycleDesigner_V11.0.0.20130303.1.892433" APIVersion="3.6.13061.0"?>
+<xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2015-06-18T02:20:02Z" uuid="04ac75da-0a12-4f8f-8c59-132b58593851">
+<template xmlns="http://www.xfa.org/schema/xfa-template/2.8/">
+   <?formServer defaultPDFRenderFormat acrobat9.0dynamic?>
+   <?formServer allowRenderCaching 0?>
+   <?formServer formModel both?>
+   <subform name="WHICSLetter" layout="tb" locale="en_AU" restoreState="auto">
+      <pageSet>
+         <pageArea name="Page1" id="Page1">
+            <contentArea x="0.25in" y="0.25in" w="197.3mm" h="284.3mm"/>
+            <medium stock="a4" short="210mm" long="297mm"/>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <subform w="197.3mm" name="page1" layout="tb">
+         <subform w="184.15mm" name="sPage1" layout="tb">
+            <bind match="none"/>
+            <field name="keyno_8118" w="62mm" h="9mm" presence="hidden">
+               <ui>
+                  <textEdit>
+                     <border>
+                        <?templateDesigner StyleID aped3?>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Myriad Pro"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="25mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text>Text Field</text>
+                  </value>
+               </caption>
+               <bind match="dataRef" ref="$.Documents.Document.Data.keyno_8118"/>
+            </field>
+            <subform w="128.65mm" name="sHead">
+               <bind match="none"/>
+               <subform name="RefDateAddressToMember" x="13.65mm" y="33.65mm">
+                  <bind match="none"/>
+                  <subform layout="tb" name="AddressBlockToMember" x="0mm" y="30mm">
+                     <keep intact="contentArea"/>
+                     <margin bottomInset="4.28mm" leftInset="5mm"/>
+                     <bind match="none"/>
+                     <field h="4.93mm" name="addr_name" w="100mm">
+                        <font typeface="Arial"/>
+                        <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                        <para spaceBelow="0pt"/>
+                        <ui>
+                           <textEdit>
+                              <border presence="hidden">
+                                 <?templateDesigner StyleID aped0?></border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <bind ref="$.Documents.Document.Data.addr_name" match="dataRef"/>
+                     </field>
+                     <field h="4.93mm" name="addr_1" w="100mm">
+                        <font typeface="Arial"/>
+                        <margin bottomInset="0mm" leftInset="0mm" rightInset="1mm" topInset="0mm"/>
+                        <para spaceBelow="0pt"/>
+                        <ui>
+                           <textEdit>
+                              <border presence="hidden">
+                                 <?templateDesigner StyleID aped0?></border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <bind ref="$.Documents.Document.Data.addr_1" match="dataRef"/>
+                     </field>
+                     <field h="4.93mm" name="addr_2" w="100mm">
+                        <font typeface="Arial"/>
+                        <margin bottomInset="0mm" leftInset="0mm" rightInset="1mm" topInset="0mm"/>
+                        <para spaceBelow="0pt"/>
+                        <ui>
+                           <textEdit>
+                              <border presence="hidden">
+                                 <?templateDesigner StyleID aped0?></border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <bind ref="$.Documents.Document.Data.addr_2" match="dataRef"/>
+                     </field>
+                     <field h="4.93mm" name="addr_3" w="100mm">
+                        <font typeface="Arial"/>
+                        <margin bottomInset="0mm" leftInset="0mm" rightInset="1mm" topInset="0mm"/>
+                        <para spaceBelow="0pt"/>
+                        <ui>
+                           <textEdit>
+                              <border presence="hidden">
+                                 <?templateDesigner StyleID aped0?></border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <bind ref="$.Documents.Document.Data.addr_3" match="dataRef"/>
+                     </field>
+                     <?templateDesigner expand 0?></subform>
+                  <field h="7mm" name="reference" w="105mm" y="6.381mm">
+                     <caption reserve="7.462mm">
+                        <para vAlign="middle"/>
+                        <value>
+                           <text>Ref:</text>
+                        </value>
+                     </caption>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="0.5mm" leftInset="0mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para vAlign="middle"/>
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <bind ref="$.Documents.Document.Data.refer_no" match="dataRef"/>
+                  </field>
+                  <field h="7mm" name="date" w="62mm" y="14.584mm">
+                     <font typeface="Arial"/>
+                     <margin bottomInset="0.5mm" leftInset="0mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para vAlign="middle"/>
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <bind ref="$.Documents.Document.Data.letter_dte" match="dataRef"/>
+                  </field>
+                  <margin leftInset="0mm"/>
+                  <?templateDesigner expand 0?></subform>
+               <?templateDesigner expand 1?></subform>
+            <subform w="185mm" name="sLetterContent" layout="tb">
+               <bind match="none"/>
+               <field name="salute" w="62mm" h="9mm" id="floatingField025630" presence="hidden" access="readOnly">
+                  <ui>
+                     <textEdit>
+                        <border>
+                           <?templateDesigner StyleID aped3?>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Myriad Pro"/>
+                  <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.Documents.Document.Data.salute"/>
+                  <value>
+                     <text>Dear</text>
+                  </value>
+                  <event activity="initialize" name="event__initialize">
+                     <script contentType="application/x-javascript">
+//customUtils.formatSalute(this);
+
+</script>
+                  </event>
+               </field>
+               <field name="keyno_021" w="62mm" h="9mm" id="floatingField000041" presence="hidden" access="readOnly">
+                  <ui>
+                     <textEdit>
+                        <border>
+                           <?templateDesigner StyleID aped3?>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Myriad Pro"/>
+                  <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.Documents.Document.Data.keyno_021"/>
+               </field>
+               <field name="keyno_023" w="62mm" h="9mm" id="floatingField018467" presence="hidden" access="readOnly">
+                  <ui>
+                     <textEdit>
+                        <border>
+                           <?templateDesigner StyleID aped3?>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Myriad Pro"/>
+                  <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.Documents.Document.Data.keyno_023"/>
+               </field>
+               <field name="keyno_8001" w="62mm" h="9mm" id="floatingField006334" presence="hidden" access="readOnly">
+                  <ui>
+                     <textEdit>
+                        <border>
+                           <?templateDesigner StyleID aped3?>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Myriad Pro"/>
+                  <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.Documents.Document.Data.keyno_8001"/>
+               </field>
+               <field name="keyno_8002" w="62mm" h="9mm" id="floatingField026500" presence="hidden" access="readOnly">
+                  <ui>
+                     <textEdit>
+                        <border>
+                           <?templateDesigner StyleID aped3?>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Myriad Pro"/>
+                  <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.Documents.Document.Data.keyno_8002"/>
+                  <calculate>
+                     <script contentType="application/x-javascript">
+//utils.setVisible();
+</script>
+                  </calculate>
+               </field>
+               <draw w="170mm" name="paragraph" minH="7mm">
+                  <font typeface="Myriad Pro" baselineShift="0pt"/>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-align:justify;font-family:Arial;text-decoration:none;letter-spacing:0in"><span xfa:embedType="uri" xfa:embedMode="raw" xfa:embed="#floatingField025630"/></p><p style="text-align:justify;font-family:Arial;font-size:11pt;font-weight:bold;text-decoration:none;letter-spacing:0in">Your membership is now suspended</p><p style="font-family:Arial;text-decoration:none;letter-spacing:0in">Thanks for contacting us about suspending your membership. We've now set this up and here are the details:</p><p style="font-family:Arial;text-decoration:none;letter-spacing:0in">Membership Number:<span style="xfa-spacerun:yes"> </span><span xfa:embedType="uri" xfa:embedMode="raw" xfa:embed="#floatingField000041"/></p><p style="font-family:Arial;text-decoration:none;letter-spacing:0in">Member Name:<span style="xfa-spacerun:yes"> </span><span xfa:embedType="uri" xfa:embedMode="raw" xfa:embed="#floatingField018467"/></p><p style="font-family:Arial;text-decoration:none;letter-spacing:0in">Suspension starts on:<span style="xfa-spacerun:yes"> </span><span xfa:embedType="uri" xfa:embedMode="raw" xfa:embed="#floatingField006334"/></p><p style="font-family:Arial;text-decoration:none;letter-spacing:0in">Suspension ends on:<span style="xfa-spacerun:yes"> </span><span xfa:embedType="uri" xfa:embedMode="raw" xfa:embed="#floatingField026500"/></p><p style="font-family:Arial;text-decoration:none;letter-spacing:0in">We'll also send you a letter when your cover resumes to remind you to call us so we can get your premium payments up and running again.</p></body>
+                     </exData>
+                  </value>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <margin leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm" bottomInset="0.5mm"/>
+                  <para spaceAbove="2pt" spaceBelow="6pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+                  <keep intact="none"/>
+               </draw>
+               <margin topInset="0mm" leftInset="13.75mm"/>
+               <?templateDesigner expand 0?></subform>
+            <subform name="Subform_green" w="185mm" layout="tb">
+               <bind match="none"/>
+               <field name="keyno_8120" w="62mm" h="9mm" id="floatingField024464" presence="hidden" access="readOnly">
+                  <ui>
+                     <textEdit>
+                        <border>
+                           <?templateDesigner StyleID aped3?>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Myriad Pro"/>
+                  <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.Documents.Document.Data.keyno_8120"/>
+               </field>
+               <field name="keyno_8126" w="62mm" h="9mm" id="floatingField005705" presence="hidden" access="readOnly">
+                  <ui>
+                     <textEdit>
+                        <border>
+                           <?templateDesigner StyleID aped3?>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Myriad Pro"/>
+                  <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.Documents.Document.Data.keyno_8126"/>
+               </field>
+               <draw name="Text1" w="170.685mm" minH="18.932mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="margin-top:2pt;margin-bottom:6pt;font-family:Arial;letter-spacing:0in">We've also processed a refund of premiums you've paid on your cover after your suspension start date. We'll try and refund you in the way you originally paid us so you'll receive a<span style="xfa-spacerun:yes"> </span><span xfa:embedType="uri" xfa:embedMode="raw" xfa:embed="#floatingField024464"/>.</p><p style="margin-top:2pt;margin-bottom:6pt;font-family:Arial;letter-spacing:0in">Your total refund amount will be<span style="xfa-spacerun:yes"> </span><span xfa:embedType="uri" xfa:embedMode="raw" xfa:embed="#floatingField005705"/>.</p></body>
+                     </exData>
+                  </value>
+                  <font typeface="Shruti" baselineShift="0pt"/>
+                  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                  <para spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+               </draw>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript">if(!keyno_8120.isNull &amp;&amp; (keyno_8118.rawValue == "31" || keyno_8118.rawValue == "32")) {
+	this.presence = "visible"; 
+} else {
+	this.presence = "hidden"; 
+}
+</script>
+               </event>
+               <margin leftInset="13.75mm" topInset="0mm"/>
+               <?templateDesigner expand 0?></subform>
+            <subform name="Subform_blue" w="185mm" layout="tb">
+               <bind match="none"/>
+               <draw name="Text3" w="6.742125in" h="0.733806in">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="font-weight:bold;letter-spacing:0in">Important things to know about your suspension</p><p style="letter-spacing:0in">You'll need to call us 30 days before you or anyone else on the membership returns back to work so you'll be able to start using your cover again (some memberships can be cancelled if we aren't contacted).</p></body>
+                     </exData>
+                  </value>
+                  <font typeface="Arial" baselineShift="0pt"/>
+                  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                  <para spaceAbove="2pt" spaceBelow="6pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+               </draw>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript">
+if(keyno_8118.rawValue == "31") {
+	this.presence = "visible"; 
+} else {
+	this.presence = "hidden"; 
+}
+</script>
+               </event>
+               <margin leftInset="13.75mm" topInset="0mm"/>
+               <keep intact="contentArea"/>
+               <?templateDesigner expand 0?></subform>
+            <subform name="sFooter" w="185mm" layout="tb">
+               <bind match="none"/>
+               <draw name="Text3" w="6.742125in" h="0.789361in">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-decoration:none;letter-spacing:0in">You can't make any claims whilst your membership is suspended. The maximum time you can be suspended is 2 years, if you want to extend it please contact us to discuss. You might also need to pay up to 1.5% Medicare Levy Surcharge so please contact the ATO for more information.<span style="color:#ff0000"><span style="xfa-spacerun:yes"> </span></span>The balance of any waiting periods you haven't served will still need to be served when your cover restarts.</p></body>
+                     </exData>
+                  </value>
+                  <font typeface="Arial" baselineShift="0pt"/>
+                  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                  <para spaceAbove="2pt" spaceBelow="6pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+               </draw>
+               <keep intact="contentArea"/>
+               <margin leftInset="13.75mm" topInset="0mm"/>
+               <?templateDesigner expand 0?></subform>
+            <subform layout="tb" name="HSSSignatureBlock">
+               <keep intact="contentArea" next="contentArea"/>
+               <bind match="none"/>
+               <draw name="Text4" w="6.708667in" h="18.639mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="font-weight:bold;text-decoration:none;letter-spacing:0in">Any questions?</p><p style="text-align:left;text-decoration:none;letter-spacing:0in">We want to help you make the most of your cover, so please contact us if you want any help or visit ahm.com.au</p></body>
+                     </exData>
+                  </value>
+                  <font typeface="Arial" baselineShift="0pt"/>
+                  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+                  <para hAlign="justify" spaceAbove="2pt" spaceBelow="6pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+               </draw>
+               <margin leftInset="13.75mm"/>
+               <?templateDesigner expand 0?>
+               <subform usehref="..\..\_CommonFragments\HSSSignatureBlock.xdp#som($template.form1.HSSSignatureBlock)">
+                  <?templateDesigner expand 1?>
+               </subform>
+            </subform>
+            <subform w="77mm" layout="tb" name="sAttachment">
+               <bind match="none"/>
+               <margin topInset="0mm" leftInset="13.75mm"/>
+               <?templateDesigner expand 1?></subform>
+            <?templateDesigner expand 1?></subform>
+         <bind match="none"/>
+         <?templateDesigner expand 1?></subform>
+      <proto>
+         <variables>
+            <script usehref="..\..\..\AHM\trunk\Active\_CommonFragments\customUtils.xdp#som($template.form1.#subform.#variables.customUtils)"/>
+            <?templateDesigner expand 1?></variables>
+         <?templateDesigner expand 1?></proto>
+      <desc>
+         <text name="version">9.0.0.0.20091029.1.612548.606130</text>
+      </desc>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Arial" 0 0 ISO-8859-1 4 252 63 00030008000A000B000C000F0010001100120013001400150016001700180019001B001C001D002400270028002B002C002D002F0030003100320035003600370039003A003C00420043004400450046004700480049004A004B004C004E004F0050005100520053005400550056005700580059005A005B005C005E0060 %'(),-./012345689:ADEHIJLMNORSTVWY_`abcdefghiklmnopqrstuvwxy{}?>
+      <?renderCache.subset "Arial" 1 0 ISO-8859-1 4 120 30 000300220024002C00330037003C004400450046004700480049004A004B004C004E004F0050005100520053005400550056005700580059005A005C ?AIPTYabcdefghiklmnopqrstuvwy?>
+      <?renderCache.subset "Myriad Pro" 0 0 ISO-8859-1 4 48 12 0001002500270035004200450046004A004D005300550059 DFTadeilrtx?></subform>
+   <?templateDesigner DefaultPreviewDynamic 1?>
+   <?templateDesigner SavePDFWithLog 0?>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-template/2.8/?>
+   <?templateDesigner Grid show:0, snap:0, units:17, color:ff8080, origin:(0,0), interval:(12500,12500), objsnap:0, guidesnap:0, pagecentersnap:-1313315713?>
+   <?templateDesigner DefaultLanguage JavaScript?>
+   <?templateDesigner DefaultRunAt client?>
+   <?acrobat JavaScript strictScoping?>
+   <?PDFPrintOptions embedViewerPrefs 0?>
+   <?PDFPrintOptions embedPrintOnFormOpen 0?>
+   <?PDFPrintOptions scalingPrefs 0?>
+   <?PDFPrintOptions enforceScalingPrefs 0?>
+   <?PDFPrintOptions paperSource 0?>
+   <?PDFPrintOptions duplexMode 0?>
+   <?templateDesigner DefaultPreviewType interactive?>
+   <?templateDesigner DefaultPreviewPagination simplex?>
+   <?templateDesigner XDPPreviewFormat 20?>
+   <?templateDesigner DefaultPreviewDataFileName ..\..\TestFiles\SUSPND_test.xml?>
+   <?templateDesigner SaveTaggedPDF 0?>
+   <?templateDesigner SavePDFWithEmbeddedFonts 0?>
+   <?templateDesigner FormTargetVersion 28?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?>
+   <?templateDesigner Zoom 111?></template>
+<config xmlns="http://www.xfa.org/schema/xci/2.8/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo>
+            <embed>0</embed>
+         </fontInfo>
+         <tagged>0</tagged>
+         <version>1.7</version>
+         <adobeExtensionLevel>3</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data>
+            <xsl>
+               <uri/>
+            </xsl>
+            <outputXSL>
+               <uri/>
+            </outputXSL>
+         </data>
+      </common>
+      <cache>
+         <macroCache/>
+      </cache>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+   <psMap>
+      <font typeface="Shruti" psName="Shruti-Bold" weight="bold" posture="normal"/>
+      <font typeface="Shruti" psName="Shruti" weight="normal" posture="normal"/>
+   </psMap>
+</config>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale name="en_AU" desc="English (Australia)">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, D MMMM YYYY</datePattern>
+         <datePattern name="long">D MMMM YYYY</datePattern>
+         <datePattern name="med">DD/MM/YYYY</datePattern>
+         <datePattern name="short">D/MM/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$z,zz9.99</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">$</currencySymbol>
+         <currencySymbol name="isoname">AUD</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+      </typefaces>
+   </locale>
+</localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 4.2.1-c041 52.337767, 2008/04/13-15:41:00        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" rdf:about="">
+         <xmp:MetadataDate>2015-06-18T02:20:02Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer 11.0</xmp:CreatorTool>
+      </rdf:Description>
+      <rdf:Description xmlns:pdf="http://ns.adobe.com/pdf/1.3/" rdf:about="">
+         <pdf:Producer>Adobe LiveCycle Designer 11.0</pdf:Producer>
+      </rdf:Description>
+      <rdf:Description xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" rdf:about="">
+         <xmpMM:DocumentID>uuid:04ac75da-0a12-4f8f-8c59-132b58593851</xmpMM:DocumentID>
+      </rdf:Description>
+      <rdf:Description xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>9.0.0.0.20091029.1.612548.606130</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+<connectionSet xmlns="http://www.xfa.org/schema/xfa-connection-set/2.8/">
+   <xmlConnection name="DataConnection" dataDescription="WHICSLetter">
+      <uri>..\..\..\..\SUSPND.txt.000000.3b2e293452874f3da4096ddb9750b7db.xml</uri>
+   </xmlConnection>
+</connectionSet>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+   <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="WHICSLetter">
+      <WHICSLetter>
+         <MetaData>
+            <Fund/>
+            <FundName/>
+            <FileName/>
+            <FileDate/>
+            <ConvertDate/>
+         </MetaData>
+         <Documents>
+            <Document>
+               <Data>
+                  <addr_1/>
+                  <addr_2/>
+                  <addr_3/>
+                  <addr_name/>
+                  <keyno_021/>
+                  <keyno_8001/>
+                  <keyno_8002/>
+                  <keyno_8118/>
+                  <keyno_8119/>
+                  <keyno_8120/>
+                  <keyno_8121/>
+                  <letter_dte/>
+                  <refer_no/>
+                  <salute/>
+               </Data>
+               <MetaData>
+                  <Form/>
+                  <trayin/>
+                  <trayout/>
+               </MetaData>
+            </Document>
+         </Documents>
+         <LetterSettings>
+            <printer_id/>
+         </LetterSettings>
+      </WHICSLetter>
+   </dd:dataDescription>
+</xfa:datasets></xdp:xdp>

@@ -1,0 +1,20 @@
+{
+  "configurations": [
+    {
+      "name": "C#: Launch Startup Project",
+      "type": "dotnet",
+      "request": "launch"
+    },
+    {
+      "name": "Create Work Request Winform App",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/CreateWorkRequestApp/bin/Debug/net8.0-windows/CreateWorkRequestApp.exe",
+      "cwd": "${workspaceFolder}",
+      "project": "${workspaceFolder}/CreateWorkRequestApp/CreateWorkRequestApp.csproj",
+      "console": "internalConsole",
+      "stopAtEntry": false
+    }
+  ]
+}

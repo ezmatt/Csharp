@@ -1,0 +1,2 @@
+triggerOutputs()?['body/value']?['Title']
+triggerOutputs()?['body/value']?['Description0']

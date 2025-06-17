@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xfa generator="AdobeLiveCycleDesignerES_V9.0.0.1.20100329.2.659576" APIVersion="3.1.9277.0"?>
+<xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2012-06-28T00:33:44Z" uuid="5404359d-2320-461f-b33f-1f795e2b5d5e">
+<template xmlns="http://www.xfa.org/schema/xfa-template/2.8/">
+   <!-- commandline= -->
+   <?formServer defaultPDFRenderFormat acrobat9.0dynamic?>
+   <?formServer allowRenderCaching 0?>
+   <?formServer formModel both?>
+   <subform name="F" layout="tb" locale="en_AU" restoreState="auto">
+      <pageSet>
+         <pageArea id="Page_1" name="Page_1">
+            <medium short="21.0141cm" long="29.7043cm" imagingBBox="0cm,0cm,21.0141cm,29.7043cm" stock="a4"/>
+            <contentArea id="CA_Page_1" w="21.0141cm" h="29.7043cm" x="0cm" y="0cm"/>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <subform name="Page_1" w=" 8.27in" h="11.69in">
+         <draw name="R1" y="217.101mm" x="42.917mm" w="15.2659cm" h="0.7684cm">
+            <value>
+               <rectangle>
+                  <edge thickness="0.01cm" cap="butt"/>
+                  <fill>
+                     <stipple/>
+                  </fill>
+               </rectangle>
+            </value>
+         </draw>
+         <draw name="R2" y="194.032mm" x="15.683mm" w="17.9893cm" h="0.8004cm">
+            <value>
+               <rectangle>
+                  <edge thickness="0.01cm" cap="butt"/>
+                  <fill>
+                     <stipple/>
+                  </fill>
+               </rectangle>
+            </value>
+         </draw>
+         <draw name="R3" y="118.702mm" x="42.116mm" w="15.2961cm" h="1.2805cm">
+            <value>
+               <rectangle>
+                  <edge thickness="0.01cm" cap="butt"/>
+                  <fill>
+                     <stipple/>
+                  </fill>
+               </rectangle>
+            </value>
+         </draw>
+         <draw name="R4" y="216.941mm" x="15.607mm" w="2.731cm" h="0.8004cm">
+            <value>
+               <rectangle>
+                  <edge thickness="0.01cm" cap="butt"/>
+                  <fill>
+                     <color value="0,0,0"/>
+                  </fill>
+               </rectangle>
+            </value>
+         </draw>
+         <draw name="R5" y="208.437mm" x="160.263mm" w="3.5015cm" h="0.7194cm">
+            <value>
+               <rectangle>
+                  <edge thickness="0.0254cm" cap="butt"/>
+               </rectangle>
+            </value>
+         </draw>
+         <draw name="R6" y="87.557mm" x="162.163mm" w="3.2776cm" h="0.6002cm">
+            <value>
+               <rectangle>
+                  <edge thickness="0.01cm" cap="butt"/>
+                  <corner radius="5.08mm"/>
+               </rectangle>
+            </value>
+         </draw>
+         <draw name="R7" y="118.702mm" x="15.205mm" w="2.6911cm" h="1.2905cm">
+            <value>
+               <rectangle>
+                  <edge thickness="0.01cm" cap="butt"/>
+                  <fill>
+                     <color value="0,0,0"/>
+                  </fill>
+               </rectangle>
+            </value>
+         </draw>
+         <draw name="R8" y="133.608mm" x="162.384mm" w="2.541cm" h="0.698cm">
+            <value>
+               <rectangle>
+                  <edge thickness="0.01cm" cap="butt"/>
+               </rectangle>
+            </value>
+         </draw>
+         <draw name="R9" y="133.608mm" x="187.794mm" w="0.7623cm" h="0.698cm">
+            <value>
+               <rectangle>
+                  <edge thickness="0.01cm" cap="butt"/>
+                  <fill>
+                     <color value="0,0,0"/>
+                  </fill>
+               </rectangle>
+            </value>
+         </draw>
+         <draw name="R10" y="208.581mm" x="24.61mm" w="2.651cm" h="0.6906cm">
+            <value>
+               <rectangle>
+                  <edge thickness="0.0254cm" cap="butt"/>
+               </rectangle>
+            </value>
+         </draw>
+         <draw name="R11" y="208.578mm" x="60.873mm" w="2.651cm" h="0.6912cm">
+            <value>
+               <rectangle>
+                  <edge thickness="0.0254cm" cap="butt"/>
+               </rectangle>
+            </value>
+         </draw>
+         <draw name="R12" y="208.437mm" x="88.333mm" w="3.5015cm" h="0.7194cm">
+            <value>
+               <rectangle>
+                  <edge thickness="0.0254cm" cap="butt"/>
+               </rectangle>
+            </value>
+         </draw>
+         <draw name="R13" y="208.437mm" x="124.298mm" w="3.5015cm" h="0.7194cm">
+            <value>
+               <rectangle>
+                  <edge thickness="0.0254cm" cap="butt"/>
+               </rectangle>
+            </value>
+         </draw>
+         <draw name="R14" y="243.251mm" x="162.962mm" w="0.7521cm" h="0.6137cm">
+            <value>
+               <rectangle>
+                  <edge thickness="0.01cm" cap="butt"/>
+                  <fill>
+                     <color value="0,0,0"/>
+                  </fill>
+               </rectangle>
+            </value>
+         </draw>
+         <draw name="R15" y="243.251mm" x="170.552mm" w="2.5303cm" h="0.6137cm">
+            <value>
+               <rectangle>
+                  <edge thickness="0.01cm" cap="butt"/>
+               </rectangle>
+            </value>
+         </draw>
+         <draw name="R16" y="252.855mm" x="163.12mm" w="3.2901cm" h="0.5796cm">
+            <value>
+               <rectangle>
+                  <edge thickness="0.0254cm" cap="butt"/>
+               </rectangle>
+            </value>
+         </draw>
+         <draw name="R17" y="208.524mm" x="52.07mm" w="0.8502cm" h="0.7021cm">
+            <value>
+               <rectangle>
+                  <edge thickness="0.01cm" cap="butt"/>
+                  <fill>
+                     <color value="0,0,0"/>
+                  </fill>
+               </rectangle>
+            </value>
+         </draw>
+         <draw name="R18" y="208.582mm" x="15.907mm" w="0.8502cm" h="0.6904cm">
+            <value>
+               <rectangle>
+                  <edge thickness="0.01cm" cap="butt"/>
+                  <fill>
+                     <color value="0,0,0"/>
+                  </fill>
+               </rectangle>
+            </value>
+         </draw>
+         <draw name="L1" y="166.621mm" x="15.306mm" w="17.977cm" h="0cm">
+            <value>
+               <line>
+                  <edge thickness="0.0254cm" cap="butt"/>
+               </line>
+            </value>
+         </draw>
+         <draw name="L2" y="182.727mm" x="15.306mm" w="17.977cm" h="0cm">
+            <value>
+               <line>
+                  <edge thickness="0.0254cm" cap="butt"/>
+               </line>
+            </value>
+         </draw>
+         <draw name="L3" y="166.721mm" x="15.306mm" w="0cm" h="2.551cm">
+            <value>
+               <line slope="/">
+                  <edge thickness="0.0254cm" cap="butt"/>
+               </line>
+            </value>
+         </draw>
+         <draw name="L4" y="166.721mm" x="60.224mm" w="0cm" h="2.551cm">
+            <value>
+               <line slope="/">
+                  <edge thickness="0.0254cm" cap="butt"/>
+               </line>
+            </value>
+         </draw>
+         <draw name="L5" y="192.231mm" x="15.306mm" w="17.977cm" h="0cm">
+            <value>
+               <line>
+                  <edge thickness="0.0254cm" cap="butt"/>
+               </line>
+            </value>
+         </draw>
+         <draw name="L6" y="166.721mm" x="105.141mm" w="0cm" h="2.551cm">
+            <value>
+               <line slope="/">
+                  <edge thickness="0.0254cm" cap="butt"/>
+               </line>
+            </value>
+         </draw>
+         <draw name="L7" y="166.721mm" x="150.059mm" w="0cm" h="2.551cm">
+            <value>
+               <line slope="/">
+                  <edge thickness="0.0254cm" cap="butt"/>
+               </line>
+            </value>
+         </draw>
+         <draw name="L8" y="166.721mm" x="194.977mm" w="0cm" h="2.551cm">
+            <value>
+               <line slope="/">
+                  <edge thickness="0.0254cm" cap="butt"/>
+               </line>
+            </value>
+         </draw>
+         <draw name="L9" y="260.058mm" x="15.862mm" w="17.9639cm" h="0cm">
+            <value>
+               <line>
+                  <edge thickness="0.0254cm" cap="butt"/>
+               </line>
+            </value>
+         </draw>
+         <draw name="T1" y="2.0708cm" x="1.5706cm" w="8.5133cm" h="1.5006cm">
+            <value>
+               <text>Private Health Insurance Statement 1 July 2006 to 30 June 2007</text>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font weight="bold" size="14.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para lineHeight="13.994pt"/>
+            <?renderCache.bounds 241322 42537 0 0 0 0 0 0?>
+            <?renderCache.textRun 35 Private Health Insurance Statement  0 0 11054 0 0 0 "Arial" 1 0 14000 ISO-8859-1?>
+            <?renderCache.textRun 27 1 July 2006 to 30 June 2007 0 0 25048 0 0 0 "Arial" 1 0 14000 ISO-8859-1?></draw>
+         <draw name="T2" y="143.112mm" x="15.606mm" w="17.977cm" h="2.3509cm">
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="tab-interval:1.271cm">If you received a cash or cheque payment from Medicare for health insurance premiums paid during the year, the tax offset you <span style="xfa-spacerun:yes"> </span><span style="font-weight:bold">may</span>  be eligible to claim at item T5 (item 23 or retirees or item 38 for Short tax return) on your tax return is the amount shown at <span style="font-weight:bold">G </span>less the cash or cheque payment from Medicare. If the amount at <span style="font-weight:bold">G </span>is ‘0’ you have already received your full entitlement.</p><p style="tab-interval:1.271cm">The information used to calculate your maximum claimable rebate amount is listed below:</p></body>
+               </exData>
+            </value>
+            <ui>
+               <textEdit>
+                  <extras>
+                     <float name="LineSpacingPoints">12</float>
+                  </extras>
+               </textEdit>
+            </ui>
+            <font size="9.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para hAlign="justify" lineHeight="12pt" spaceAbove="2pt" spaceBelow="6pt"/>
+         </draw>
+         <draw name="T3" y="88.385mm" x="15.307mm" w="10.7241cm" h="27.516mm">
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="tab-interval:1.271cm">The figures on this statement are projected to 30 June 2007. If you changed the amount of premium you paid, or you changed your type of cover since the '<span style="xfa-spacerun:yes"> </span><span style="font-weight:bold">Statement Current At</span>' date or you made a payment after 30 June 2007 that was due on or before 30 June, this statement may not be correct - refer to Question T5 in the <span style="font-style:italic">Tax Pack 2007</span>, 23 in the <span style="font-style:italic">Retirees Tax Pack 2007</span>  or 38 in the <span style="font-style:italic">Short tax return instructions 2007</span>  to help you calculate your full entitlement.</p></body>
+               </exData>
+            </value>
+            <ui>
+               <textEdit>
+                  <extras>
+                     <float name="LineSpacingPoints">-154618.823</float>
+                  </extras>
+               </textEdit>
+            </ui>
+            <font size="9.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para hAlign="justify" lineHeight="9pt" spaceAbove="2pt" spaceBelow="6pt"/>
+         </draw>
+         <draw name="T4" y="203.735mm" x="15.606mm" w="17.977cm" h="0.4802cm">
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span> <span style="xfa-spacerun:yes">             </span>Health fund ID<span style="xfa-tab-count:1">         </span><span style="xfa-spacerun:yes">  </span>Membership Number<span style="xfa-spacerun:yes">                </span>Type of Cover<span style="xfa-tab-count:1">         </span><span style="xfa-spacerun:yes">          </span>Highest Level of Excess<span style="xfa-spacerun:yes">      </span>Highest Level of Rebate<span style="xfa-spacerun:yes"> </span></p></body>
+               </exData>
+            </value>
+            <ui>
+               <textEdit>
+                  <extras>
+                     <float name="LineSpacingPoints">-154618.823</float>
+                  </extras>
+               </textEdit>
+            </ui>
+            <font weight="bold" size="8.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para vAlign="middle" lineHeight="7.2pt"/>
+         </draw>
+         <draw name="T5" y="88.657mm" x="125.849mm" h="0.5505cm">
+            <value>
+               <text>Statement current at </text>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font weight="bold" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para lineHeight="12pt"/>
+         </draw>
+         <draw name="T6" y="122mm" x="19.079mm" w="1.9718cm" h="0.6209cm">
+            <value>
+               <text>T5/23/38</text>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font weight="bold" size="14.0pt" typeface="Arial">
+               <fill presence="hidden">
+                  <color value="255,255,255"/>
+               </fill>
+            </font>
+            <para vAlign="middle" hAlign="center" lineHeight="13.994pt"/>
+            <?renderCache.bounds 55894 17600 0 0 0 0 0 0?>
+            <?renderCache.textRun 8 T5/23/38 0 316 12857 255 255 255 "Arial" 1 0 14000 ISO-8859-1?></draw>
+         <draw name="T7" y="168.722mm" x="63.437mm" w="3.8903cm" h="1.0799cm">
+            <value>
+               <text>Total premiums received by
+the health fund from you
+or your employer</text>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font size="9.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para hAlign="center" lineHeight="9pt"/>
+            <?renderCache.bounds 110276 30611 0 0 0 0 0 0?>
+            <?renderCache.textRun 26 Total premiums received by 0 0 7106 0 0 0 "Arial" 0 0 9000 ISO-8859-1?>
+            <?renderCache.textRun 25 the health fund from you  0 6607 16106 0 0 0 "Arial" 0 0 9000 ISO-8859-1?>
+            <?renderCache.textRun 16 or your employer 0 21375 25106 0 0 0 "Arial" 0 0 9000 ISO-8859-1?></draw>
+         <draw name="T8" y="168.722mm" x="110.801mm" w="3.4202cm" h="1.0799cm">
+            <value>
+               <text>Premium reductions you
+have received from the
+Federal Government</text>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font size="9.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para hAlign="center" lineHeight="9pt"/>
+            <?renderCache.bounds 96951 30611 0 0 0 0 0 0?>
+            <?renderCache.textRun 22 Premium reductions you 0 0 7106 0 0 0 "Arial" 0 0 9000 ISO-8859-1?>
+            <?renderCache.textRun 23 have received from the  0 2702 16106 0 0 0 "Arial" 0 0 9000 ISO-8859-1?>
+            <?renderCache.textRun 18 Federal Government 0 7206 25106 0 0 0 "Arial" 0 0 9000 ISO-8859-1?></draw>
+         <draw name="T9" y="171.898mm" x="24.472mm" w="2.6249cm" h="0.4447cm">
+            <value>
+               <text>Total cost of policy</text>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font size="9.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para hAlign="center" lineHeight="9pt"/>
+            <?renderCache.bounds 74407 12606 0 0 0 0 0 0?>
+            <?renderCache.textRun 20 Total cost of policy 0 0 7106 0 0 0 "Arial" 0 0 9000 ISO-8859-1?></draw>
+         <draw name="T10" y="185.678mm" x="27.211mm" h="0.5506cm">
+            <value>
+               <text>$</text>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font weight="bold" size="12.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para lineHeight="12pt"/>
+         </draw>
+         <draw name="T11" y="169.251mm" x="153.123mm" w="3.9767cm" h="0.974cm">
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.6.0.0">
+                        <p style="tab-interval:1.2705cm; color:rgb(0,0,0); vertical-align:top; text-align:center; margin-right:0in;margin-left:0cm;text-indent:-0cm">
+                           <span style="font-family: 'Arial';"/>
+                           <span style="font-size: 9.0pt;">Maximum rebate amount</span>
+                        </p>
+                        <p style="tab-interval:1.2705cm; color:rgb(0,0,0); vertical-align:top; text-align:center; margin-right:0in;margin-left:0cm;text-indent:-0cm">
+                           <span style="font-family: 'Arial'; font-size: 9.0pt;">(before premium reductions)</span>
+                        </p>
+                     </body>
+               </exData>
+            </value>
+            <ui>
+               <textEdit>
+                  <extras>
+                     <float name="LineSpacingPoints">-154618.823</float>
+                  </extras>
+               </textEdit>
+            </ui>
+            <font typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para hAlign="center" lineHeight="12pt"/>
+            <?renderCache.bounds 112725 27609 0 0 0 0 0 0?>
+            <?renderCache.textRun 1   0 5203 7896 0 0 0 "Arial" 0 0 10000 ISO-8859-1?>
+            <?renderCache.textRun 21 Maximum rebate amount 0 7981 7896 0 0 0 "Arial" 0 0 9000 ISO-8859-1?>
+            <?renderCache.textRun 2    0 107522 7896 0 0 0 "Arial" 0 0 10000 ISO-8859-1?>
+            <?renderCache.textRun 27 (before premium reductions) 0 0 19896 0 0 0 "Arial" 0 0 9000 ISO-8859-1?></draw>
+         <draw name="T12" y="135.183mm" x="190.234mm" w="0.4091cm" h="0.6209cm">
+            <value>
+               <text>G</text>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font weight="bold" size="14.0pt" typeface="Arial">
+               <fill presence="hidden">
+                  <color value="255,255,255"/>
+               </fill>
+            </font>
+            <para hAlign="center" lineHeight="13.994pt"/>
+            <?renderCache.bounds 11597 17600 0 0 0 0 0 0?>
+            <?renderCache.textRun 1 G 0 354 11054 255 255 255 "Arial" 1 0 14000 ISO-8859-1?></draw>
+         <draw name="T13" y="135.248mm" x="25.654mm" w="5.418167in" h="0.5505cm">
+            <value>
+               <text>Maximum claimable rebate on private health insurance (after premium reductions)</text>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font weight="bold" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para hAlign="right" lineHeight="12pt"/>
+            <?renderCache.bounds 390108 15605 0 0 0 0 0 0?>
+            <?renderCache.textRun 79 Maximum claimable rebate on private health insurance (after premium reductions) 0 1 7896 0 0 0 "Arial" 1 0 10000 ISO-8859-1?></draw>
+         <draw name="T14" y="196.134mm" x="19.308mm" h="0.6209cm">
+            <value>
+               <text>Private Health Insurance policy details</text>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font weight="bold" size="14.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para lineHeight="13.994pt"/>
+         </draw>
+         <draw name="T15" y="208.929mm" x="17.889mm" w="0.3811cm" h="0.6209cm">
+            <value>
+               <text>B</text>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font weight="bold" size="14.0pt" typeface="Arial">
+               <fill presence="hidden">
+                  <color value="255,255,255"/>
+               </fill>
+            </font>
+            <para vAlign="middle" hAlign="center" lineHeight="13.994pt"/>
+            <?renderCache.bounds 10803 17600 0 0 0 0 0 0?>
+            <?renderCache.textRun 1 B 0 346 12857 255 255 255 "Arial" 1 0 14000 ISO-8859-1?></draw>
+         <draw name="T16" y="208.929mm" x="55.252mm" w="0.3811cm" h="0.6209cm">
+            <value>
+               <text>C</text>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font weight="bold" size="14.0pt" typeface="Arial">
+               <fill presence="hidden">
+                  <color value="255,255,255"/>
+               </fill>
+            </font>
+            <para vAlign="middle" hAlign="center" lineHeight="13.994pt"/>
+            <?renderCache.bounds 10803 17600 0 0 0 0 0 0?>
+            <?renderCache.textRun 1 C 0 346 12857 255 255 255 "Arial" 1 0 14000 ISO-8859-1?></draw>
+         <draw name="T17" y="209.917mm" x="185.673mm" h="0.5506cm">
+            <value>
+               <text>%</text>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font weight="bold" size="12.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para lineHeight="12pt"/>
+         </draw>
+         <draw name="T18" y="218.814mm" x="46.218mm" h="0.5861cm">
+            <value>
+               <text>Medicare levy surcharge</text>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font weight="bold" size="13.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para lineHeight="13.008pt"/>
+         </draw>
+         <draw name="T19" y="280.515mm" x="16.18mm" w="179.298mm" h="8.018mm">
+            <value>
+               <text>ahm Health Insurance is a business of Medibank Private Ltd ABN 47 080 890 259. 'ahm Health Insurance' or 'ahm' are references to Medibank Private Ltd trading as ahm Health Insurance.</text>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font size="8pt" typeface="Arial" baselineShift="0pt">
+               <fill presence="hidden"/>
+            </font>
+            <para vAlign="middle" hAlign="center" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 508246 22728 0 0 0 0 0 0?>
+            <?renderCache.textRun 138 ahm Health Insurance is a business of Medibank Private Ltd ABN 47 080 890 259. 'ahm Health Insurance' or 'ahm' are references to Medibank  0 1594 8880 0 0 0 "Arial" 0 0 8000 ISO-8859-1?>
+            <?renderCache.textRun 44 Private Ltd trading as ahm Health Insurance. 0 174969 18480 0 0 0 "Arial" 0 0 8000 ISO-8859-1?></draw>
+         <draw name="T20" y="218.005mm" x="19.233mm" w="2.0811cm" h="0.6209cm">
+            <value>
+               <text>M2/27/45</text>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font weight="bold" size="14.0pt" typeface="Arial">
+               <fill presence="hidden">
+                  <color value="255,255,255"/>
+               </fill>
+            </font>
+            <para vAlign="middle" hAlign="center" lineHeight="13.994pt"/>
+            <?renderCache.bounds 58992 17600 0 0 0 0 0 0?>
+            <?renderCache.textRun 8 M2/27/45 0 310 12857 255 255 255 "Arial" 1 0 14000 ISO-8859-1?></draw>
+         <draw name="T21" y="226.095mm" x="15.906mm" w="17.9926cm" h="18.796mm">
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="tab-interval:1.271cm">If you and all of your dependants (including your spouse) did not have an appropriate level of private patient hospital cover for the full financial year (365 days) you may be liable for the Medicare levy surcharge. Refer to question M2 in <span style="xfa-spacerun:yes"> </span><span style="font-style:italic">TaxPack 2007</span>; question 27 in the <span style="font-style:italic">Retirees TaxPack 2007</span>  or question 45 in the <span style="font-style:italic">Short tax return instructions 2007.</span></p></body>
+               </exData>
+            </value>
+            <ui>
+               <textEdit>
+                  <extras>
+                     <float name="LineSpacingPoints">10.286</float>
+                  </extras>
+               </textEdit>
+            </ui>
+            <font typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para hAlign="justify" lineHeight="10.286pt" spaceAbove="2pt" spaceBelow="6pt"/>
+         </draw>
+         <draw name="T22" y="260.811mm" x="16.005mm" w="17.9639cm" h="0.761917in">
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in">If you have any questions about this statement contact ahm Health Insurance on <span style="font-weight:bold">134 246</span>.</p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in">The labels on this statement correspond to the labels on your tax return.</p><p style="tab-interval:1.271cm;text-decoration:none;letter-spacing:0in">If you have any questions about the Private Health Insurance rebate generally, contact the Tax Office on<span style="xfa-spacerun:yes"> </span><span style="font-weight:bold">13 28 61</span>.</p></body>
+               </exData>
+            </value>
+            <ui>
+               <textEdit>
+                  <extras>
+                     <float name="LineSpacingPoints">10.286</float>
+                  </extras>
+               </textEdit>
+            </ui>
+            <font typeface="Arial" baselineShift="0pt">
+               <fill presence="hidden"/>
+            </font>
+            <para vAlign="middle" hAlign="center" lineHeight="10.286pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+         </draw>
+         <draw name="T23" y="275.164mm" x="16.262mm" w="17.9639cm" h="0.4802cm">
+            <value>
+               <text>KEEP THIS STATEMENT TO HELP YOU COMPLETE YOUR 2007 TAX RETURN</text>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font weight="bold" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para vAlign="bottom" hAlign="center" lineHeight="12pt"/>
+            <?renderCache.bounds 509213 13612 0 0 0 0 0 0?>
+            <?renderCache.textRun 61 KEEP THIS STATEMENT TO HELP YOU COMPLETE YOUR 2007 TAX RETURN 0 69863 11508 0 0 0 "Arial" 1 0 10000 ISO-8859-1?></draw>
+         <draw name="T24" y="243.551mm" x="15.906mm" w="14.211cm" h="10.917mm">
+            <value>
+               <text>Maximum number of days this policy may provide an appropriate level of private patient hospital cover</text>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font weight="bold" size="9.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para lineHeight="9pt" spaceAbove="2pt" spaceBelow="6pt"/>
+            <?renderCache.bounds 402831 30946 0 0 0 0 0 0?>
+            <?renderCache.textRun 87 Maximum number of days this policy may provide an appropriate level of private patient  0 0 9106 0 0 0 "Arial" 1 0 9000 ISO-8859-1?>
+            <?renderCache.textRun 14 hospital cover 0 0 18106 0 0 0 "Arial" 1 0 9000 ISO-8859-1?></draw>
+         <draw name="T25" y="253.155mm" x="15.762mm" w="14.2456cm" h="7.348mm">
+            <value>
+               <text>Number of days covered by Ancillary (Extras) cover (for your information only) </text>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font size="9.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para vAlign="middle" lineHeight="9pt" spaceAbove="2pt" spaceBelow="6pt"/>
+            <?renderCache.bounds 403812 20829 0 0 0 0 0 0?>
+            <?renderCache.textRun 80 Number of days covered by Ancillary (Extras) cover (for your information only)  0 0 11020 0 0 0 "Arial" 0 0 9000 ISO-8859-1?></draw>
+         <draw name="T26" y="243.249mm" x="164.942mm" w="0.3811cm" h="0.6209cm">
+            <value>
+               <text>A</text>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font weight="bold" size="14.0pt" typeface="Arial">
+               <fill presence="hidden">
+                  <color value="255,255,255"/>
+               </fill>
+            </font>
+            <para vAlign="middle" hAlign="center" lineHeight="13.994pt"/>
+            <?renderCache.bounds 10803 17600 0 0 0 0 0 0?>
+            <?renderCache.textRun 1 A 0 346 12857 255 255 255 "Arial" 1 0 14000 ISO-8859-1?></draw>
+         <draw name="T27" y="185.678mm" x="72.728mm" h="0.5506cm">
+            <value>
+               <text>$</text>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font weight="bold" size="12.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para lineHeight="12pt"/>
+         </draw>
+         <draw name="T28" y="185.678mm" x="118.246mm" h="0.5506cm">
+            <value>
+               <text>$</text>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font weight="bold" size="12.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para lineHeight="12pt"/>
+         </draw>
+         <draw name="T29" y="185.678mm" x="162.964mm" h="0.5506cm">
+            <value>
+               <text>$</text>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font weight="bold" size="12.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para lineHeight="12pt"/>
+         </draw>
+         <draw name="T30" y="135.248mm" x="165.625mm" h="0.5506cm">
+            <value>
+               <text>$</text>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font weight="bold" size="12.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para lineHeight="12pt"/>
+         </draw>
+         <draw name="T31" y="35.862mm" x="157.397mm" w="26.275mm" h="4.253mm">
+            <value>
+               <text>ahm Health Insurance</text>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font weight="bold" size="7.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para vAlign="middle" lineHeight="7.2pt"/>
+            <?renderCache.bounds 74480 12056 0 0 0 0 0 0?>
+            <?renderCache.textRun 20 ahm Health Insurance 0 0 7955 0 0 0 "Arial" 1 0 7000 ISO-8859-1?></draw>
+         <draw name="T32" y="119.258mm" x="46.618mm" w="145.015mm" h="1.111111in">
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="tab-interval:1.271cm"><span style="xfa-spacerun:yes"> </span><span style="font-size:14pt">Federal Government 30% rebate on private health insurance</span></p><p style="tab-interval:1.271cm">and the higher rebates for older Australians</p><p style="tab-interval:1.271cm"> </p><p style="tab-interval:1.271cm"> </p></body>
+               </exData>
+            </value>
+            <ui>
+               <textEdit>
+                  <extras>
+                     <float name="LineSpacingPoints">-154618.823</float>
+                  </extras>
+               </textEdit>
+            </ui>
+            <font weight="bold" size="12.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para vAlign="middle" lineHeight="12pt" spaceAbove="2pt" spaceBelow="6pt"/>
+            <?renderCache.bounds 411066 80000 0 0 0 0 0 0?>
+            <?renderCache.textRun 1   0 0 13054 0 0 0 "Arial" 1 0 12000 ISO-8859-1?>
+            <?renderCache.textRun 57 Federal Government 30% rebate on private health insurance 0 3334 13054 0 0 0 "Arial" 1 0 14000 ISO-8859-1?>
+            <?renderCache.textRun 1   0 403243 13054 0 0 0 "Arial" 1 0 12000 ISO-8859-1?>
+            <?renderCache.textRun 45 and the higher rebates for older Australians  0 0 31475 0 0 0 "Arial" 1 0 12000 ISO-8859-1?>
+            <?renderCache.textRun 3    0 0 51475 0 0 0 "Arial" 1 0 12000 ISO-8859-1?>
+            <?renderCache.textRun 2   0 0 71475 0 0 0 "Arial" 1 0 12000 ISO-8859-1?></draw>
+         <draw name="T33" y="209.917mm" x="129.451mm" h="0.5506cm">
+            <value>
+               <text>$</text>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font weight="bold" size="12.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para lineHeight="12pt"/>
+         </draw>
+         <draw name="T34" y="4.5718cm" x="13.2752cm" w="5.9823cm" h="0.6403cm">
+            <value>
+               <text>Locked Bag 1006, Matraville NSW 2006</text>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font size="9.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para vAlign="middle" lineHeight="9pt"/>
+            <?renderCache.bounds 169577 18150 0 0 0 0 0 0?>
+            <?renderCache.textRun 36 Locked Bag 1006, Matraville NSW 2006 0 0 11681 0 0 0 "Arial" 0 0 9000 ISO-8859-1?></draw>
+         <traversal>
+            <traverse operation="first" ref="aname"/>
+         </traversal>
+         <field name="aname" y="5.4821cm" x="2.601cm" w="9.4212cm" h="0.4235cm">
+            <bind match="global"/>
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text maxChars="40"/>
+            </value>
+            <font weight="bold" size="12.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para lineHeight="12pt"/>
+         </field>
+         <field name="addr_1" y="5.9056cm" x="2.601cm" w="6.1238cm" h="0.4235cm">
+            <bind match="global"/>
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text maxChars="26"/>
+            </value>
+            <font weight="bold" size="12.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para lineHeight="12pt"/>
+         </field>
+         <field name="addr_2" y="6.3291cm" x="2.601cm" w="6.1238cm" h="0.4235cm">
+            <bind match="global"/>
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text maxChars="26"/>
+            </value>
+            <font weight="bold" size="12.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para lineHeight="12pt"/>
+         </field>
+         <field name="suburb" y="6.7526cm" x="2.601cm" w="6.1238cm" h="0.4235cm">
+            <bind match="global"/>
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text maxChars="26"/>
+            </value>
+            <font weight="bold" size="12.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para lineHeight="12pt"/>
+         </field>
+         <field name="rebate_g" y="135.248mm" x="169.826mm" w="1.6487cm" h="0.4235cm">
+            <bind match="global"/>
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text maxChars="7"/>
+            </value>
+            <font weight="bold" size="12.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para lineHeight="12pt"/>
+         </field>
+         <field name="tot_cost" y="185.678mm" x="30.312mm" w="1.6487cm" h="0.4235cm">
+            <bind match="global"/>
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text maxChars="7"/>
+            </value>
+            <font weight="bold" size="12.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para lineHeight="12pt"/>
+         </field>
+         <field name="tot_prem" y="185.678mm" x="75.83mm" w="1.6487cm" h="0.4235cm">
+            <bind match="global"/>
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text maxChars="7"/>
+            </value>
+            <font weight="bold" size="12.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para lineHeight="12pt"/>
+         </field>
+         <field name="prem_red" y="185.678mm" x="121.346mm" w="1.6487cm" h="0.4235cm">
+            <bind match="global"/>
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text maxChars="7"/>
+            </value>
+            <font weight="bold" size="12.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para lineHeight="12pt"/>
+         </field>
+         <field name="max_30pcent" y="185.678mm" x="166.065mm" w="1.6487cm" h="0.4235cm">
+            <bind match="global"/>
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text maxChars="7"/>
+            </value>
+            <font weight="bold" size="12.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para lineHeight="12pt"/>
+         </field>
+         <field name="rhbo" y="209.917mm" x="33.081mm" w="0.7066cm" h="0.4235cm">
+            <bind match="global"/>
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text maxChars="3"/>
+            </value>
+            <font weight="bold" size="12.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para hAlign="center" lineHeight="12pt"/>
+         </field>
+         <field name="client" y="209.917mm" x="64.508mm" w="1.8842cm" h="0.4235cm">
+            <bind match="global"/>
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text maxChars="8"/>
+            </value>
+            <font weight="bold" size="12.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para hAlign="center" lineHeight="12pt"/>
+         </field>
+         <field name="top_cover" y="209.917mm" x="95.24mm" w="2.1198cm" h="0.4235cm">
+            <bind match="global"/>
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text maxChars="9"/>
+            </value>
+            <font weight="bold" size="12.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para hAlign="center" lineHeight="12pt"/>
+         </field>
+         <field name="Lvl_excess" y="209.917mm" x="133.252mm" w="2.1198cm" h="0.4235cm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text maxChars="9"/>
+            </value>
+            <font weight="bold" size="12.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para hAlign="center" lineHeight="12pt"/>
+         </field>
+         <field name="highest_rebate" y="209.917mm" x="168.369mm" w="1.6487cm" h="0.4235cm">
+            <bind match="global"/>
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text maxChars="7"/>
+            </value>
+            <font weight="bold" size="12.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para hAlign="center" lineHeight="12pt"/>
+         </field>
+         <field name="approp_days" y="244.451mm" x="178.794mm" w="0.7066cm" h="0.4235cm">
+            <bind match="global"/>
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text maxChars="3"/>
+            </value>
+            <font weight="bold" size="12.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para hAlign="center" lineHeight="12pt"/>
+         </field>
+         <field name="anc_days" y="253.455mm" x="178.794mm" w="0.7066cm" h="0.4235cm">
+            <bind match="global"/>
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text maxChars="3"/>
+            </value>
+            <font size="12.0pt" typeface="Arial">
+               <fill presence="hidden"/>
+            </font>
+            <para hAlign="center" lineHeight="12pt"/>
+         </field>
+         <draw name="Text1" y="88.243mm" x="162.653mm" w="27.439mm" h="0.17825in">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>30/06/2007</text>
+            </value>
+            <font typeface="Arial" weight="bold"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <?renderCache.bounds 74946 10000 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 10 30/06/2007 0 1417 9313 0 0 0 "Arial" 1 0 10000 ISO-8859-1?></draw>
+         <?templateDesigner expand 1?></subform>
+      <desc>
+         <text name="version">1.0</text>
+      </desc>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Arial" 0 0 ISO-8859-1 4 260 70 00030003000A000B000C000F001000110013001400150016001700180019001A001B001C001D001E0024002500280029002A002B002C002D002F00300031003200330034003500360037003A004400450046004700480049004A004B004C004D004E004F0050005100520053005400550056005700580059005A005B005C00B500B6  '(),-.0123456789:;ABEFGHIJLMNOPQRSTWabcdefghijklmnopqrstuvwxy‘’?>
+      <?renderCache.subset "Arial" 1 0 ISO-8859-1 4 236 60 0003000300070008000B000C00120013001400150016001700180019001A001B002400250026002700280029002A002B002C002D002E002F00300031003200330035003600370038003B003C004400450046004700480049004A004B004C004F005000510052005300550056005700580059005B005C  $%()/012345678ABCDEFGHIJKLMNOPRSTUXYabcdefghilmnoprstuvxy?>
+      <?renderCache.subset "Arial" 0 1 ISO-8859-1 4 88 22 0003001100130015001A0033003500360037004400460048004B004C004E005100520055005600570058005B .027PRSTacehiknorstux?></subform>
+   <?templateDesigner SavePDFWithLog 0?>
+   <?templateDesigner Grid show:1, snap:0, units:17, color:ff8080, origin:(0,0), interval:(158750,158750), objsnap:0, guidesnap:0, pagecentersnap:2091297749?>
+   <?templateDesigner Zoom 77?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?>
+   <?templateDesigner FormTargetVersion 28?>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-template/2.8/?>
+   <?templateDesigner DefaultLanguage JavaScript?>
+   <?templateDesigner DefaultRunAt client?>
+   <?acrobat JavaScript strictScoping?>
+   <?PDFPrintOptions embedViewerPrefs 0?>
+   <?PDFPrintOptions embedPrintOnFormOpen 0?>
+   <?PDFPrintOptions scalingPrefs 0?>
+   <?PDFPrintOptions enforceScalingPrefs 0?>
+   <?PDFPrintOptions paperSource 0?>
+   <?PDFPrintOptions duplexMode 0?>
+   <?templateDesigner DefaultPreviewType interactive?>
+   <?templateDesigner DefaultPreviewPagination simplex?>
+   <?templateDesigner XDPPreviewFormat 19?>
+   <?templateDesigner DefaultPreviewDataFileName K:\Learning and Development\PHI Learning and Development\Communications\Adobe LiveCycle\WHICSLetter_seed.xml?>
+   <?templateDesigner SaveTaggedPDF 0?>
+   <?templateDesigner SavePDFWithEmbeddedFonts 0?></template>
+<config xmlns="http://www.xfa.org/schema/xci/2.8/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo>
+            <embed>0</embed>
+         </fontInfo>
+         <tagged>0</tagged>
+         <version>1.7</version>
+         <adobeExtensionLevel>3</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data/>
+      </common>
+      <cache>
+         <macroCache/>
+      </cache>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+</config>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale name="en_AU" desc="English (Australia)">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, D MMMM YYYY</datePattern>
+         <datePattern name="long">D MMMM YYYY</datePattern>
+         <datePattern name="med">DD/MM/YYYY</datePattern>
+         <datePattern name="short">D/MM/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$z,zz9.99</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">$</currencySymbol>
+         <currencySymbol name="isoname">AUD</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+      </typefaces>
+   </locale>
+</localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 4.2.1-c043 52.398682, 2009/08/10-13:00:47        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" rdf:about="">
+         <xmp:MetadataDate>2012-06-28T00:33:44Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer ES 9.0</xmp:CreatorTool>
+      </rdf:Description>
+      <rdf:Description xmlns:pdf="http://ns.adobe.com/pdf/1.3/" rdf:about="">
+         <pdf:Producer>Adobe LiveCycle Designer ES 9.0</pdf:Producer>
+      </rdf:Description>
+      <rdf:Description xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" rdf:about="">
+         <xmpMM:DocumentID>uuid:5404359d-2320-461f-b33f-1f795e2b5d5e</xmpMM:DocumentID>
+      </rdf:Description>
+      <rdf:Description xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>1.0</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta></xdp:xdp>

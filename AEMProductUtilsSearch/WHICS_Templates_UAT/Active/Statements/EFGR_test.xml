@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<WHICSLetter>
+	<MetaData>
+		<Fund>fund</Fund>
+		<FundName>Fund name</FundName>
+		<FileName>c:\CivicaLivecycleES\in\R11115GOOD.dat</FileName>
+		<FileDate>2012-01-24 11:43:59</FileDate>
+		<ConvertDate>2012-01-24 11:44:00</ConvertDate>
+	</MetaData>
+	<Documents>
+		<Document>
+			<Data>
+				<batch_no>AA000021</batch_no>
+				<birth_dte>03/10/1951</birth_dte>
+				<cat_type>24</cat_type>
+				<client>10001006</client>
+				<client_given>Robyn</client_given>
+				<client_name>Robyn Whiles</client_name>
+				<client_surname>Whiles</client_surname>
+				<doc_status>3</doc_status>
+				<gender>F</gender>
+				<home_addr1>4 Lillian St</home_addr1>
+				<home_addr2>JUNEE  NSW 2663</home_addr2>
+				<home_addr3></home_addr3>
+				<letter_date>21/11/2011</letter_date>
+				<medic_entitled>Yes</medic_entitled>
+				<medicare_exp>04/2013</medicare_exp>
+				<medicare_name>Robyn  Whiles</medicare_name>
+				<medicare_no>2092204853</medicare_no>
+				<phone_no>02 69248200</phone_no>
+				<rebate_date>01/11/2011</rebate_date>
+				<policy_member>
+					<cust_given>Peter</cust_given>
+					<cust_surname>Whiles</cust_surname>
+					<cust_birthdte>12/10/1948</cust_birthdte>
+					<cust_gender>M</cust_gender>
+					<cust_dep>Yes</cust_dep>
+				</policy_member>
+			</Data>
+			<MetaData>
+				<Form>EFGR</Form>
+				<trayin></trayin>
+				<trayout></trayout>
+			</MetaData>
+		</Document>
+		<Document>
+			<Data>
+				<batch_no>AA000022</batch_no>
+				<birth_dte>24/05/1954</birth_dte>
+				<cat_type>24</cat_type>
+				<client>10071308</client>
+				<client_given>Barry W</client_given>
+				<client_name>Barry W Barlow</client_name>
+				<client_surname>Barlow</client_surname>
+				<doc_status>3</doc_status>
+				<gender>M</gender>
+				<home_addr1>180 River Street</home_addr1>
+				<home_addr2>DENILIQUIN  NSW 2710</home_addr2>
+				<home_addr3></home_addr3>
+				<letter_date>21/11/2011</letter_date>
+				<medic_entitled>Yes</medic_entitled>
+				<medicare_exp>04/2014</medicare_exp>
+				<medicare_name>Barry W Barlow</medicare_name>
+				<medicare_no>2092204853</medicare_no>
+				<phone_no>03 58843302</phone_no>
+				<rebate_date>10/11/2011</rebate_date>
+				<policy_member>
+					<cust_given>Jayne</cust_given>
+					<cust_surname>Barlow</cust_surname>
+					<cust_birthdte>13/11/1964</cust_birthdte>
+					<cust_gender>F</cust_gender>
+					<cust_dep>Yes</cust_dep>
+				</policy_member>
+				<policy_member>
+					<cust_given>Gabrielle A</cust_given>
+					<cust_surname>Barlow</cust_surname>
+					<cust_birthdte>31/12/1992</cust_birthdte>
+					<cust_gender>F</cust_gender>
+					<cust_dep>Yes</cust_dep>
+				</policy_member>
+				<policy_member>
+					<cust_given>Melanie</cust_given>
+					<cust_surname>Barlow</cust_surname>
+					<cust_birthdte>14/05/1996</cust_birthdte>
+					<cust_gender>F</cust_gender>
+					<cust_dep>Yes</cust_dep>
+				</policy_member>
+			</Data>
+			<MetaData>
+				<Form>EFGR</Form>
+				<trayin></trayin>
+				<trayout></trayout>
+			</MetaData>
+		</Document>
+		<Document>
+			<Data>
+				<batch_no>AA000023</batch_no>
+				<birth_dte>21/12/1919</birth_dte>
+				<cat_type>24</cat_type>
+				<client>10139503</client>
+				<client_given>Evelyn E</client_given>
+				<client_name>Evelyn E Bailey</client_name>
+				<client_surname>Bailey</client_surname>
+				<doc_status>3</doc_status>
+				<gender>F</gender>
+				<home_addr1>7 Cevu Ave</home_addr1>
+				<home_addr2>WILLOUGHBY  NSW 2068</home_addr2>
+				<home_addr3></home_addr3>
+				<letter_date>21/11/2011</letter_date>
+				<medic_entitled>Yes</medic_entitled>
+				<medicare_exp>04/2003</medicare_exp>
+				<medicare_name>Evelyn E Bailey</medicare_name>
+				<medicare_no>3328210301</medicare_no>
+				<phone_no>02 99583391</phone_no>
+				<rebate_date>21/11/2011</rebate_date>
+			</Data>
+			<MetaData>
+				<Form>EFGR</Form>
+				<trayin></trayin>
+				<trayout></trayout>
+			</MetaData>
+		</Document>
+		<Document>
+			<Data>
+				<batch_no>AA000024</batch_no>
+				<birth_dte>19/10/1981</birth_dte>
+				<cat_type>24</cat_type>
+				<client>24218005</client>
+				<client_given>Joan</client_given>
+				<client_name>Joan Test</client_name>
+				<client_surname>Test</client_surname>
+				<doc_status>3</doc_status>
+				<gender>F</gender>
+				<home_addr1>1 the st</home_addr1>
+				<home_addr2>WOLLONGONG  NSW 2500</home_addr2>
+				<home_addr3></home_addr3>
+				<letter_date>21/11/2011</letter_date>
+				<medic_entitled>Yes</medic_entitled>
+				<medicare_exp>11/2013</medicare_exp>
+				<medicare_name>Joan  Test</medicare_name>
+				<medicare_no>2639077753</medicare_no>
+				<phone_no>0212341234</phone_no>
+				<rebate_date>20/11/2011</rebate_date>
+				<policy_member>
+					<cust_given>Joe</cust_given>
+					<cust_surname>Test</cust_surname>
+					<cust_birthdte>07/08/1979</cust_birthdte>
+					<cust_gender>M</cust_gender>
+					<cust_dep>Yes</cust_dep>
+				</policy_member>
+			</Data>
+			<MetaData>
+				<Form>EFGR</Form>
+				<trayin></trayin>
+				<trayout></trayout>
+			</MetaData>
+		</Document>
+		<Document>
+			<Data>
+				<batch_no>AA000025</batch_no>
+				<birth_dte>19/10/1981</birth_dte>
+				<cat_type>24</cat_type>
+				<client>24218040</client>
+				<client_given>Sarah</client_given>
+				<client_name>Sarah Test</client_name>
+				<client_surname>Test</client_surname>
+				<doc_status>3</doc_status>
+				<gender>F</gender>
+				<home_addr1>1 the st</home_addr1>
+				<home_addr2>WOLLONGONG  NSW 2500</home_addr2>
+				<home_addr3></home_addr3>
+				<letter_date>21/11/2011</letter_date>
+				<medic_entitled>Yes</medic_entitled>
+				<medicare_exp>11/2013</medicare_exp>
+				<medicare_name>Joan  Test</medicare_name>
+				<medicare_no>2639077753</medicare_no>
+				<phone_no>0212341234</phone_no>
+				<rebate_date>20/11/2011</rebate_date>
+				<policy_member>
+					<cust_given>Sean</cust_given>
+					<cust_surname>Test</cust_surname>
+					<cust_birthdte>07/08/1979</cust_birthdte>
+					<cust_gender>M</cust_gender>
+					<cust_dep>Yes</cust_dep>
+				</policy_member>
+			</Data>
+			<MetaData>
+				<Form>EFGR</Form>
+				<trayin></trayin>
+				<trayout></trayout>
+			</MetaData>
+		</Document>
+		<Document>
+			<Data>
+				<batch_no>AA000026</batch_no>
+				<birth_dte>19/10/1984</birth_dte>
+				<cat_type>24</cat_type>
+				<client>24218130</client>
+				<client_given>Terri</client_given>
+				<client_name>Terri Test</client_name>
+				<client_surname>Test</client_surname>
+				<doc_status>3</doc_status>
+				<gender>F</gender>
+				<home_addr1>1 the st</home_addr1>
+				<home_addr2>WOLLONGONG  NSW 2500</home_addr2>
+				<home_addr3></home_addr3>
+				<letter_date>21/11/2011</letter_date>
+				<medic_entitled>Yes</medic_entitled>
+				<medicare_exp>11/2013</medicare_exp>
+				<medicare_name>Joan  Test</medicare_name>
+				<medicare_no>2639077753</medicare_no>
+				<phone_no>0212341234</phone_no>
+				<rebate_date>20/11/2011</rebate_date>
+				<policy_member>
+					<cust_given>Terry</cust_given>
+					<cust_surname>Test</cust_surname>
+					<cust_birthdte>07/08/1976</cust_birthdte>
+					<cust_gender>M</cust_gender>
+					<cust_dep>Yes</cust_dep>
+				</policy_member>
+			</Data>
+			<MetaData>
+				<Form>EFGR</Form>
+				<trayin></trayin>
+				<trayout></trayout>
+			</MetaData>
+		</Document>
+		<Document>
+			<Data>
+				<batch_no>AA000027</batch_no>
+				<birth_dte>19/10/1984</birth_dte>
+				<cat_type>24</cat_type>
+				<client>24218152</client>
+				<client_given>Terri</client_given>
+				<client_name>Terri Testly</client_name>
+				<client_surname>Testly</client_surname>
+				<doc_status>3</doc_status>
+				<gender>F</gender>
+				<home_addr1>1 the st</home_addr1>
+				<home_addr2>WOLLONGONG  NSW 2500</home_addr2>
+				<home_addr3></home_addr3>
+				<letter_date>21/11/2011</letter_date>
+				<medic_entitled>Yes</medic_entitled>
+				<medicare_exp>11/2013</medicare_exp>
+				<medicare_name>Joan  Test</medicare_name>
+				<medicare_no>2639077753</medicare_no>
+				<phone_no>0212341234</phone_no>
+				<rebate_date>20/11/2011</rebate_date>
+				<policy_member>
+					<cust_given>Terry</cust_given>
+					<cust_surname>Testly</cust_surname>
+					<cust_birthdte>07/08/1976</cust_birthdte>
+					<cust_gender>M</cust_gender>
+					<cust_dep>Yes</cust_dep>
+				</policy_member>
+			</Data>
+			<MetaData>
+				<Form>EFGR</Form>
+				<trayin></trayin>
+				<trayout></trayout>
+			</MetaData>
+		</Document>
+		<Document>
+			<Data>
+				<batch_no>AA000028</batch_no>
+				<birth_dte>19/10/1984</birth_dte>
+				<cat_type>24</cat_type>
+				<client>24218175</client>
+				<client_given>Terri</client_given>
+				<client_name>Terri Testlyy</client_name>
+				<client_surname>Testlyy</client_surname>
+				<doc_status>3</doc_status>
+				<gender>F</gender>
+				<home_addr1>1 the st</home_addr1>
+				<home_addr2>WOLLONGONG  NSW 2500</home_addr2>
+				<home_addr3></home_addr3>
+				<letter_date>21/11/2011</letter_date>
+				<medic_entitled>Yes</medic_entitled>
+				<medicare_exp>11/2013</medicare_exp>
+				<medicare_name>Joan  Test</medicare_name>
+				<medicare_no>2639077753</medicare_no>
+				<phone_no>0212341234</phone_no>
+				<rebate_date>20/11/2011</rebate_date>
+				<policy_member>
+					<cust_given>Terry</cust_given>
+					<cust_surname>Testlyy</cust_surname>
+					<cust_birthdte>07/08/1976</cust_birthdte>
+					<cust_gender>M</cust_gender>
+					<cust_dep>Yes</cust_dep>
+				</policy_member>
+			</Data>
+			<MetaData>
+				<Form>EFGR</Form>
+				<trayin></trayin>
+				<trayout></trayout>
+			</MetaData>
+		</Document>
+	</Documents>
+	<LetterSettings>
+	</LetterSettings>
+</WHICSLetter>

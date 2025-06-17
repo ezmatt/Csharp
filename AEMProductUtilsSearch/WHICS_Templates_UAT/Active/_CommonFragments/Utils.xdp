@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xfa generator="Designer_V6.5.0.20190325.1.935878" APIVersion="3.6.19011.0"?>
+<xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2025-04-07T04:24:15Z" uuid="6c7b25a9-4734-4bc3-9135-7b6f314455ae">
+<template xmlns="http://www.xfa.org/schema/xfa-template/3.3/">
+   <?formServer defaultPDFRenderFormat acrobat10.0static?>
+   <subform name="form1" locale="en_AU" layout="tb">
+      <pageSet>
+         <pageArea>
+            <contentArea x="20mm" y="40mm" w="170mm" h="235mm"/>
+            <medium stock="a4" short="210mm" long="297mm"/>
+         </pageArea>
+      </pageSet>
+      <subform>
+         <variables>
+            <script contentType="application/x-javascript" name="Utils">// co-payment Hospital codes.
+var hospitalCoverOptionsWithCopayment = "T";
+
+/* ---------------------------------------------------------
+* Global Methods
+* ---------------------------------------------------------
+*/
+// Get hospital Cover code. Pass through keyno_042
+function getHospitalCode(coverCode) {
+	// Clean the code and trim
+	var code = cleanCode(coverCode);
+	// First charqacter is the hospital code
+	var returnCode = code[0] || "N";
+
+	return returnCode;
+}
+
+// Get Excess Cover code. Pass through keyno_042
+function getExcessCode(coverCode) {
+	// Clean the code and trim
+	var code = cleanCode(coverCode);
+	// Second character is the excess code. Default is 0
+	var returnCode = (/^-?\d+$/.test(code[1])) ? code[1] : "0";
+
+	return returnCode;
+}
+
+// Get Excess Cover code. Pass through keyno_042
+function getExtrasCode(coverCode) {
+	// Clean the code and trim
+	var code = cleanCode(coverCode);
+	// Third character is the Extras code. Default is N
+	var returnCode = code[2] || "N";
+
+	return returnCode;
+}
+
+
+// Validate the code coming through and trim white space.
+function cleanCode(rawCode) {
+	// Check if the code is not null, is an object or a string.
+	var cleanedCode = checkParameter(rawCode);
+
+	// If the code doesn't exist in the file, then just return an empty string
+	cleanedCode = (cleanedCode) ? extractCoverCode(cleanedCode) : "";
+
+
+	return cleanedCode;
+}
+
+// Hospital Cover Description
+// requires the full cover description (keyno_047)
+function getHospitalDescription(coverDescription, productType) {
+	var descriptions = parseDescription(coverDescription, productType);
+	return descriptions.hospital;
+}
+
+// Extras Cover Description
+// requires the full cover description (keyno_047.rawValue)
+function getExtrasDescription(coverDescription, productType) {
+	var descriptions = parseDescription(coverDescription, productType);
+	return descriptions.extras;
+}
+
+//-----------------------------------------------------
+// Form specific methods
+//-----------------------------------------------------
+
+//---------------------------------------------------
+// HENQDX
+//---------------------------------------------------
+
+// Is this an excess or a co-payment?
+// Requires the hospital cover code.
+function hasExcess(hospitalCoverCode) {
+	var hospCode = checkParameter(hospitalCoverCode);
+	// If it's not the hospital code then get the hospital code from the raw field.
+	if (hospCode.length != 1) {
+		hospCode = getHospitalCode(hospCode);
+	}
+	return hospitalCoverOptionsWithCopayment.indexOf(hospCode) === -1;
+}
+
+// Get the amount of the excess/co-payment
+// and format as currency. eg $1,000
+// Can take either the excessCoPaycode or Cover code (keyno_042)
+function getExcessOrCopayAmount(coverCode) {
+	// can take either the full cover code, the cover code object or just the excess code
+	var coverCodeString = checkParameter(coverCode);
+
+	// If it is the full code then just get the excess code only.
+	var excessCoPayCode = (coverCodeString.length != 1) ? getExcessCode(coverCodeString) : coverCodeString;
+	return currency(getExcessOrCoPaymountFromExcessCode(excessCoPayCode), true);
+}
+
+// Do Not Send!!! Last resort catch
+// If Hopsital code = 'N' or there is no excess amount then do not send...
+function DoNotSend(coverDescription, coverCode) {
+
+	// Clean the data
+	coverDescription = checkParameter(coverDescription);
+	coverCode = checkParameter(coverCode);
+
+	var hospitalCoverCode = getHospitalCode(coverCode);
+	var excessCoPayCode = getExcessCode(coverCode);
+
+	return (!coverDescription || hospitalCoverCode == "N" || excessCoPayCode == 0) ? true : false;
+}
+
+//Determine excess/co-payment amount based on the Excess Code
+function getExcessOrCoPaymountFromExcessCode(excessCoPayCode) {
+	var amount = (excessCoPayCode) ? excessCoPayCode * 100 : 0;
+
+	if (excessCoPayCode === "7") {
+		amount = 750;
+	}
+
+	return amount;
+}
+
+//---------------------------------------------------
+// MEMMIG and PRODMIG
+//---------------------------------------------------
+var g1 = ["B5N","B51","B52","B53","B54","B5K","B5L","B5M","B5T","B5U","B7N","B71","B72","B73","B74","B7K","B7L","B7M","B7T","B7U","B58","B5F","B5S","B5V","B5W","B5X","B5Y","B5Z","B78","B7F","B7S","B7V","B7W","B7X","B7Y","B7Z","10M","10T","10U","10S","10W","10Y","10Z"];
+var g2 = ["G5N","G51","G52","G53","G54","G5K","G5L","G5M","G5T","G5U","G7N","G71","G72","G73","G74","G7K","G7L","G7M","G7T","G7U","G58","G5F","G5S","G5V","G5W","G5X","G5Y","G5Z","G78","G7F","G7S","G7V","G7W","G7X","G7Y","G7Z","108","10F","10V","10X"];
+var g3 = ["W5N","W51","W52","W53","W54","W5K","W5L","W5M","W5T","W5U","W7N","W71","W72","W73","W74","W7K","W7L","W7M","W7T","W7U","W58","W5F","W5S","W5V","W5W","W5X","W5Y","W5Z","W78","W7F","W7S","W7V","W7W","W7X","W7Y","W7Z","10K","10L"];
+var g4 = ["B5N","B7N","G5N","G7N","W5N","W7N","102","10R","105","106"];
+var g5 = ["B51","B52","B53","B54","B5K","B5L","B5M","B5T","B5U","B71","B72","B73","B74","B7K","B7L","B7M","B7T","B7U","B58","B5F","B5S","B5V","B5W","B5X","B5Y","B5Z","B78","B7F","B7S","B7V","B7W","B7X","B7Y","B7Z","G51","G52","G53","G54","G5K","G5L","G5M","G5T","G5U","G71","G72","G73","G74","G7K","G7L","G7M","G7T","G7U","G58","G5F","G5S","G5V","G5W","G5X","G5Y","G5Z","G78","G7F","G7S","G7V","G7W","G7X","G7Y","G7Z","W51","W52","W53","W54","W5K","W5L","W5M","W5T","W5U","W71","W72","W73","W74","W7K","W7L","W7M","W7T","W7U","W58","W5F","W5S","W5V","W5W","W5X","W5Y","W5Z","W78","W7F","W7S","W7V","W7W","W7X","W7Y","W7Z","103","104"];
+var g6 = ["B5N","B51","B52","B53","B54","B5K","B5L","B5M","B5T","B5U","G5N","G51","G52","G53","G54","G5K","G5L","G5M","G5T","G5U","W5N","W51","W52","W53","W54","W5K","W5L","W5M","W5T","W5U","W58","W5F","W5S","W5V","W5W","W5X","W5Y","W5Z","G58","G5F","G5S","G5V","G5W","G5X","G5Y","G5Z","B58","B5F","B5S","B5V","B5W","B5X","B5Y","B5Z","10N","101"];
+
+function checkGrouping(productCode) {
+	if (isStringInArray(g1, productCode)) {
+		return 1;
+	}
+	else if (isStringInArray(g2, productCode)) {
+		return 2;
+	}
+	else if (isStringInArray(g3, productCode)) {
+		return 3;
+	}
+	else if (isStringInArray(g4, productCode)) {
+		return 4;
+	}
+	else if (isStringInArray(g5, productCode)) {
+		return 5;
+	}
+	else if (isStringInArray(g6, productCode)) {
+		return 6;
+	}
+	else {
+		return 0;
+	}
+	
+}
+
+//---------------------------------------------------
+// Helper Methods. 
+//---------------------------------------------------
+
+// Format a number into a currency
+function currency(amount, noDecimal) {
+	if (isNaN(amount) || amount === null || amount === "") {
+		amount = 0; // Default if the input is invalid
+	}
+
+	// Convert to a floating point number and format
+	if (!noDecimal) {
+		var formatted = parseFloat(amount).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	}
+	else {
+		var formatted = parseFloat(amount).toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	}
+
+	return "$" + formatted;
+}
+
+// Seperate hospital cover and extras cover from the full description.
+function parseDescription(description, type) {
+
+	// can take the raw value or the actual object as well
+	var coverDescription = checkParameter(description);
+	var productType = checkParameter(type);
+
+	// Default value is blank.
+	var hospitalDescription = "";
+	var extrasDescription = "";
+
+	// If there is a cover description then split it by the +
+	if (coverDescription) {
+		// if we have a + then we know that it is hospital and extras by default
+		// regardless if we have the product Type or not.
+		if (coverDescription.indexOf(" + ") !== -1) {
+			var plusIndex = coverDescription.indexOf(" + ");
+			hospitalDescription = coverDescription.substring(0, plusIndex);
+			extrasDescription = coverDescription.substring(plusIndex + 3);
+		}
+		else {
+			// check if product type is in the data
+			if (productType) {
+				// If product type is equal to H then it is hospital only.
+				hospitalDescription = (productType == "H") ? coverDescription : "";
+				// If product type is equal to A then it is extras only.
+				extrasDescription = (productType == "A") ? coverDescription : "";
+			}
+			else {
+				hospitalDescription = coverDescription;
+			}
+		}
+	}
+
+
+	return {
+		hospital: hospitalDescription,
+		extras: extrasDescription
+	};
+}
+
+// Return a string regardless of what format was passed to it.
+function checkParameter(parameter) {
+	var returnString = "";
+	if (typeof parameter === "object") {
+		if (parameter.rawValue) {
+			returnString = parameter.rawValue;
+		}
+		else {
+			returnString = "";
+		}
+	}
+	else if (typeof parameter === "string") {
+		returnString = parameter;
+	}
+	return returnString;
+}
+
+// Get the correct part of 042 no matter how messed up it is.
+function extractCoverCode(cleanedCode) {
+	var match = cleanedCode.match(/^\s*([A-Za-z0-9]{3})/);
+	return match ? match[1] : null;
+}
+
+// Only way to check for strings in an array
+function isStringInArray(array, code) {
+	code = checkParameter(code);
+	for (var i = 0; i &lt; array.length; i++) {
+		if (array[i] == code) {
+			return true;
+		}
+	}
+	return false;
+}
+
+               
+               
+
+               <?templateDesigner isFragment yes?>
+               <?templateDesigner fragmentTitle Utils?></script>
+         </variables>
+      </subform>
+   </subform>
+   <?templateDesigner SaveTaggedPDF 1?>
+   <?templateDesigner SavePDFWithEmbeddedFonts 1?>
+   <?templateDesigner FormTargetVersion 33?>
+   <?templateDesigner Zoom 119?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?></template>
+<config xmlns="http://www.xfa.org/schema/xci/3.0/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+         <version>1.7</version>
+         <adobeExtensionLevel>8</adobeExtensionLevel>
+      </pdf>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+   <psMap>
+      <font typeface="Proxima Nova Lt" psName="ProximaNova-Light" weight="normal" posture="normal"/>
+      <font typeface="Proxima Nova Rg" psName="ProximaNova-Regular" weight="normal" posture="normal"/>
+      <font typeface="Proxima Nova Rg" psName="ProximaNova-Bold" weight="bold" posture="normal"/>
+      <font typeface="Proxima Nova Th" psName="ProximaNova-Extrabld" weight="bold" posture="normal"/>
+      <font typeface="Proxima Nova Lt" psName="ProximaNova-Semibold" weight="bold" posture="normal"/>
+      <font typeface="Calibri" psName="Calibri" weight="normal" posture="normal"/>
+   </psMap>
+</config>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c015 81.159809, 2016/09/10-01:42:48        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:pdfuaid="http://www.aiim.org/pdfua/ns/id/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:lcd="http://ns.adobe.com/livecycle/designer/" xmlns:dc="http://purl.org/dc/elements/1.1/" rdf:about="">
+         <xmp:MetadataDate>2025-04-07T04:24:15Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Designer 6.5</xmp:CreatorTool>
+         <pdfuaid:part>1</pdfuaid:part>
+         <pdf:Producer>Designer 6.5</pdf:Producer>
+         <xmpMM:DocumentID>uuid:6c7b25a9-4734-4bc3-9135-7b6f314455ae</xmpMM:DocumentID>
+         <lcd:fragmentCatalog>
+            <rdf:Seq>
+               <rdf:li rdf:parseType="Resource">
+                  <dc:title>
+                     <rdf:Alt>
+                        <rdf:li xml:lang="x-default">Utils</rdf:li>
+                     </rdf:Alt>
+                  </dc:title>
+                  <dc:description>
+                     <rdf:Alt>
+                        <rdf:li xml:lang="x-default"/>
+                     </rdf:Alt>
+                  </dc:description>
+                  <dc:identifier>$template.form1.#subform.#variables.Utils</dc:identifier>
+                  <lcd:fragmentRole>ScriptObject</lcd:fragmentRole>
+               </rdf:li>
+            </rdf:Seq>
+         </lcd:fragmentCatalog>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale name="en_AU" desc="English (Australia)">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, D MMMM YYYY</datePattern>
+         <datePattern name="long">D MMMM YYYY</datePattern>
+         <datePattern name="med">DD/MM/YYYY</datePattern>
+         <datePattern name="short">D/MM/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$z,zz9.99</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">$</currencySymbol>
+         <currencySymbol name="isoname">AUD</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+      </typefaces>
+   </locale>
+</localeSet></xdp:xdp>

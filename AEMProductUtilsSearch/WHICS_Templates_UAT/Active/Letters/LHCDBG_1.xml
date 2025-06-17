@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<WHICSLetter>
+<MetaData>
+<Fund>ahm</Fund>
+<FundName>ahm</FundName>
+<FileName>D:\WHICS_INPUT\stgn\input\ARCHIVE_STGN_WY04_1_10211608_20210604_10211704.dat</FileName>
+<FileDate>4/06/2021 10:21:17 AM</FileDate>
+<ConvertDate>4/06/2021 10:21:18 AM</ConvertDate>
+</MetaData>
+<Documents>
+<Document>
+<Data>
+<Graph>D:/WHICS_Templates/Print_Image_Library/tlb.gif</Graph>
+<addr_1>Address Withheld</addr_1>
+<addr_2></addr_2>
+<addr_3></addr_3>
+<addr_name>Mrs A  New</addr_name>
+<keyno_004>$221.10</keyno_004>
+<keyno_005>Month</keyno_005>
+<keyno_045>30/06/2021</keyno_045>
+<keyno_064> 0</keyno_064>
+<keyno_528>12</keyno_528>
+<keyno_659>decreased</keyno_659>
+<keyno_8017>Direct Debit</keyno_8017>
+<keyno_99901>Yours sincerely</keyno_99901>
+<keyno_99902>Tamara Bienke</keyno_99902>
+<keyno_99903>Customer Services Officer</keyno_99903>
+<keyno_99904></keyno_99904>
+<keyno_99905></keyno_99905>
+<keyno_99906></keyno_99906>
+<keyno_99907></keyno_99907>
+<keyno_99908></keyno_99908>
+<keyno_99909></keyno_99909>
+<keyno_99910></keyno_99910>
+<letter_dte>04 Jun 2021</letter_dte>
+<refer_no>36634312.LHCBG.H10001.tlb./tl</refer_no>
+<salute>Dear Mrs New</salute>
+<bcc_email_addr></bcc_email_addr>
+<comm_serial>23086759</comm_serial>
+<healthstream>11.4.01|01|36634312|36634312|C|Mrs Adelle New|LHCBG002|||A|E|23086759</healthstream>
+<onl_corresp_filename>ahm_LHCBG002_04_06_2021_10_21_16</onl_corresp_filename>
+<onl_corresp_id>3212666</onl_corresp_id>
+<onl_corresp_meth_save>email</onl_corresp_meth_save>
+<onl_email_acct>ahm</onl_email_acct>
+<onl_email_addr>tamara.bienke@medibank.com.au</onl_email_addr>
+<onl_email_subject>Your recent request #3212666</onl_email_subject>
+<onl_email_template>AHM_1</onl_email_template>
+<onl_recipient_id>36634312</onl_recipient_id>
+<onl_salute>Hi Adelle</onl_salute>
+<signature></signature>
+<stationery_code1>AH1</stationery_code1>
+<stationery_code2>AH2</stationery_code2>
+</Data>
+<MetaData>
+<Form>LHCBG002</Form>
+<trayin></trayin>
+<trayout></trayout>
+</MetaData>
+</Document>
+</Documents>
+<LetterSettings>
+<printer_id>email</printer_id>
+</LetterSettings>
+</WHICSLetter>

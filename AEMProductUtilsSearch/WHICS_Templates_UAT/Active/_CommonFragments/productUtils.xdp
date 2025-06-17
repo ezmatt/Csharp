@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xfa generator="Designer_V6.5.0.20190325.1.935878" APIVersion="3.6.19011.0"?>
+<xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2025-02-26T00:38:52Z" uuid="3d1a4815-6d11-44ca-a044-01d56d5a7593">
+<template xmlns="http://www.xfa.org/schema/xfa-template/3.3/">
+   <?formServer defaultPDFRenderFormat acrobat10.0static?>
+   <subform name="form1" locale="en_AU" layout="tb">
+      <pageSet>
+         <pageArea>
+            <contentArea x="20mm" y="40mm" w="170mm" h="235mm"/>
+            <medium stock="a4" short="210mm" long="297mm"/>
+         </pageArea>
+      </pageSet>
+      <subform>
+         <variables>
+            <script contentType="application/x-javascript" name="productUtils"> 
+
+/*
+* getExtrasLevel()
+* Obtain level of extras cover based on product code
+*
+* @param {strProd} Product code, should be keyno_042
+* @return level of extras cover
+* N - No Extras
+* P - Standard Cover
+* 1 - Basic Extras
+* 2 - Family Extras
+* 3 - Super Extras
+* 4 - Lifestyle Extras 
+ * 5 - L55 Lite
+* 6 - L56 Lite Cover Plus
+* 7 - Y57 First Step
+* 8 - M58 Mid Cover
+* A - black+white starter
+* B - black+white lite
+* D - black+white classic
+* E - black+white signature
+* G - black+white starter flexi
+* H - black+white lite flexi
+* I - black+white classic flexi
+* J - black+white signature flexi
+*/
+function getExtrasLevel(strProd) {
+  var allOptions = "NP12345678ABDEGHIJ";
+  var level = 'N';
+  var arr = splitProducts(strProd);
+  if (arr.length &gt; 0 &amp;&amp; arr[0].length == 3) {
+    if (arr[0] == "AMB") {
+    level = 'N';
+    } else if (arr[0] == "P56") {
+    level = 'P';
+    } else {
+    level = arr[0].charAt(2);
+    }  
+  }
+  
+  if (allOptions.indexOf(level) == -1) {
+                level = 'N';
+  }
+    return level;
+}
+
+/*
+* getExtrasDesc()
+* Obtain description of extras cover based on product code
+*
+* @param {strProd} Product code, should be keyno_042
+* @return description of extras cover
+* N - No Extras
+* P - Standard Cover
+* 1 - Basic Extras
+* 2 - Family Extras
+* 3 - Super Extras
+* 4 - Lifestyle Extras 
+* 5 - Lite Cover
+* 6 - Lite Cover Plus
+* 7 - Y57 First Step
+* 8 - Mid Cover
+* A - black+white starter
+* B - black+white lite
+* D - black+white classic
+* E - black+white signature
+* G - black+white starter flexi
+* H - black+white lite flexi
+* I - black+white classic flexi
+* J - black+white signature flexi
+*/
+function getExtrasDesc(strProd) {
+  var extrasLevel = getExtrasLevel(strProd);
+  switch(extrasLevel){
+    case "1":
+      return "Basic Extras";
+    case "2":
+      return "Family Extras";
+    case "A":
+      return "black+white starter";
+    case "B":
+      return "black+white lite";
+    case "D":
+      return "black+white classic";
+    case "E":
+      return "black+white signature";
+    case "G":
+      return "black+white starter flexi";
+    case "H":
+      return "black+white lite flexi";
+    case "I":
+      return "black+white classic flexi";
+    case "J":
+      return "black+white signature flexi";
+    case "3":
+      return "Super Extras";
+    case "4":
+      return "Lifestyle Extras";
+    case "5":
+      return "Lite Cover"
+    case "6":
+      return "Lite Cover Plus";
+    case "7":
+      return "First Step";
+    case "8":
+      return "Mid Cover";
+    case "P":
+      return "Standard Cover";
+    default:
+      return "";
+  }
+}
+
+/*
+* getHospitalLevel()
+* Obtain level of hospital cover based on product code
+*
+* @param {strProd} Product code, should be keyno_042
+* @return level of hospital cover
+* B - Basic Hospital
+* C - Lite Cover Plus
+* F - Family Hospital
+* L - Lite Cover
+* M - Mid Cover
+* N - No Hospital
+* P - Standard Cover
+* S - Essential Hospital
+* T - Top Hospital
+* Y - Y57 First Step
+* Z - Budget Hospital
+* J - Classic Hospital
+* X - Top Hospital 500
+* V - Top Hospital No Obstetrics
+* A - black+white starter
+* K - black+white lite  
+ * G - black+white classic
+* W - black+white signature
+* Q - black+white starter flexi 
+ * R - black+white lite flexi 
+ * I - black+white classic flexi 
+ * U - black+white signature flexi 
+ */
+function getHospitalLevel(strProd) {
+  var allOptions = "BCFLMNPSTYZXJVAGWKQRIU";
+  var level = 'N';
+  var arr = splitProducts(strProd);
+  if (arr.length &gt; 0 &amp;&amp; arr[0].length == 3) {
+    if (arr[0] == "AMB") {
+    level = 'N';
+    } else if (arr[0] == "L56") {
+		level = 'C';
+  	} else if (arr[0] == "L5B") {
+		level = 'K';
+  	} else if (arr[0] == "A5G") {
+		level = 'Q';
+  	} else if (arr[0] == "L5H") {
+		level = 'R';
+  	} else if (arr[0] == "G5I") {
+		level = 'I';
+  	} else if (arr[0] == "W5J") {
+		level = 'U';
+	} else {
+		level = arr[0].charAt(0);
+	}  
+  }
+  if (allOptions.indexOf(level) == -1) {
+    level = 'N';
+  }  
+  return level;
+}
+
+/*
+* getHospitalDesc()
+* Obtain description of hospital cover based on product code
+*
+* @param {strProd} Product code, should be keyno_042
+* @return description of hospital cover
+* B - Basic Hospital
+* C - Lite Cover Plus
+* F - Family Hospital
+* L - Lite Cover
+* M - Mid Cover
+* N - No Hospital
+* P - Standard Cover
+* S - Essential Hospital
+* T - Top Hospital
+* Y - Y57 First Step
+* Z - Budget Hospital
+* J - Classic Hospital
+* X - Top Hospital 500
+* V - Top Hospital No Obstetrics
+* A - black+white starter
+* K - black+white lite  
+ * G - black+white classic
+* W - black+white signature
+* Q - black+white starter flexi 
+ * R - black+white lite flexi 
+ * I - black+white classic flexi 
+ * U - black+white signature flexi 
+ */
+function getHospitalDesc(strProd) {
+  var hospLevel = getHospitalLevel(strProd);
+  switch(hospLevel){
+    case "J":
+    return "Classic Hospital";
+    case "X":
+    return "Top Hospital 500";
+    case "A":
+    return "black+white starter";
+    case "K":
+    return "black+white lite";
+    case "G":
+    return "black+white classic";
+    case "W":
+    return "black+white signature";
+    case "Q":
+    return "black+white starter flexi";
+    case "R":
+    return "black+white lite flexi";
+    case "I":
+    return "black+white classic flexi";
+    case "U":
+    return "black+white signature flexi";
+    case "V":
+    return "Top Hospital No Obstetrics";
+    case "B":
+    return "Basic Hospital";
+    case "C":
+    return "Lite Cover Plus";
+    case "F":
+    return "Family Hospital";
+    case "L":
+    return "Lite Cover";
+    case "M":
+    return "Mid Cover";
+    case "P":
+    return "Standard Cover";
+    case "S":
+    return "Essential Hospital";
+    case "T":
+    var copay = getCopayment(strProd);      
+    return (copay == 0) ? "Top Hospital" : ("Top Hospital " + copay);
+    case "Y":
+    return "First Step";
+    case "Z":
+    return "Budget Hospital";
+    default:
+    return "";
+  }
+}
+
+/*
+* hasCopayment()
+* Does this product have a copayment as opposed to an excess
+* @param {strProd} Product code, should be keyno_042
+* @return true if product has a copayment level
+*/
+function hasCopayment(strProd) {
+  var level = getHospitalLevel(strProd);
+  var optionsWithCopayment = "BSFT";
+  return (optionsWithCopayment.indexOf(level) != -1);
+}
+
+/*
+* hasExcess()
+* Does this product have an excess as opposed to a copayment
+* @param {strProd} Product code, should be keyno_042
+* @return true if product has excess level
+*/
+function hasExcess(strProd) {
+  var level = getHospitalLevel(strProd);
+  var optionsWithExcess = "YZLCPMJXVAKGWQRIU";
+  return (optionsWithExcess.indexOf(level) != -1);
+}
+/*
+* getCopayment()
+* Obtain level of Copayment based on product code. 
+ * Will return 0 for products which don't have a copayment
+* but have an excess (i.e First Step, Budget Hospital)
+* Use hasCopayment() to make sure that copayments apply to
+* product first. Use getExcess() for products with an excess
+* @param {strProd} Product code, should be keyno_042
+* @return level of Copayment 
+ * 0 - $0
+* 5 - $500
+* 8 - $800
+*/
+function getCopayment(strProd) {
+  var amt = 0;
+  if (hasCopayment(strProd)) {
+    var arr = splitProducts(strProd);
+    amt = parseInt(arr[0].charAt(1), 10) || 0;
+   }
+  return amt;
+}
+
+
+/*
+* getExcess()
+* Obtain level of Excess based on product code. 
+ * Will return 0 for products which don't have an excess
+* but have a copayment (e.g. Top Hospital, Family Hospital)
+* Use hasExcess() to make sure that excesses apply to
+* product first. Use getCopayment() for products with a copayment
+* @param {strProd} Product code, should be keyno_042
+* @return level of Excess
+* 0 - $0
+* 5 - $500
+* 8 - $800
+*/
+function getExcess(strProd) {
+  var amt = 0;
+  if (hasExcess(strProd)) {
+    var arr = splitProducts(strProd);
+    amt = parseInt(arr[0].charAt(1), 10) || 0;
+   }
+  return amt;
+}
+
+/* 
+ * depracated
+* use getHospitalLevel instead and check for level = 'Y'
+*/
+function hasFirstStep(strProd) {
+  var arr = splitProducts(strProd);
+  for (var i = 0; i &lt; arr.length; i++) {
+    if (arr[i] == "Y57") {
+      return true;
+    }
+  }  
+  return false;
+}
+
+/* 
+ * splitProducts()
+* return an array of product components
+* str should be keyno_042.rawValue
+*/
+
+function splitProducts(str) {
+  
+  var prods = new Array();
+  if (str != "" &amp;&amp; str != null &amp;&amp; str != undefined) {
+    var arr = str.split(" ");
+    for (var i = 0; i &lt; arr.length; i++) {
+      if (arr[i] != "") {
+        prods.push(arr[i]);
+      }
+    }
+  }
+  
+  return prods;
+}         
+               
+
+               
+               
+               
+
+               <?templateDesigner isFragment yes?>
+               <?templateDesigner fragmentTitle productUtils?>
+               <?templateDesigner fragmentDescription Helper functions for product code manipulation?></script>
+         </variables>
+      </subform>
+   </subform>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-template/2.8/?>
+   <?templateDesigner FormTargetVersion 33?>
+   <?templateDesigner Zoom 164?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?></template>
+<config xmlns="http://www.xfa.org/schema/xci/3.0/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+         <version>1.7</version>
+         <adobeExtensionLevel>8</adobeExtensionLevel>
+      </pdf>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+   <psMap>
+      <font typeface="DINOT-Bold" psName="DINOT-Bold" weight="normal" posture="normal"/>
+      <font typeface="DINOT" psName="DINOT" weight="normal" posture="normal"/>
+      <font typeface="Proxima Nova Lt" psName="ProximaNova-Light" weight="normal" posture="normal"/>
+   </psMap>
+</config>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 4.2.1-c043 52.398682, 2009/08/10-13:00:47        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:pdfuaid="http://www.aiim.org/pdfua/ns/id/" xmlns:lcd="http://ns.adobe.com/livecycle/designer/" xmlns:dc="http://purl.org/dc/elements/1.1/" rdf:about="">
+         <xmp:MetadataDate>2025-02-26T00:38:52Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Designer 6.5</xmp:CreatorTool>
+         <pdf:Producer>Designer 6.5</pdf:Producer>
+         <xmpMM:DocumentID>uuid:3d1a4815-6d11-44ca-a044-01d56d5a7593</xmpMM:DocumentID>
+         <pdfuaid:part>1</pdfuaid:part>
+         <lcd:fragmentCatalog>
+            <rdf:Seq>
+               <rdf:li rdf:parseType="Resource">
+                  <dc:title>
+                     <rdf:Alt>
+                        <rdf:li xml:lang="x-default">productUtils</rdf:li>
+                     </rdf:Alt>
+                  </dc:title>
+                  <dc:description>
+                     <rdf:Alt>
+                        <rdf:li xml:lang="x-default">Helper functions for product code manipulation</rdf:li>
+                     </rdf:Alt>
+                  </dc:description>
+                  <dc:identifier>$template.form1.#subform.#variables.productUtils</dc:identifier>
+                  <lcd:fragmentRole>ScriptObject</lcd:fragmentRole>
+               </rdf:li>
+            </rdf:Seq>
+         </lcd:fragmentCatalog>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale name="en_AU" desc="English (Australia)">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, D MMMM YYYY</datePattern>
+         <datePattern name="long">D MMMM YYYY</datePattern>
+         <datePattern name="med">DD/MM/YYYY</datePattern>
+         <datePattern name="short">D/MM/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$z,zz9.99</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">$</currencySymbol>
+         <currencySymbol name="isoname">AUD</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+      </typefaces>
+   </locale>
+</localeSet></xdp:xdp>

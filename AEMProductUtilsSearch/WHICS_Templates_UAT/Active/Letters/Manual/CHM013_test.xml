@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<WHICSLetter>
+	<MetaData>
+		<Fund>fund</Fund>
+		<FundName>Fund name</FundName>
+		<FileName>c:\CivicaLivecycleES\in\WC52.R4.218200.8687.dat</FileName>
+		<FileDate>2011-11-03 15:22:10</FileDate>
+		<ConvertDate>2011-11-03 15:22:34</ConvertDate>
+	</MetaData>
+	<Documents>
+		<Document>
+			<Data>
+				<addr_1>11 Legs Drive</addr_1>
+				<addr_2>CANBERRA  ACT 2600</addr_2>
+				<addr_3></addr_3>
+				<addr_name>Mr R  Berry</addr_name>
+				<keyno_021>23928118</keyno_021>
+				<keyno_023>Rasp Berry</keyno_023>
+				<keyno_042> T02</keyno_042>
+				<keyno_045>01/12/2011</keyno_045>
+				<keyno_047>Top Hospital &amp; Family Extras</keyno_047>
+				<keyno_303>[pat name]</keyno_303>
+				<keyno_616>[rsn 4 hsptlstn]</keyno_616>
+				<letter_dte>26 Oct 2011</letter_dte>
+				<refer_no>23928118.CHM013.H10002.kxz.4</refer_no>
+				<salute>Dear Mr Berry</salute>
+			</Data>
+			<MetaData>
+				<Form>CHM013003</Form>
+				<trayin></trayin>
+				<trayout></trayout>
+			</MetaData>
+		</Document>
+	</Documents>
+	<LetterSettings>
+	</LetterSettings>
+</WHICSLetter>

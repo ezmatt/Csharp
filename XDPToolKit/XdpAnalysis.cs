@@ -11,6 +11,7 @@ using XDPToolKit.Models;
 using System.Text;
 using DocumentFormat.OpenXml.Presentation;
 using System.Text.RegularExpressions;
+using DocumentFormat.OpenXml.Vml.Office;
 
 namespace XDPToolKit
 {
@@ -36,7 +37,9 @@ namespace XDPToolKit
             private int _scriptCounter = 1;
             private int _fragmentCounter = 1;
 
-            public XdpParser(string filePath)
+            public Logger Logger { get; set; }
+
+            public XdpParser(string filePath, Logger log)
             {
                 if (!File.Exists(filePath))
                     throw new FileNotFoundException("XDP file not found", filePath);
@@ -45,7 +48,7 @@ namespace XDPToolKit
                 _root = _xdpDocument?.Root;
                 var firstElement = _root?.Descendants().FirstOrDefault();
                 xfaNs = firstElement?.GetDefaultNamespace() ?? XNamespace.None;
-
+                Logger = log ?? new Logger(Directory.GetCurrentDirectory() + @"\\XDP_Parser_log.txt");
                 //Console.WriteLine($"Namespace: {xfaNs}"); // Debugging: Should print the actual namespace
             }
 
@@ -347,9 +350,42 @@ namespace XDPToolKit
             private string GetFieldIDfromXDPID(string fieldID)
             {
                 string cleaned = fieldID.TrimStart('#');
+
+                if (!_allFields.Values.Any(f => f.FieldID == cleaned))
+                {
+                    Console.WriteLine($"[WARN] Field ID '{cleaned}' not found in _allFields.");
+                }
+
                 return _allFields.FirstOrDefault(kvp => kvp.Value.FieldID == cleaned).Key ?? string.Empty;
 
             }
+
+            public void PreloadAllFields(XElement root)
+            {
+                foreach (var node in root.Descendants(xfaNs + "field"))
+                {
+                    var name = node.Attribute("name")?.Value;
+                    var fieldID = node.Attribute("id")?.Value ?? Guid.NewGuid().ToString("N");
+
+                    var bindRef = node.Element(xfaNs + "bind")?.Attribute("ref")?.Value ?? "";
+
+                    var scripts = GetScripts(node);
+                    List<string> scriptIDs = scripts.Select(script => GetOrAddScriptId(script)).ToList(); // ✅ Store IDs
+
+                    FormField formField = new FormField
+                    {
+                        Name = name,
+                        Binding = bindRef,
+                        Scripts = scriptIDs,
+                        FieldID = fieldID,
+                    };
+
+                    string field_id = GetOrAddFieldId(formField);
+                }
+
+                Console.WriteLine($"[INFO] Preloaded {_allFields.Count} fields from XDP.");
+            }
+
 
             // Get all the fields and relevant bindings as well as any associated rules
             public List<Fragment> GetFragments(XElement subFormNode)
@@ -418,14 +454,14 @@ namespace XDPToolKit
                 XNamespace xhtmlNs = "http://www.w3.org/1999/xhtml";
 
                 // 1. Check for image
+
                 var imageHref = valueElem.Element(xfaNs + "image")?.Attribute("href")?.Value;
                 if (!string.IsNullOrWhiteSpace(imageHref))
                 {
                     type = "image";
                     content = imageHref.Trim();
                 }
-                // 2. Check for exData text
-                else if (!string.IsNullOrWhiteSpace(valueElem.Element(xfaNs + "exData")?.Value))
+                else
                 {
                     var exDataElem = valueElem.Element(xfaNs + "exData");
                     var bodyElem = exDataElem?.Element(xhtmlNs + "body");
@@ -433,14 +469,20 @@ namespace XDPToolKit
                     {
                         content = ExtractTextFromHtml(bodyElem, xfaNs);
                     }
-                }
-                // 3. Fallback to raw value (plain text)
-                else if (!string.IsNullOrWhiteSpace(valueElem.Value))
-                {
-                    content = valueElem.Value.Trim();
+
+                    // If exData exists but content is still empty, try fallback
+                    if (string.IsNullOrWhiteSpace(content) && !string.IsNullOrWhiteSpace(valueElem.Value))
+                    {
+                        content = valueElem.Value.Trim();
+                    }
                 }
 
-                if (string.IsNullOrWhiteSpace(content)) return null;
+                if (string.IsNullOrWhiteSpace(content))
+                {
+                    Logger.Log($"[DEBUG] Skipped <draw> element: name='{name}', no usable content found.");
+                    return null;
+                }
+
 
                 return new DrawItem
                 {
@@ -497,9 +539,12 @@ namespace XDPToolKit
 
                             case "span":
                                 var embedAttr = elem.Attribute(dataXfaNs + "embed");
+                                embedAttr = elem.Attributes().FirstOrDefault(a => a.Name.LocalName == "embed");
+
                                 if (embedAttr != null)
                                 {
                                     sb.Append($"{GetFieldIDfromXDPID(embedAttr.Value)}");
+                                    //Logger.Log($"Attribute: {embedAttr.Name.LocalName}, Value: {embedAttr.Value}");
                                 }
                                 else
                                 {
@@ -598,6 +643,8 @@ namespace XDPToolKit
                 _allScripts.Clear();
                 _fieldCounter = 1;
                 _scriptCounter = 1;
+
+                PreloadAllFields(rootSubform);
 
                 // Parse and build model
                 var rootNode = ParseSubform(rootSubform, null);

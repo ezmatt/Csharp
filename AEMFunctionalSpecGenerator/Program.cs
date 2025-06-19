@@ -73,14 +73,25 @@ namespace XDPFunctionalSpecGenerator
 
                 foreach (string jsonFile in Directory.GetFiles(jsonDirectory, "*.json"))
                 {
-                    //##########################################
-                    if (!jsonFile.Contains("AMBLD1")) continue;
-                    //##########################################
+                    //#######################################################
+                    // Testing specific letter codes
+                    // Leave it empty if you want all letters
+                    //#######################################################
+                    string[] testingLetterCodes =
+                    [
+                        "HENQBX",
+                        //"MEMDBG",
+                        //"AMBLD1",
+                    ];
+                    //#######################################################
+                    if (testingLetterCodes.Length > 0 && !testingLetterCodes.Any(code => jsonFile.Contains(code))) continue;
+                    //#######################################################
 
                     log.Log($"- {jsonFile}");
 
                     try
                     {
+                        hyperlinkTags = [];
                         FormJsonModel subformNode = JsonLoader.LoadSubformFromJson(jsonFile);
                         GenerateWordDocument(subformNode, jsonFile.Replace(".json", ".docx"));
                     }
@@ -330,9 +341,9 @@ namespace XDPFunctionalSpecGenerator
 
             // ✅ Define the column widths explicitly
             TableGrid tableGrid = new TableGrid(
-                new GridColumn() { Width = DXA(2.5) },
-                new GridColumn() { Width = DXA(2.5) },
-                new GridColumn() {  }
+                new GridColumn(),
+                new GridColumn(),
+                new GridColumn()
             );
             table.AppendChild(tableGrid);
 
@@ -345,10 +356,12 @@ namespace XDPFunctionalSpecGenerator
             headerRow.Append(
                 new TableCell(
                     StandardCellProperties(new CellProps(), ((int)Colours.AHMGrey).ToString("X6")),
+                    new TableCellWidth { Width = DXA(2.8), Type = TableWidthUnitValues.Dxa },
                     PrintStyle("tableHeading", "Master Page", true)
                 ),
                 new TableCell(
                     StandardCellProperties(new CellProps(), ((int)Colours.AHMGrey).ToString("X6")),
+                    new TableCellWidth { Width = DXA(2.8), Type = TableWidthUnitValues.Dxa },
                     PrintStyle("tableHeading", "Fragment ID", true)
                 ),
                 new TableCell(
@@ -412,9 +425,9 @@ namespace XDPFunctionalSpecGenerator
                         
             // ✅ Define the column widths explicitly
             TableGrid tableGrid = new TableGrid(
-                new GridColumn() { Width = DXA(2.8) },
-                new GridColumn() { Width = DXA(2.8) },
-                new GridColumn() { Width = DXA(12.8) }
+                new GridColumn(),
+                new GridColumn(),
+                new GridColumn()
             );
             table.AppendChild(tableGrid);
             
@@ -427,10 +440,12 @@ namespace XDPFunctionalSpecGenerator
             headerRow.Append(
                 new TableCell(
                     StandardCellProperties(new CellProps(), ((int)Colours.AHMGrey).ToString("X6")),
+                    new TableCellWidth { Width = DXA(2.8), Type = TableWidthUnitValues.Dxa },
                     PrintStyle("tableHeading", "BR ID", true)
                 ),
                 new TableCell(
                     StandardCellProperties(new CellProps(), ((int)Colours.AHMGrey).ToString("X6")),
+                    new TableCellWidth { Width = DXA(2.8), Type = TableWidthUnitValues.Dxa },
                     PrintStyle("tableHeading", "BR Name ID", true)
                 ),
                 new TableCell(
@@ -536,6 +551,7 @@ namespace XDPFunctionalSpecGenerator
             headerRow.Append(
                 new TableCell(
                     StandardCellProperties(new CellProps(VerticalMergeType.Restart), ((int)Colours.AHMGrey).ToString("X6")),
+                    new TableCellWidth { Width = DXA(2.8), Type = TableWidthUnitValues.Dxa },
                     PrintStyle("tableHeading", "Field ID", true)
                 ),
                 new TableCell(
@@ -548,6 +564,7 @@ namespace XDPFunctionalSpecGenerator
                 ),
                 new TableCell(
                     StandardCellProperties(new CellProps(VerticalMergeType.Restart), ((int)Colours.AHMGrey).ToString("X6")),
+                    new TableCellWidth { Width = DXA(2.8), Type = TableWidthUnitValues.Dxa },
                     PrintStyle("tableHeading", "Scripts", true)
                 )
             );
@@ -869,7 +886,7 @@ namespace XDPFunctionalSpecGenerator
                     _ => ((int)Colours.Black).ToString("X6")
                 };
 
-                if (!hyperlinkTags.Contains(match.Value))
+                if (hyperlinkTags.Contains(match.Value))
                 {
                     para.Append(
                         new Hyperlink(
@@ -878,6 +895,12 @@ namespace XDPFunctionalSpecGenerator
                         {
                             Anchor = match.Value // must match a BookmarkStart.Name somewhere else
                         });
+                }
+                else
+                {
+                    para.Append(
+                        PrintTextWithStyling(match.Value, highlight, bold, true)
+                    );
                     hyperlinkTags.Add(match.Value);
                 }
 
@@ -1139,7 +1162,24 @@ namespace XDPFunctionalSpecGenerator
             );
         }
 
-       
+        private static TableProperties CreateInnerTableProperties(string width, bool autofit = true)
+        {
+            var auto = (autofit) ? TableLayoutValues.Autofit : TableLayoutValues.Fixed;
+
+            // Define table properties
+            return new TableProperties(
+                new TableWidth { Width = width, Type = TableWidthUnitValues.Dxa },
+                new TableLayout { Type = auto },
+                new TableBorders(
+                    new LeftBorder { Val = BorderValues.Single, Size = 6 },
+                    new RightBorder { Val = BorderValues.Single, Size = 6 },
+                    new InsideHorizontalBorder { Val = BorderValues.Single, Size = 6 },
+                    new InsideVerticalBorder { Val = BorderValues.Single, Size = 6 }
+                )
+            );
+        }
+
+
         private static Table CreateInnerTable(List<ContentItemWithContext> rowItems)
         {
             double totalWidth = 0;
@@ -1166,7 +1206,7 @@ namespace XDPFunctionalSpecGenerator
                 tableGrid.Append(new GridColumn() { Width = DXA(width) });
             }
             // Setup table properties
-            table.AppendChild(CreateTableProperties(DXA(totalWidth), false));
+            table.AppendChild(CreateInnerTableProperties(DXA(totalWidth), false));
 
             table.Append(tableGrid);
             table.Append(RenderTableRow(rowItems, totalWidth));

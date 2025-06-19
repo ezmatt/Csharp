@@ -38,7 +38,7 @@ namespace XDPToolKit
                     GlobalLogger.Log($"File: {file}");
                     try
                     {
-                        XdpParser parser = new XdpParser(file);
+                        XdpParser parser = new XdpParser(file, null);
                         var subforms = parser.GetAllOfType("subform");
                         var bodyTexts = new Dictionary<string, string>();
 

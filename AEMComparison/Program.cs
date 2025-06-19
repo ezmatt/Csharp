@@ -25,13 +25,18 @@ class Program
             foreach (string xdpFile in Directory.GetFiles(xdpDirectory, "*.xdp"))
             {
                 //#######################################################
-                //if (!xdpFile.Contains("HENQBX")) continue;
+                string[] testingLetterCodes = 
+                [
+                    //"HENQBX",
+                    //"AMBLD1",
+                ];
+                if (testingLetterCodes.Length > 0 && !testingLetterCodes.Any(code => xdpFile.Contains(code))) continue;
                 //#######################################################
 
                 log.Log($"- {xdpFile}");
 
                 // Start the XDP parsing process
-                var xdp = new XdpParser(xdpFile);
+                var xdp = new XdpParser(xdpFile, log);
                 var model = xdp.BuildFormModel();
 
                 // Create filename with .json extension
@@ -50,6 +55,7 @@ class Program
             }
         }
         log.Log("Complete...");
-
+        Console.WriteLine("Press any key to exit...");
+        Console.ReadKey();
     }
 }
